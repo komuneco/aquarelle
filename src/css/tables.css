@@ -1,0 +1,110 @@
+/*
+Aquarelle, The creative & opensource CSS framework.
+Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@charset "utf-8";
+ /* --------------------------------------------------------------
+
+	table.css
+		* Sets up tables layout !.
+
+-------------------------------------------------------------- */
+
+table 
+{
+	margin-bottom:		36px; 
+	width:				100%;
+	border:				thin solid #dedede;
+	border-width:		1px 1px 1px 0;
+	border-collapse:	collapse;
+	background:			#ffffff;
+}
+
+table caption
+{
+	background:			#ffffff;
+	font-size:			16px;
+	font-weight:		bold;
+	color:				#666666;
+	line-height:		18px;
+}
+
+
+table tr th
+{ 
+	font-weight:		bold;
+}
+
+table tr th,
+table tr td,
+table caption
+{ 
+	padding:			4px 10px 4px 5px;
+}
+
+table tr td
+{
+	color:				#333333;
+	border-left:		thin solid #dedede;
+	padding:			4px 6px;
+	text-align:			center;
+}
+
+table thead th,
+table tfoot th
+{
+	background:			#fafafa;
+	text-align:			center;
+	font-weight:		bold;
+	font-size:			14px;
+	color:				#205eb0;
+	border-top:			thin solid #dedede;
+	border-bottom:		thin solid #dedede;
+}
+table thead th:first-child,
+table tfoot th:first-child
+{
+	border-left:		thin solid #dedede;
+}
+
+table tfoot
+{
+	font-style:			italic; 
+}
+
+table tfoot th
+{
+	font-size:			13px;
+	color:				#538dd8;
+}
+
+table tbody th
+{
+	border-left:		thin solid #dedede;
+	text-align:			right;
+	padding-right:		3px;
+	font-size:			13px;
+	color:				#205eb0;
+}
+
+/* You can zebra-stripe your tables in outdated browsers by adding the class "even" to every other table row.*/
+table tbody tr:nth-child(even) td,
+table tbody tr.even td
+{
+	background-color:			#fafafa;
+}
+

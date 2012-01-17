@@ -1,0 +1,948 @@
+/*
+Aquarelle, The creative & opensource CSS framework.
+Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@charset "utf-8";
+/* --------------------------------------------------------------
+
+	forms.css
+
+	* Sets up some default styling for forms
+	* Gives you classes to enhance your forms
+
+-------------------------------------------------------------- */
+
+/* A special hack is included for IE8 since it does not apply padding correctly on fieldsets */
+fieldset, #IE8#HACK		{ padding-top: 18px; }
+legend, #IE8#HACK		{ margin-top: 0; margin-bottom: 0; }
+
+
+/*
+	This is to be used on forms where a variety of elements are
+	placed side-by-side. Use the p tag to denote a line.
+*/
+form.inline				{ line-height: 36px; }
+form.inline p			{ margin-bottom: 0; }
+
+
+/*-------------------------------------------------------------- 
+		Styling Fieldsets
+-------------------------------------------------------------- */
+
+fieldset
+{
+	padding:			6px 14px;
+	margin:				-1px 0 17px 0;
+	border:				thin solid #c0c0c0;
+	background-color:	#f5f5f5;
+}
+
+fieldset > legend
+{
+	font-weight:		bold;
+	font-size:			16px;;
+	padding:			0 5px;
+	color:				#333333;
+}
+
+fieldset > legend > a,
+fieldset > legend > a:visited
+{
+	text-decoration:	none;
+	color:				#205eb0;
+}
+
+fieldset > legend > a:hover
+{
+	text-decoration:	none;
+	color:				#10468c;
+}
+
+/* Grid Adjustment */
+/*
+	Due to the natural padding of a fieldset, you loose a "span"
+	Ex : The widest element inside a <fieldset class="span-10"> is a "span-9"
+*/
+
+fieldset.span-2		{ width: 40px;	}
+fieldset.span-3		{ width: 80px;	}
+fieldset.span-4		{ width: 120px;	}
+fieldset.span-5		{ width: 160px;	}
+fieldset.span-6		{ width: 200px;	}
+fieldset.span-7		{ width: 240px;	}
+fieldset.span-8		{ width: 280px;	}
+fieldset.span-9		{ width: 320px;	}
+fieldset.span-10	{ width: 360px;	}
+fieldset.span-11	{ width: 400px;	}
+fieldset.span-12	{ width: 440px;	}
+fieldset.span-13	{ width: 480px;	}
+fieldset.span-14	{ width: 520px;	}
+fieldset.span-15	{ width: 560px;	}
+fieldset.span-16	{ width: 600px;	}
+fieldset.span-17	{ width: 640px;	}
+fieldset.span-18	{ width: 680px;	}
+fieldset.span-19	{ width: 720px;	}
+fieldset.span-20	{ width: 760px;	}
+fieldset.span-21	{ width: 800px;	}
+fieldset.span-22	{ width: 840px;	}
+fieldset.span-23	{ width: 880px;	}
+fieldset.span-24	{ width: 920px;	}
+
+/*-------------------------------------------------------------- 
+		Styling Labels
+-------------------------------------------------------------- */
+
+label
+{
+	font-weight:		normal;
+	color:				#333333;
+	font-size:			15px;
+	height:				24px;
+	line-height:		14px;
+	vertical-align:		middle;
+}
+
+/*-------------------------------------------------------------- 
+		Styling Inputs
+-------------------------------------------------------------- */
+
+/* Text inputs */
+
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="file"],
+input.title,
+select
+{
+	height:				22px;
+	font-size:			13px;
+	background-color:	#ffffff;
+	border:				thin solid #c0c0c0;
+	color:				#333333;
+	padding:			1px;
+	text-indent:		5px;
+}
+
+input.title
+{
+	font-size:			18px;
+	margin:				6px 0;
+}
+
+
+/* Grid Adjustment */
+
+/* rows */
+
+/*
+	input[type="text"] is basically higher than a single row, 
+	so we start at row-2.
+*/
+input[type="text"].row-2,
+input[type="password"].row-2,
+input[type="url"].row-2,
+input[type="email"].row-2,
+input.title.row-2
+{
+	margin-top:			5px;
+}
+
+input[type="text"].row-3,
+input[type="password"].row-3,
+input[type="url"].row-3,
+input[type="email"].row-3,
+input.title.row-3
+{
+	margin-top:			13px;
+}
+
+input[type="text"].row-4,
+input[type="password"].row-4,
+input[type="url"].row-4,
+input[type="email"].row-4,
+input.title.row-4
+{
+	margin-top:			24px;
+}
+
+
+/* span */
+
+input.span-1,	input.span-2,	input.span-3,	input.span-4,
+input.span-5,	input.span-6,	input.span-7,	input.span-8,
+input.span-9,	input.span-10,	input.span-11,	input.span-12,
+input.span-13,	input.span-14,	input.span-15,	input.span-16,
+input.span-17,	input.span-18,	input.span-19,	input.span-20,
+input.span-21,	input.span-22,	input.span-23,	input.span-24,
+input.span-all
+{
+	border-left-width:	1px;
+	border-right-width:	1px;
+	padding-left:		5px;
+	padding-right:		5px;
+}
+
+input[type="text"].span-1,
+input[type="password"].span-1,
+input[type="url"].span-1,
+input[type="email"].span-1,
+input.title.span-1
+{	width:				18px;	}
+
+
+input[type="text"].span-2,
+input[type="password"].span-2,
+input[type="url"].span-2,
+input[type="email"].span-2,
+input.title.span-2
+{	width:				58px;	}
+
+
+input[type="text"].span-3,
+input[type="password"].span-3,
+input[type="url"].span-3,
+input[type="email"].span-3,
+input.title.span-3
+{	width:				98px;	}
+
+
+input[type="text"].span-4,
+input[type="password"].span-4,
+input[type="url"].span-4,
+input[type="email"].span-4,
+input.title.span-4
+{	width:				138px;	}
+
+
+input[type="text"].span-5,
+input[type="password"].span-5,
+input[type="url"].span-5,
+input[type="email"].span-5,
+input.title.span-5
+{	width:				178px;	}
+
+
+input[type="text"].span-6,
+input[type="password"].span-6,
+input[type="url"].span-6,
+input[type="email"].span-6,
+input.title.span-6
+{	width:				218px;	}
+
+
+input[type="text"].span-7,
+input[type="password"].span-7,
+input[type="url"].span-7,
+input[type="email"].span-7,
+input.title.span-7
+{	width:				258px;	}
+
+
+input[type="text"].span-8,
+input[type="password"].span-8,
+input[type="url"].span-8,
+input[type="email"].span-8,
+input.title.span-8
+{	width:				298px;	}
+
+
+input[type="text"].span-9,
+input[type="password"].span-9,
+input[type="url"].span-9,
+input[type="email"].span-9,
+input.title.span-9
+{	width:				338px;	}
+
+
+input[type="text"].span-10,
+input[type="password"].span-10,
+input[type="url"].span-10,
+input[type="email"].span-10,
+input.title.span-10
+{	width:				378px;	}
+
+
+input[type="text"].span-11,
+input[type="password"].span-11,
+input[type="url"].span-11,
+input[type="email"].span-11,
+input.title.span-11
+{	width:				418px;	}
+
+
+input[type="text"].span-12,
+input[type="password"].span-12,
+input[type="url"].span-12,
+input[type="email"].span-12,
+input.title.span-12
+{	width:				458px;	}
+
+
+input[type="text"].span-13,
+input[type="password"].span-13,
+input[type="url"].span-13,
+input[type="email"].span-13,
+input.title.span-13
+{	width:				498px;	}
+
+
+input[type="text"].span-14,
+input[type="password"].span-14,
+input[type="url"].span-14,
+input[type="email"].span-14,
+input.title.span-14
+{	width:				538px;	}
+
+
+input[type="text"].span-15,
+input[type="password"].span-15,
+input[type="url"].span-15,
+input[type="email"].span-15,
+input.title.span-15
+{	width:				578px;	}
+
+
+input[type="text"].span-16,
+input[type="password"].span-16,
+input[type="url"].span-16,
+input[type="email"].span-16,
+input.title.span-16
+{	width:				618px;	}
+
+
+input[type="text"].span-17,
+input[type="password"].span-17,
+input[type="url"].span-17,
+input[type="email"].span-17,
+input.title.span-17
+{	width:				658px;	}
+
+
+input[type="text"].span-18,
+input[type="password"].span-18,
+input[type="url"].span-18,
+input[type="email"].span-18,
+input.title.span-18
+{	width:				698px;	}
+
+
+input[type="text"].span-19,
+input[type="password"].span-19,
+input[type="url"].span-19,
+input[type="email"].span-19,
+input.title.span-19
+{	width:				738px;	}
+
+
+input[type="text"].span-20,
+input[type="password"].span-20,
+input[type="url"].span-20,
+input[type="email"].span-20,
+input.title.span-20
+{	width:				778px;	}
+
+
+input[type="text"].span-21,
+input[type="password"].span-21,
+input[type="url"].span-21,
+input[type="email"].span-21,
+input.title.span-21
+{	width:				818px;	}
+
+
+input[type="text"].span-22,
+input[type="password"].span-22,
+input[type="url"].span-22,
+input[type="email"].span-22,
+input.title.span-22
+{	width:				858px;	}
+
+
+input[type="text"].span-23,
+input[type="password"].span-23,
+input[type="url"].span-23,
+input[type="email"].span-23,
+input.title.span-23
+{	width:				898px;	}
+
+
+input[type="text"].span-24,
+input[type="password"].span-24,
+input[type="url"].span-24,
+input[type="email"].span-24,
+input.title.span-24
+{	width:				938px;	}
+
+/* Text input, styled on states */
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input.title:focus,
+select:focus
+{
+	border-color:		#666666;
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="url"]:disabled,
+input[type="email"]:disabled,
+textarea:disabled
+{
+	background-color:	#f0f0f0;
+	color:				#999999;
+}
+
+
+/* File Input */
+
+input[type="file"]
+{
+	/*
+	If you're looking for a fancy <input type="file" />, check "tricks.css" out !
+	*/
+}
+
+
+/*-------------------------------------------------------------- 
+		Styling Select & Options
+-------------------------------------------------------------- */
+
+select
+{
+	text-indent:		0;
+	height:				26px;
+}
+
+select option
+{
+	position:			relative;
+	color:				#666666;
+	text-indent:		10px;
+}
+
+select optgroup
+{
+	border-top:			thin solid #c0c0c0;
+}
+
+select optgroup[label]
+{
+	color:				#205eb0;
+}
+
+select optgroup option
+{
+	color:				#666666;
+}
+
+
+/*-------------------------------------------------------------- 
+		Styling Checkboxes & radio buttons
+-------------------------------------------------------------- */
+
+/* Styling */
+input[type="checkbox"],
+input[type="radio"]
+{
+	background-color:	#ffffff;
+	border:				thin solid #dedede;
+	margin:				6px 0;
+	vertical-align:		middle;
+}
+
+input[type="checkbox"]:active,
+input[type="radio"]:active
+{
+	background-color:	#efefef;
+	border-color:		#c0c0c0;
+}
+
+input[type="checkbox"]:hover
+{
+	border-color:		#c0c0c0;
+}
+
+input[type="radio"]
+{
+
+}
+
+input[type="checkbox"]:checked, 
+input[type="radio"]:checked {
+	background-color:	#ffffff;
+}
+
+input[type="checkbox"]:focus
+{
+	border-color:		#666666;
+	outline:			medium none;
+}
+
+/*-------------------------------------------------------------- 
+		Styling Button and input[submit-reset]
+-------------------------------------------------------------- */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button
+{
+	padding:			6px 10px;
+	line-height:		18px;
+	font-size:			15px;
+	color:				#333333;
+	border:				thin solid #999999;
+	vertical-align:		middle;
+	background-color:	#d0d0d0;
+	font-family:		Verdana, Arial, Helvetica, 'Helvetica Neue', sans-serif;
+}
+
+/* Hover */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover 
+{
+	border-color:		#666666;
+}
+
+/* Active */
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active
+{
+	background-color:	#ededed; 
+}
+
+/* Disabled */
+input[type="submit"]:disabled,
+input[type="reset"]:disabled,
+input[type="button"]:disabled,
+button:disabled,
+input[type="submit"]:disabled:hover,
+input[type="reset"]:disabled:hover,
+input[type="button"]:disabled:hover,
+button:disabled:hover,
+input[type="submit"]:disabled:active,
+input[type="reset"]:disabled:active,
+input[type="button"]:disabled:active,
+button:disabled:active
+{
+	color:				#c0c0c0;
+	border-color:		#c0c0c0;
+	background-color:	#f0f0f0;
+}
+
+/* Tiny Button */
+input[type="submit"].tiny,
+input[type="reset"].tiny,
+input[type="button"].tiny,
+button.tiny
+{
+	font-size:			13px;
+	font-weight:		normal;
+	height:				26px;
+	line-height:		14px;
+	padding:			1px 8px 0 8px;
+}
+
+/*-------------------------------------------------------------- 
+		Styling textareas
+-------------------------------------------------------------- */
+textarea
+{
+	font-size:			13px;
+	background-color:	#ffffff;
+	border:				thin solid #c0c0c0;
+	color:				#333333;
+	padding:			1px;
+}
+
+textarea:focus
+{
+	border-color:		#666666;
+}
+
+/* Grid Adjustment */
+
+textarea.span-1,	textarea.span-2,	textarea.span-3,	textarea.span-4,
+textarea.span-5,	textarea.span-6,	textarea.span-7,	textarea.span-8,
+textarea.span-9,	textarea.span-10,	textarea.span-11,	textarea.span-12,
+textarea.span-13,	textarea.span-14,	textarea.span-15,	textarea.span-16,
+textarea.span-17,	textarea.span-18,	textarea.span-19,	textarea.span-20,
+textarea.span-21,	textarea.span-22,	textarea.span-23,	textarea.span-24,
+textarea.span-all
+{
+	border-left-width:	1px;
+	border-right-width:	1px;
+	padding:			1px;
+}
+
+
+textarea.span-1		{ width: 26px;	}
+textarea.span-2		{ width: 66px;	}
+textarea.span-3		{ width: 106px;	}
+textarea.span-4		{ width: 146px;	}
+textarea.span-5		{ width: 186px;	}
+textarea.span-6		{ width: 226px;	}
+textarea.span-7		{ width: 266px;	}
+textarea.span-8		{ width: 306px;	}
+textarea.span-9		{ width: 346px;	}
+textarea.span-10	{ width: 386px;	}
+textarea.span-11	{ width: 426px;	}
+textarea.span-12	{ width: 466px;	}
+textarea.span-13	{ width: 506px;	}
+textarea.span-14	{ width: 546px;	}
+textarea.span-15	{ width: 586px;	}
+textarea.span-16	{ width: 626px;	}
+textarea.span-17	{ width: 666px;	}
+textarea.span-18	{ width: 706px;	}
+textarea.span-19	{ width: 746px;	}
+textarea.span-20	{ width: 786px;	}
+textarea.span-21	{ width: 826px;	}
+textarea.span-22	{ width: 866px;	}
+textarea.span-23	{ width: 906px;	}
+textarea.span-24	{ width: 946px;	}
+textarea.span-all	{ width: 100%;	}
+
+
+/*-------------------------------------------------------------- 
+		Styling inputs and textareas by event
+-------------------------------------------------------------- */
+input.error,
+textarea.error,
+select.error,
+input.alert,
+textarea.alert,
+select.alert
+{
+	background-color:	#fbe3e4;
+	color:				#8a1f11;
+	border-color:		#fbc2c4;
+}
+
+input.error:focus,
+textarea.error:focus,
+select.error:focus,
+input.alert:focus,
+textarea.alert:focus,
+select.alert:focus
+{
+	border-color:		#8a1f11;
+}
+
+input.notice,
+textarea.notice,
+select.notice
+{
+	background-color:	#fff6bf;
+	color:				#514721;
+	border-color:		#ffd324;
+}
+
+input.notice:focus,
+textarea.notice:focus,
+select.notice:focus
+{
+	border-color:		#514721;
+}
+
+input.success,
+textarea.success,
+select.success
+{
+	background-color:	#e6efc2;
+	color:				#264409;
+	border-color:		#c6d880;
+}
+
+input.success:focus,
+textarea.success:focus,
+select.success:focus
+{
+	border-color:		#264409;
+}
+
+input.info,
+textarea.info,
+select.info
+{
+	background-color:	#d5edf8;
+	color:				#205791;
+	border-color:		#92cae4;
+}
+
+input.info:focus,
+textarea.info:focus,
+select.info:focus
+{
+	border-color:		#205791;
+}
+
+input.important,
+textarea.important,
+select.important
+{
+	border-color:		#990000;
+}
+
+
+/*-------------------------------------------------------------- 
+		Styling labels by events
+-------------------------------------------------------------- */
+label.error,
+label.alert
+{
+	color:				#8a1f11;
+	font-weight:		bold;
+}
+
+label.notice
+{
+	color:				#514721;
+	font-weight:		bold;
+}
+
+label.info
+{
+	color:				#205791;
+	font-weight:		bold;
+}
+
+label.success
+{
+	color:				#264409;
+	font-weight:		bold;
+}
+
+label.important
+{
+	color:				#990000;
+	font-weight:		bold;
+}
+
+
+/*-------------------------------------------------------------- 
+		Styling placeholders
+-------------------------------------------------------------- */
+	/* CSS3... Not Yet
+input[placeholder], textarea[placeholder]
+{
+	color:#c0c0c0;
+}
+*/
+	/* for webkit */
+::-webkit-input-placeholder
+{
+	color:				#c0c0c0;
+}
+
+	/* for mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder
+{
+	color:				#c0c0c0;
+}
+
+
+/*-------------------------------------------------------------- 
+		Styling placeholders by event
+-------------------------------------------------------------- */
+
+	/* Mozilla based browser */
+input.error:-moz-placeholder,
+textarea.error:-moz-placeholder,
+input.alert:-moz-placeholder,
+textarea.alert:-moz-placeholder
+{
+	color:				#fbc2c4;
+}
+
+input.notice:-moz-placeholder,
+textarea.notice:-moz-placeholder
+{
+	color:				#ffd324;
+}
+
+input.success:-moz-placeholder,
+textarea.success:-moz-placeholder
+{
+	color:				#c6d880;
+}
+
+input.info:-moz-placeholder,
+textarea.info:-moz-placeholder
+{
+	color:				#92cae4;
+}
+
+	/* WebKit based browser */
+input.error::-webkit-input-placeholder,
+textarea.error::-webkit-input-placeholder,
+input.alert::-webkit-input-placeholder,
+textarea.alert::-webkit-input-placeholder
+{
+	color:				#fbc2c4;
+}
+
+input.notice::-webkit-input-placeholder,
+textarea.notice::-webkit-input-placeholder
+{
+	color:				#ffd324;
+}
+
+input.success::-webkit-input-placeholder,
+textarea.success::-webkit-input-placeholder
+{
+	color:				#c6d880;
+}
+
+input.info::-webkit-input-placeholder,
+textarea.info::-webkit-input-placeholder
+{
+	color:				#92cae4;
+}
+
+
+
+
+/*-------------------------------------------------------------- 
+		Inline Grid Adjustment
+-------------------------------------------------------------- */
+
+/*
+	If you want your form elements to be vertically aligned on a row-[2-4] line, add the "inline" class to your row container
+	Ex :
+	<form>
+		<div class="span-17 row-2 prepend-1 inline last">
+			<div class="span-1 row-2 ">
+				<input type="checkbox" class="row-2" checked="checked" id="checkbox_alert_visit">
+			</div>
+
+			<label for="checkbox_alert_visit" class="span-12 row-2">
+				Send me a mail when someone visit my profile
+			</label>
+
+			<select class="span-4 last">
+				<option value="1">Real time</option>
+				<option value="2">Every hour</option>
+				<option value="3">Once a day</option>
+			</select> 
+		</div>
+	</form>
+*/
+
+/* Designed for 1 line labels */
+.inline label.row-2							{ line-height:36px; }
+
+/* Designed for 2 lines labels */
+.inline label.row-3							{ line-height:18px; margin-top:7px; height:47px; }
+
+/* Designed for 3 lines labels */
+.inline label.row-4							{ line-height:18px; margin-top:9px; height:63px; }
+
+
+.inline.row-2 > select						{ margin-top:5px; }
+.inline.row-3 > select						{ margin-top:14px; }
+.inline.row-4 > select						{ margin-top:22px; }
+	
+.inline.row-2 > input						{ margin-top:5px; }
+.inline.row-3 > input						{ margin-top:14px; }
+.inline.row-4 > input						{ margin-top:22px; }
+
+.inline.row-2 > input[type="submit"].tiny,
+.inline.row-2 > input[type="reset"].tiny,
+.inline.row-2 > button.tiny
+{
+	margin-top:			5px;
+}
+
+.inline.row-3 > input[type="submit"].tiny,
+.inline.row-3 > input[type="reset"].tiny,
+.inline.row-3 > button.tiny
+{
+	margin-top:			13px;
+}
+
+.inline.row-4 > input[type="submit"].tiny,
+.inline.row-4 > input[type="reset"].tiny,
+.inline.row-4 > button.tiny
+{
+	margin-top:			21px;
+}
+
+.inline.row-2 > input[type="submit"],
+.inline.row-2 > input[type="reset"],
+.inline.row-2 > button
+{
+	margin-top:			1px;
+}
+
+.inline.row-3 > input[type="submit"],
+.inline.row-3 > input[type="reset"],
+.inline.row-3 > button
+{
+	margin-top:			11px;
+}
+
+.inline.row-4 > input[type="submit"],
+.inline.row-4 > input[type="reset"],
+.inline.row-4 > button
+{ margin-top:19px;
+}
+
+.inline input[type="checkbox"].row-2		{ height:auto; margin-top:11px; }
+.inline input[type="checkbox"].row-3		{ height:auto; margin-top:20px; }
+.inline input[type="checkbox"].row-4		{ height:auto; margin-top:29px; }
+
+.inline input[type="radio"].row-2			{ height:auto; margin-top:11px; }
+.inline input[type="radio"].row-3			{ height:auto; margin-top:20px; }
+.inline input[type="radio"].row-4			{ height:auto; margin-top:29px; }
+
+
+
+/*-------------------------------------------------------------- 
+		TODO			>>>		CIBLE 0.4.0
+-------------------------------------------------------------- */
+
+/* Style those elements */
+/*
+	
+GO HERE http://www.diveintohtml5.org/detect.html#input-types
+
+
+<input type="search">			for search boxes
+<input type="number">			for spinboxes
+<input type="range">			for sliders
+<input type="color">			for color pickers
+<input type="tel">				for telephone numbers
+<input type="url">				for web addresses
+<input type="email">			for email addresses
+<input type="date">				for calendar date pickers
+<input type="month">			for months
+<input type="week">				for weeks
+<input type="time">				for timestamps
+<input type="datetime">			for precise, absolute date+time stamps
+<input type="datetime-local">	for local dates and times
+*/
+
+

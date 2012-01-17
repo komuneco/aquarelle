@@ -1,0 +1,160 @@
+/*
+Aquarelle, The creative & opensource CSS framework.
+Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@charset "utf-8";
+/* --------------------------------------------------------------
+	tricks.css
+		* Useful tricks.
+		Because your mission is to avoid any inline tag styling =).
+
+-------------------------------------------------------------- */
+
+/*-------------------------------------------------------------- 
+		Position
+-------------------------------------------------------------- */
+/* 	These can be used to pull an image at the start of a paragraph, so 
+	that the text flows around it (usage: <p><img class="left">Text</p>)
+ */
+.left
+{
+	float:				left !important;
+	padding-right:		10px;
+}
+
+.right
+{
+	float:				right !important;
+	padding-left:		10px;
+}
+
+
+/* 	You don't want the gutter ? Use those class to make your element
+	stuck on the side 
+*/
+.left.stuck
+{
+	float:				left !important;
+	padding-right:		0;
+}
+
+.right.stuck
+{
+	float:				right !important;
+	padding-left:		0;
+}
+
+
+/* Clearing floats without extra markup
+	Based on How To Clear Floats Without Structural Markup by PiE
+		[http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after
+{
+	content:			"\0020";
+	display:			block;
+	height:				0;
+	clear: 				both;
+	visibility:			hidden;
+	overflow:			hidden;
+}
+.clearfix				{ display: block; }
+
+/* Regular clearing
+	apply to column that should drop below previous ones. */
+
+.clear					{ clear: both; }
+.clear-left				{ clear: left; }
+.clear-right			{ clear: right; }
+/*-------------------------------------------------------------- 
+		Visibility and display
+-------------------------------------------------------------- */
+
+.invisible, .hidden 	{ visibility: hidden; }
+.visible,				{ visibility: visible; }
+
+.no-display				{ display: none; }
+.inlined				{ display: inline; }
+.in-blocked				{ display: inline-block; }
+.blocked				{ display: block; }
+
+.hide					{ display: none; }
+.show					{ display: block; }
+
+/*-------------------------------------------------------------- 
+		Text and Typography
+-------------------------------------------------------------- */
+.align-left				{ text-align: left; }
+.align-center			{ text-align: center; text-indent: 0; }
+.align-right			{ text-align: right; }
+.align-justify			{ text-align: justify; }
+
+/*-------------------------------------------------------------- 
+		Forms 
+-------------------------------------------------------------- */
+
+/* This method is based on the Michael McGrady's trick available for reading here : http://www.quirksmode.org/dom/inputfile.html */
+
+div.input-file
+{
+	position:		relative;
+}
+
+input[type="file"].real-input-file
+{
+	position:			relative;
+	text-align:			right;
+	-moz-opacity:		0 ;
+	filter:				alpha(opacity: 0);
+	opacity:			0;
+	z-index:			2;
+}
+
+div.fake-input-file
+{
+	position:			absolute;
+	top:				0px;
+	left:				0px;
+	z-index:			1;
+}
+/*
+	How to use:
+
+	<div class="input-file">
+		<input type="file" class="real-input-file" />
+		<div class="fake-input-file">
+			<input type="text" class="text" />
+			<input type="button" class="tiny" value="Browse" />
+		</div>
+	</div>
+*/
+
+
+/* Use class="noresize" on a textarea to avoid browser resizing capabilities */
+textarea.noresize
+{
+	resize:				none;
+	padding:			1px;
+}
+
+/* Use class="noindent" on a p to remove the automatic text-indent */
+p.noindent
+{
+	text-indent:		0;
+}
+
+

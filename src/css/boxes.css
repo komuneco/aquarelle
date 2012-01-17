@@ -1,0 +1,173 @@
+/*
+Aquarelle, The creative & opensource CSS framework.
+Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@charset "utf-8";
+/* --------------------------------------------------------------
+
+	boxes.css
+		
+		*Allows you to design your page with boxes.
+		*Thoses boxes are made to fit the size of your structural divs.
+
+		You can title them by using the h3 and h4 tags.
+		
+		If you're looking for color changing, check the ./themes/ folder.
+		
+-------------------------------------------------------------- */
+
+/*
+	Grid overloading 
+	Just because we want our box to have a border
+	/!\ Not safe to change
+*/
+.box.span-1		{ width: 16px;	}
+.box.span-2		{ width: 56px;	}
+.box.span-3		{ width: 96px;	}
+.box.span-4		{ width: 136px;	}
+.box.span-5		{ width: 176px;	}
+.box.span-6		{ width: 216px;	}
+.box.span-7		{ width: 256px;	}
+.box.span-8		{ width: 296px;	}
+.box.span-9		{ width: 336px;	}
+.box.span-10	{ width: 376px;	}
+.box.span-11	{ width: 416px;	}
+.box.span-12	{ width: 456px;	}
+.box.span-13	{ width: 496px;	}
+.box.span-14	{ width: 536px;	}
+.box.span-15	{ width: 576px;	}
+.box.span-16	{ width: 616px;	}
+.box.span-17	{ width: 656px;	}
+.box.span-18	{ width: 696px;	}
+.box.span-19	{ width: 736px;	}
+.box.span-20	{ width: 776px;	}
+.box.span-21	{ width: 816px;	}
+.box.span-22	{ width: 856px;	}
+.box.span-23	{ width: 896px;	}
+.box.span-24	{ width: 936px;	}
+
+/* Include the horizontal gutter */
+.box.row-1,
+.box.row-2		{ height: 11px;		}
+.box.row-3		{ height: 29px;		}
+.box.row-4		{ height: 47px;		}
+.box.row-5		{ height: 65px;		}
+.box.row-6		{ height: 83px;		}
+.box.row-7		{ height: 101px;	}
+.box.row-8		{ height: 119px;	}
+.box.row-9		{ height: 137px;	}
+
+.box.row-10		{ height: 155px;	}
+.box.row-11		{ height: 173px;	}
+.box.row-12		{ height: 191px;	}
+.box.row-13		{ height: 209px;	}
+.box.row-14		{ height: 227px;	}
+.box.row-15		{ height: 245px;	}
+.box.row-16		{ height: 263px;	}
+.box.row-17		{ height: 281px;	}
+.box.row-18		{ height: 299px;	}
+.box.row-19		{ height: 317px;	}
+
+.box.row-20		{ height: 335px;	}
+.box.row-21		{ height: 353px;	}
+.box.row-22		{ height: 371px;	}
+.box.row-23		{ height: 389px;	}
+.box.row-24		{ height: 407px;	}
+.box.row-25		{ height: 425px;	}
+.box.row-26		{ height: 443px;	}
+.box.row-27		{ height: 461px;	}
+.box.row-28		{ height: 479px;	}
+.box.row-29		{ height: 497px;	}
+
+.box.row-30		{ height: 515px;	}
+.box.row-31		{ height: 533px;	}
+.box.row-32		{ height: 551px;	}
+.box.row-33		{ height: 569px;	}
+.box.row-34		{ height: 587px;	}
+.box.row-35		{ height: 605px;	}
+.box.row-36		{ height: 623px;	}
+.box.row-37		{ height: 641px;	}
+.box.row-38		{ height: 659px;	}
+.box.row-39		{ height: 677px;	}
+
+.box.row-40		{ height: 695px;	}
+.box.row-41		{ height: 713px;	}
+.box.row-42		{ height: 731px;	}
+.box.row-43		{ height: 749px;	}
+.box.row-44		{ height: 767px;	}
+.box.row-45		{ height: 785px;	}
+.box.row-46		{ height: 803px;	}
+.box.row-47		{ height: 821px;	}
+.box.row-48		{ height: 839px;	}
+.box.row-49		{ height: 857px;	}
+
+.box.row-50		{ height: 875px;	}
+.box.row-all	{ height: 100%;		}
+/* 
+	Here is the box 
+	/!\ Not safe to change padding and border-width
+*/
+.box
+{
+	overflow:			hidden;
+	background-color:	#ffffff;
+	padding:			6px 6px 7px; 
+	margin-bottom:		12px; 
+	border-width:		thin;
+	border-style:		solid;
+	border-color:		#dddddd;
+}
+
+.box > h3
+{
+	height:				36px;
+	margin:				0 0 -1px 0;
+	padding:			0; 
+	text-indent:		10px; 
+	font-size:			20px;
+	font-weight:		normal;
+	line-height:		36px;
+	color:				#333333;
+	background-color:	#ffffff; 
+}
+
+.box h4
+{
+	text-indent:		15px;
+	font-size:			16px;
+	font-weight:		bold;
+	line-height:		18px;
+	height:				18px;
+	margin:				0 0 9px 0;
+	padding:			0;
+	color: 				#666666;
+}
+
+/* 
+	Just another titling.
+	You can use it to introduce your ads for instance. =) 
+*/
+.box > h4.alt
+{
+	font-size:			13px;
+	line-height:		18px;
+	height:				14px;
+	text-align:			right;
+	margin:				0 0 4px 0;
+	padding:			0;
+	color:				#666666;
+}

@@ -1,0 +1,1059 @@
+/*
+Aquarelle, The creative & opensource CSS framework.
+Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@charset "utf-8";
+/* --------------------------------------------------------------
+
+	icons.css
+
+		*Contains all the position of the icons on the spritesheet.
+
+-------------------------------------------------------------- */
+
+img.icon
+{
+	vertical-align: middle;
+}
+
+.message.info > .icon_info
+{
+	height:					18px;
+	width:					18px;
+	display:				inline-block;
+	
+	padding:				0; 
+	margin-top:				-2px;
+	line-height:			18px;
+	vertical-align:			middle;
+	
+	background-color:		#205eb0; 
+	background-image:		url(../img/16x16/info.png); 
+	background-position:	3px 3px; 
+	background-repeat:		no-repeat; 
+	
+	-moz-border-radius:		10px;
+	-webkit-border-radius:	10px;
+	-o-border-radius:		10px;
+	border-radius:			10px;
+}
+
+/*-------------------------------------------------------------- 
+
+		ICONSET // SPRITE
+		
+-------------------------------------------------------------- */
+
+
+/*-------------------------------------------------------------- 
+		16x16px Iconset
+-------------------------------------------------------------- */
+
+
+.icon-16
+{
+	background-image:		url(../img/16x16/iconset_16.png);
+	background-repeat:		no-repeat;
+	height:					16px;
+	width:					16px;
+	vertical-align:			middle;
+	line-height:			16px;
+	display:				block;
+	border:					none;
+}
+
+
+.icon-16-container
+{
+	margin:					2px;
+	padding:				2px;
+	height:					16px;
+	width:					16px;
+	display:				inline-block;
+	
+	-moz-border-radius:		2px;
+	-webkit-border-radius:	2px;
+	-o-border-radius:		2px;
+	border-radius:			2px;
+	
+}
+
+.message > .icon-16-container
+{
+	float:				left;
+	margin:				0 10px 0 0;
+}
+
+.message.error > .icon-16-container,
+.message.alert > .icon-16-container
+{
+	background-color:	#8a1f11;
+}
+
+.message.info > .icon-16-container
+{
+	background-color:	#0a3872;
+}
+
+.message.notice > .icon-16-container
+{
+	background-color:	#3d3722;
+}
+
+.message.success > .icon-16-container
+{
+	background-color:	#2b4f24;
+}
+
+.message.important > .icon-16-container
+{
+	background-color:	#990000;
+}
+
+.icon-16-container.dark				{ background-color:#dedede; }
+.icon-16-container.dark:hover		{ background-color:#ededed; }
+
+.icon-16-container.light			{ background-color:#333333; }
+.icon-16-container.light:hover		{ background-color:#222222; }
+
+.icon-16.dark{
+	opacity: 0.9;
+}
+
+.icon-16.edit,
+.icon-16.edit.dark							{ background-position:	-16px 	0;	}
+.icon-16.edit.light							{ background-position:	0		0;	}
+.icon-16.unavailable,
+.icon-16.unavailable.dark					{ background-position:	-16px 	-16px;	}
+.icon-16.unavailable.light					{ background-position:	0		-16px;	}
+.icon-16.open-recent,
+.icon-16.open-recent.dark					{ background-position:	-16px 	-32px;	}
+.icon-16.open-recent.light					{ background-position:	0		-32px;	}
+.icon-16.save-as,
+.icon-16.save-as.dark						{ background-position:	-16px 	-48px;	}
+.icon-16.save-as.light						{ background-position:	0		-48px;	}
+.icon-16.save,
+.icon-16.save.dark							{ background-position:	-16px 	-64px;	}
+.icon-16.save.light							{ background-position:	0		-64px;	}
+.icon-16.clear,
+.icon-16.clear.dark							{ background-position:	-16px 	-80px;	}
+.icon-16.clear.light						{ background-position:	0		-80px;	}
+.icon-16.copy,
+.icon-16.copy.dark							{ background-position:	-16px 	-96px;	}
+.icon-16.copy.light							{ background-position:	0		-96px;	}
+.icon-16.cut,
+.icon-16.cut.dark							{ background-position:	-16px 	-112px;	}
+.icon-16.cut.light							{ background-position:	0		-112px;	}
+.icon-16.delete,
+.icon-16.delete.dark						{ background-position:	-16px 	-128px;	}
+.icon-16.delete.light						{ background-position:	0		-128px;	}
+.icon-16.find,
+.icon-16.find.dark							{ background-position:	-16px 	-144px;	}
+.icon-16.find.light							{ background-position:	0		-144px;	}
+.icon-16.paste,
+.icon-16.paste.dark							{ background-position:	-16px 	-160px;	}
+.icon-16.paste.light						{ background-position:	0		-160px;	}
+.icon-16.redo,
+.icon-16.redo.dark							{ background-position:	-16px 	-176px;	}
+.icon-16.redo.light							{ background-position:	0		-176px;	}
+.icon-16.undo,
+.icon-16.undo.dark							{ background-position:	-16px 	-192px;	}
+.icon-16.undo.light							{ background-position:	0		-192px;	}
+.icon-16.indent-less,
+.icon-16.indent-less.dark					{ background-position:	-16px 	-208px;	}
+.icon-16.indent-less.light					{ background-position:	0		-208px;	}
+.icon-16.indent-more,
+.icon-16.indent-more.dark					{ background-position:	-16px 	-224px;	}
+.icon-16.indent-more.light					{ background-position:	0		-224px;	}
+.icon-16.justify-center,
+.icon-16.justify-center.dark				{ background-position:	-16px 	-240px;	}
+.icon-16.justify-center.light				{ background-position:	0		-240px;	}
+.icon-16.justify-fill,
+.icon-16.justify-fill.dark					{ background-position:	-16px 	-256px;	}
+.icon-16.justify-fill.light					{ background-position:	0		-256px;	}
+.icon-16.justify-left,
+.icon-16.justify-left.dark					{ background-position:	-16px 	-272px;	}
+.icon-16.justify-left.light					{ background-position:	0		-272px;	}
+.icon-16.justify-right,
+.icon-16.justify-right.dark					{ background-position:	-16px 	-288px;	}
+.icon-16.justify-right.light				{ background-position:	0		-288px;	}
+.icon-16.text-bold,
+.icon-16.text-bold.dark						{ background-position:	-16px 	-304px;	}
+.icon-16.text-bold.light					{ background-position:	0		-304px;	}
+.icon-16.text-italic,
+.icon-16.text-italic.dark					{ background-position:	-16px 	-320px;	}
+.icon-16.text-italic.light					{ background-position:	0		-320px;	}
+.icon-16.text-strikethrought,
+.icon-16.text-strikethrought.dark			{ background-position:	-16px 	-336px;	}
+.icon-16.text-strikethrought.light			{ background-position:	0		-336px;	}
+.icon-16.text-underline,
+.icon-16.text-underline.dark				{ background-position:	-16px 	-352px;	}
+.icon-16.text-underline.light				{ background-position:	0		-352px;	}
+.icon-16.go-bottom,
+.icon-16.go-bottom.dark						{ background-position:	-16px 	-368px;	}
+.icon-16.go-bottom.light					{ background-position:	0		-368px;	}
+.icon-16.go-down,
+.icon-16.go-down.dark						{ background-position:	-16px 	-384px;	}
+.icon-16.go-down.light						{ background-position:	0		-384px;	}
+.icon-16.go-first,
+.icon-16.go-first.dark						{ background-position:	-16px 	-400px;	}
+.icon-16.go-first.light						{ background-position:	0		-400px;	}
+.icon-16.go-last,
+.icon-16.go-last.dark						{ background-position:	-16px 	-416px;	}
+.icon-16.go-last.light						{ background-position:	0		-416px;	}
+.icon-16.go-next,
+.icon-16.go-next.dark						{ background-position:	-16px 	-432px;	}
+.icon-16.go-next.light						{ background-position:	0		-432px;	}
+.icon-16.go-previous,
+.icon-16.go-previous.dark					{ background-position:	-16px 	-448px;	}
+.icon-16.go-previous.light					{ background-position:	0		-448px;	}
+.icon-16.go-top,
+.icon-16.go-top.dark						{ background-position:	-16px 	-464px;	}
+.icon-16.go-top.light						{ background-position:	0		-464px;	}
+.icon-16.go-up,
+.icon-16.go-up.dark							{ background-position:	-16px 	-480px;	}
+.icon-16.go-up.light						{ background-position:	0		-480px;	}
+.icon-16.list-add,
+.icon-16.list-add.dark						{ background-position:	-16px 	-496px;	}
+.icon-16.list-add.light						{ background-position:	0		-496px;	}
+.icon-16.list-remove,
+.icon-16.list-remove.dark					{ background-position:	-16px 	-512px;	}
+.icon-16.list-remove.light					{ background-position:	0		-512px;	}
+.icon-16.media-eject,
+.icon-16.media-eject.dark					{ background-position:	-16px 	-528px;	}
+.icon-16.media-eject.light					{ background-position:	0		-528px;	}
+.icon-16.media-pause,
+.icon-16.media-pause.dark					{ background-position:	-16px 	-544px;	}
+.icon-16.media-pause.light					{ background-position:	0		-544px;	}
+.icon-16.media-start,
+.icon-16.media-start.dark					{ background-position:	-16px 	-560px;	}
+.icon-16.media-start.light					{ background-position:	0		-560px;	}
+.icon-16.media-stop,
+.icon-16.media-stop.dark					{ background-position:	-16px 	-576px;	}
+.icon-16.media-stop.light					{ background-position:	0		-576px;	}
+.icon-16.media-record,
+.icon-16.media-record.dark					{ background-position:	-16px 	-592px;	}
+.icon-16.media-record.light					{ background-position:	0		-592px;	}
+.icon-16.media-skip-backward,
+.icon-16.media-skip-backward.dark			{ background-position:	-16px 	-608px;	}
+.icon-16.media-skip-backward.light			{ background-position:	0		-608px;	}
+.icon-16.media-skip-forward,
+.icon-16.media-skip-forward.dark			{ background-position:	-16px 	-624px;	}
+.icon-16.media-skip-forward.light			{ background-position:	0		-624px;	}
+.icon-16.media-seek-backward,
+.icon-16.media-seek-backward.dark			{ background-position:	-16px 	-640px;	}
+.icon-16.media-seek-backward.light			{ background-position:	0		-640px;	}
+.icon-16.media-seek-forward,
+.icon-16.media-seek-forward.dark			{ background-position:	-16px 	-656px;	}
+.icon-16.media-seek-forward.light			{ background-position:	0		-656px;	}
+.icon-16.object-flip-horizontal,
+.icon-16.object-flip-horizontal.dark		{ background-position:	-16px 	-672px;	}
+.icon-16.object-flip-horizontal.light		{ background-position:	0		-672px;	}
+.icon-16.object-flip-vertical,
+.icon-16.object-flip-vertical.dark			{ background-position:	-16px 	-688px;	}
+.icon-16.object-flip-vertical.light			{ background-position:	0		-688px;	}
+.icon-16.object-rotate-left,
+.icon-16.object-rotate-left.dark			{ background-position:	-16px 	-704px;	}
+.icon-16.object-rotate-left.light			{ background-position:	0		-704px;	}
+.icon-16.object-rotate-right,
+.icon-16.object-rotate-right.dark			{ background-position:	-16px 	-720px;	}
+.icon-16.object-rotate-right.light			{ background-position:	0		-720px;	}
+.icon-16.object-select,
+.icon-16.object-select.dark					{ background-position:	-16px 	-736px;	}
+.icon-16.object-select.light				{ background-position:	0		-736px;	}
+.icon-16.process-stop,
+.icon-16.process-stop.dark					{ background-position:	-16px 	-752px;	}
+.icon-16.process-stop.light					{ background-position:	0		-752px;	}
+.icon-16.send-to,
+.icon-16.send-to.dark						{ background-position:	-16px 	-768px;	}
+.icon-16.send-to.light						{ background-position:	0		-768px;	}
+.icon-16.system-run,
+.icon-16.system-run.dark					{ background-position:	-16px 	-784px;	}
+.icon-16.system-run.light					{ background-position:	0		-784px;	}
+.icon-16.system-shutdown,
+.icon-16.system-shutdown.dark				{ background-position:	-16px 	-800px;	}
+.icon-16.system-shutdown.light				{ background-position:	0		-800px;	}
+.icon-16.view-fullscreen,
+.icon-16.view-fullscreen.dark				{ background-position:	-16px 	-816px;	}
+.icon-16.view-fullscreen.light				{ background-position:	0		-816px;	}
+.icon-16.view-refresh,
+.icon-16.view-refresh.dark					{ background-position:	-16px 	-832px;	}
+.icon-16.view-refresh.light					{ background-position:	0		-832px;	}
+.icon-16.view-restore,
+.icon-16.view-restore.dark					{ background-position:	-16px 	-848px;	}
+.icon-16.view-restore.light					{ background-position:	0		-848px;	}
+.icon-16.window-close,
+.icon-16.window-close.dark					{ background-position:	-16px 	-864px;	}
+.icon-16.window-close.light					{ background-position:	0		-864px;	}
+.icon-16.zoom-in,
+.icon-16.zoom-in.dark						{ background-position:	-16px 	-880px;	}
+.icon-16.zoom-in.light						{ background-position:	0		-880px;	}
+.icon-16.zoom-original,
+.icon-16.zoom-original.dark					{ background-position:	-16px 	-896px;	}
+.icon-16.zoom-original.light				{ background-position:	0		-896px;	}
+.icon-16.zoom-out,
+.icon-16.zoom-out.dark						{ background-position:	-16px 	-912px;	}
+.icon-16.zoom-out.light						{ background-position:	0		-912px;	}
+.icon-16.calculator,
+.icon-16.calculator.dark					{ background-position:	-16px 	-944px;	}
+.icon-16.calculator.light					{ background-position:	0		-944px;	}
+.icon-16.character-map,
+.icon-16.character-map.dark					{ background-position:	-16px 	-960px;	}
+.icon-16.character-map.light				{ background-position:	0		-960px;	}
+.icon-16.text-editor,
+.icon-16.text-editor.dark					{ background-position:	-16px 	-976px;	}
+.icon-16.text-editor.light					{ background-position:	0		-976px;	}
+.icon-16.help-browser,
+.icon-16.help-browser.dark					{ background-position:	-16px 	-992px;	}
+.icon-16.help-browser.light					{ background-position:	0		-992px;	}
+.icon-16.accessibility,
+.icon-16.accessibility.dark					{ background-position:	-16px 	-1008px;	}
+.icon-16.accessibility.light				{ background-position:	0		-1008px;	}
+.icon-16.display,
+.icon-16.display.dark						{ background-position:	-16px 	-1024px;	}
+.icon-16.display.light						{ background-position:	0		-1024px;	}
+.icon-16.keyboard-shortcut,
+.icon-16.keyboard-shortcut.dark				{ background-position:	-16px 	-1040px;	}
+.icon-16.keyboard-shortcut.light			{ background-position:	0		-1040px;	}
+.icon-16.date-time,
+.icon-16.date-time.dark						{ background-position:	-16px 	-1056px;	}
+.icon-16.date-time.light					{ background-position:	0		-1056px;	}
+.icon-16.file-manager,
+.icon-16.file-manager.dark					{ background-position:	-16px 	-1072px;	}
+.icon-16.file-manager.light					{ background-position:	0		-1072px;	}
+.icon-16.users,
+.icon-16.users.dark							{ background-position:	-16px 	-1088px;	}
+.icon-16.users.light						{ background-position:	0		-1088px;	}
+.icon-16.monitor,
+.icon-16.monitor.dark						{ background-position:	-16px 	-1104px;	}
+.icon-16.monitor.light						{ background-position:	0		-1104px;	}
+.icon-16.terminal,
+.icon-16.terminal.dark						{ background-position:	-16px 	-1120px;	}
+.icon-16.terminal.light						{ background-position:	0		-1120px;	}
+.icon-16.preferences,
+.icon-16.preferences.dark					{ background-position:	-16px 	-1136px;	}
+.icon-16.preferences.light					{ background-position:	0		-1136px;	}
+.icon-16.microphone,
+.icon-16.microphone.dark					{ background-position:	-16px 	-1168px;	}
+.icon-16.microphone.light					{ background-position:	0		-1168px;	}
+.icon-16.camera-photo,
+.icon-16.camera-photo.dark					{ background-position:	-16px 	-1184px;	}
+.icon-16.camera-photo.light					{ background-position:	0		-1184px;	}
+.icon-16.camera-web,
+.icon-16.camera-web.dark					{ background-position:	-16px 	-1200px;	}
+.icon-16.camera-web.light					{ background-position:	0		-1200px;	}
+.icon-16.computer,
+.icon-16.computer.dark						{ background-position:	-16px 	-1216px;	}
+.icon-16.computer.light						{ background-position:	0		-1216px;	}
+.icon-16.harddisk,
+.icon-16.harddisk.dark						{ background-position:	-16px 	-1232px;	}
+.icon-16.harddisk.light						{ background-position:	0		-1232px;	}
+.icon-16.keyboard,
+.icon-16.keyboard.dark						{ background-position:	-16px 	-1248px;	}
+.icon-16.keyboard.light						{ background-position:	0		-1248px;	}
+.icon-16.touchpad,
+.icon-16.touchpad.dark						{ background-position:	-16px 	-1264px;	}
+.icon-16.touchpad.light						{ background-position:	0		-1264px;	}
+.icon-16.optical,
+.icon-16.optical.dark						{ background-position:	-16px 	-1280px;	}
+.icon-16.optical.light						{ background-position:	0		-1280px;	}
+.icon-16.phone,
+.icon-16.phone.dark							{ background-position:	-16px 	-1296px;	}
+.icon-16.phone.light						{ background-position:	0		-1296px;	}
+.icon-16.printer,
+.icon-16.printer.dark						{ background-position:	-16px 	-1312px;	}
+.icon-16.printer.light						{ background-position:	0		-1312px;	}
+.icon-16.screen,
+.icon-16.screen.dark						{ background-position:	-16px 	-1328px;	}
+.icon-16.screen.light						{ background-position:	0		-1328px;	}
+.icon-16.default,
+.icon-16.default.dark						{ background-position:	-16px 	-1360px;	}
+.icon-16.default.light						{ background-position:	0		-1360px;	}
+.icon-16.favorite,
+.icon-16.favorite.dark						{ background-position:	-16px 	-1376px;	}
+.icon-16.favorite.light						{ background-position:	0		-1376px;	}
+.icon-16.important,
+.icon-16.important.dark						{ background-position:	-16px 	-1392px;	}
+.icon-16.important.light					{ background-position:	0		-1392px;	}
+.icon-16.shared,
+.icon-16.shared.dark						{ background-position:	-16px 	-1408px;	}
+.icon-16.shared.light						{ background-position:	0		-1408px;	}
+.icon-16.synchronizing,
+.icon-16.synchronizing.dark					{ background-position:	-16px 	-1424px;	}
+.icon-16.synchronizing.light				{ background-position:	0		-1424px;	}
+.icon-16.emote-sad,
+.icon-16.emote-sad.dark						{ background-position:	-16px 	-1456px;	}
+.icon-16.emote-sad.light					{ background-position:	0		-1456px;	}
+.icon-16.emote-smile,
+.icon-16.emote-smile.dark					{ background-position:	-16px 	-1472px;	}
+.icon-16.emote-smile.light					{ background-position:	0		-1472px;	}
+.icon-16.audio,
+.icon-16.audio.dark							{ background-position:	-16px 	-1504px;	}
+.icon-16.audio.light						{ background-position:	0		-1504px;	}
+.icon-16.package,
+.icon-16.package.dark						{ background-position:	-16px 	-1520px;	}
+.icon-16.package.light						{ background-position:	0		-1520px;	}
+.icon-16.text,
+.icon-16.text.dark							{ background-position:	-16px 	-1536px;	}
+.icon-16.text.light							{ background-position:	0		-1536px;	}
+.icon-16.folder,
+.icon-16.folder.dark						{ background-position:	-16px 	-1568px;	}
+.icon-16.folder.light						{ background-position:	0		-1568px;	}
+.icon-16.folder-searchs,
+.icon-16.folder-searchs.dark				{ background-position:	-16px 	-1584px;	}
+.icon-16.folder-searchs.light				{ background-position:	0		-1584px;	}
+.icon-16.folder-pictures,
+.icon-16.folder-pictures.dark				{ background-position:	-16px 	-1600px;	}
+.icon-16.folder-pictures.light				{ background-position:	0		-1600px;	}
+.icon-16.folder-templates,
+.icon-16.folder-templates.dark				{ background-position:	-16px 	-1616px;	}
+.icon-16.folder-templates.light				{ background-position:	0		-1616px;	}
+.icon-16.folder-videos,
+.icon-16.folder-videos.dark					{ background-position:	-16px 	-1632px;	}
+.icon-16.folder-videos.light				{ background-position:	0		-1632px;	}
+.icon-16.folder-downloads,
+.icon-16.folder-downloads.dark				{ background-position:	-16px 	-1648px;	}
+.icon-16.folder-downloads.light				{ background-position:	0		-1648px;	}
+.icon-16.folder-music,
+.icon-16.folder-music.dark					{ background-position:	-16px 	-1664px;	}
+.icon-16.folder-music.light					{ background-position:	0		-1664px;	}
+.icon-16.network-remote,
+.icon-16.network-remote.dark				{ background-position:	-16px 	-1680px;	}
+.icon-16.network-remote.light				{ background-position:	0		-1680px;	}
+.icon-16.network-server,
+.icon-16.network-server.dark				{ background-position:	-16px 	-1696px;	}
+.icon-16.network-server.light				{ background-position:	0		-1696px;	}
+.icon-16.network-workgrounp,
+.icon-16.network-workgrounp.dark			{ background-position:	-16px 	-1712px;	}
+.icon-16.network-workgrounp.light			{ background-position:	0		-1712px;	}
+.icon-16.bookmark,
+.icon-16.bookmark.dark						{ background-position:	-16px 	-1728px;	}
+.icon-16.bookmark.light						{ background-position:	0		-1728px;	}
+.icon-16.home,
+.icon-16.home.dark							{ background-position:	-16px 	-1744px;	}
+.icon-16.home.light							{ background-position:	0		-1744px;	}
+.icon-16.trash,
+.icon-16.trash.dark							{ background-position:	-16px 	-1760px;	}
+.icon-16.trash.light						{ background-position:	0		-1760px;	}
+.icon-16.volume-mute,
+.icon-16.volume-mute.dark					{ background-position:	-16px 	-1792px;	}
+.icon-16.volume-mute.light					{ background-position:	0		-1792px;	}
+.icon-16.volume-low,
+.icon-16.volume-low.dark					{ background-position:	-16px 	-1808px;	}
+.icon-16.volume-low.light					{ background-position:	0		-1808px;	}
+.icon-16.volume-medium,
+.icon-16.volume-medium.dark					{ background-position:	-16px 	-1824px;	}
+.icon-16.volume-medium.light				{ background-position:	0		-1824px;	}
+.icon-16.volume-high,
+.icon-16.volume-high.dark					{ background-position:	-16px 	-1840px;	}
+.icon-16.volume-high.light					{ background-position:	0		-1840px;	}
+.icon-16.avatar,
+.icon-16.avatar.dark						{ background-position:	-16px 	-1856px;	}
+.icon-16.avatar.light						{ background-position:	0		-1856px;	}
+.icon-16.change-allow,
+.icon-16.change-allow.dark					{ background-position:	-16px 	-1872px;	}
+.icon-16.change-allow.light					{ background-position:	0		-1872px;	}
+.icon-16.change-prevent,
+.icon-16.change-prevent.dark				{ background-position:	-16px 	-1888px;	}
+.icon-16.change-prevent.light				{ background-position:	0		-1888px;	}
+.icon-16.dialog-error,
+.icon-16.dialog-error.dark					{ background-position:	-16px 	-1904px;	}
+.icon-16.dialog-error.light					{ background-position:	0		-1904px;	}
+.icon-16.dialog-information,
+.icon-16.dialog-information.dark			{ background-position:	-16px 	-1920px;	}
+.icon-16.dialog-information.light			{ background-position:	0		-1920px;	}
+.icon-16.dialog-password,
+.icon-16.dialog-password.dark				{ background-position:	-16px 	-1936px;	}
+.icon-16.dialog-password.light				{ background-position:	0		-1936px;	}
+.icon-16.dialog-question,
+.icon-16.dialog-question.dark				{ background-position:	-16px 	-1952px;	}
+.icon-16.dialog-question.light				{ background-position:	0		-1952px;	}
+.icon-16.dialog-warning,
+.icon-16.dialog-warning.dark				{ background-position:	-16px 	-1968px;	}
+.icon-16.dialog-warning.light				{ background-position:	0		-1968px;	}
+.icon-16.mail-attachment,
+.icon-16.mail-attachment.dark				{ background-position:	-16px 	-1984px;	}
+.icon-16.mail-attachment.light				{ background-position:	0		-1984px;	}
+.icon-16.mail-unread,
+.icon-16.mail-unread.dark					{ background-position:	-16px 	-2000px;	}
+.icon-16.mail-unread.light					{ background-position:	0		-2000px;	}
+.icon-16.mail-read,
+.icon-16.mail-read.dark						{ background-position:	-16px 	-2016px;	}
+.icon-16.mail-read.light					{ background-position:	0		-2016px;	}
+.icon-16.mail-replied,
+.icon-16.mail-replied.dark					{ background-position:	-16px 	-2032px;	}
+.icon-16.mail-replied.light					{ background-position:	0		-2032px;	}
+.icon-16.mail-send-receive,
+.icon-16.mail-send-receive.dark				{ background-position:	-16px 	-2048px;	}
+.icon-16.mail-send-receive.light			{ background-position:	0		-2048px;	}
+.icon-16.non-starred,
+.icon-16.non-starred.dark					{ background-position:	-16px 	-2064px;	}
+.icon-16.non-starred.light					{ background-position:	0		-2064px;	}
+.icon-16.starred,
+.icon-16.starred.dark						{ background-position:	-16px 	-2080px;	}
+.icon-16.starred.light						{ background-position:	0		-2080px;	}
+.icon-16.security-low,
+.icon-16.security-low.dark					{ background-position:	-16px 	-2096px;	}
+.icon-16.security-low.light					{ background-position:	0		-2096px;	}
+.icon-16.security-medium,
+.icon-16.security-medium.dark				{ background-position:	-16px 	-2112px;	}
+.icon-16.security-medium.light				{ background-position:	0		-2112px;	}
+.icon-16.security-high,
+.icon-16.security-high.dark					{ background-position:	-16px 	-2128px;	}
+.icon-16.security-high.light				{ background-position:	0		-2128px;	}
+.icon-16.user-available,
+.icon-16.user-available.dark				{ background-position:	-16px 	-2144px;	}
+.icon-16.user-available.light				{ background-position:	0		-2144px;	}
+.icon-16.user-away,
+.icon-16.user-away.dark						{ background-position:	-16px 	-2160px;	}
+.icon-16.user-away.light					{ background-position:	0		-2160px;	}
+.icon-16.user-busy,
+.icon-16.user-busy.dark						{ background-position:	-16px 	-2176px;	}
+.icon-16.user-busy.light					{ background-position:	0		-2176px;	}
+.icon-16.user-idle,
+.icon-16.user-idle.dark						{ background-position:	-16px 	-2192px;	}
+.icon-16.user-idle.light					{ background-position:	0		-2192px;	}
+.icon-16.user-invisible,
+.icon-16.user-invisible.dark				{ background-position:	-16px 	-2208px;	}
+.icon-16.user-invisible.light				{ background-position:	0		-2208px;	}
+.icon-16.user-offline,
+.icon-16.user-offline.dark					{ background-position:	-16px 	-2224px;	}
+.icon-16.user-offline.light					{ background-position:	0		-2224px;	}
+.icon-16.weather-clear-night,
+.icon-16.weather-clear-night.dark			{ background-position:	-16px 	-2240px;	}
+.icon-16.weather-clear-night.light			{ background-position:	0		-2240px;	}
+.icon-16.weather-clear,
+.icon-16.weather-clear.dark					{ background-position:	-16px 	-2256px;	}
+.icon-16.weather-clear.light				{ background-position:	0		-2256px;	}
+.icon-16.weather-clouds-night,
+.icon-16.weather-clouds-night.dark			{ background-position:	-16px 	-2272px;	}
+.icon-16.weather-clouds-night.light			{ background-position:	0		-2272px;	}
+.icon-16.weather-clouds,
+.icon-16.weather-clouds.dark				{ background-position:	-16px 	-2288px;	}
+.icon-16.weather-clouds.light				{ background-position:	0		-2288px;	}
+.icon-16.weather-few-clouds-night,
+.icon-16.weather-few-clouds-night.dark		{ background-position:	-16px 	-2304px;	}
+.icon-16.weather-few-clouds-night.light		{ background-position:	0		-2304px;	}
+.icon-16.weather-few-clouds,
+.icon-16.weather-few-clouds.dark			{ background-position:	-16px 	-2320px;	}
+.icon-16.weather-few-clouds.light			{ background-position:	0		-2320px;	}
+.icon-16.weather-fog,
+.icon-16.weather-fog.dark					{ background-position:	-16px 	-2336px;	}
+.icon-16.weather-fog.light					{ background-position:	0		-2336px;	}
+.icon-16.weather-overcast,
+.icon-16.weather-overcast.dark				{ background-position:	-16px 	-2352px;	}
+.icon-16.weather-overcast.light				{ background-position:	0		-2352px;	}
+.icon-16.weather-sever-alert,
+.icon-16.weather-sever-alert.dark			{ background-position:	-16px 	-2368px;	}
+.icon-16.weather-sever-alert.light			{ background-position:	0		-2368px;	}
+.icon-16.weather-showers-scattered,
+.icon-16.weather-showers-scattered.dark		{ background-position:	-16px 	-2384px;	}
+.icon-16.weather-showers-scattered.light	{ background-position:	0		-2384px;	}
+.icon-16.weather-showers,
+.icon-16.weather-showers.dark				{ background-position:	-16px 	-2400px;	}
+.icon-16.weather-showers.light				{ background-position:	0		-2400px;	}
+.icon-16.weather-snow,
+.icon-16.weather-snow.dark					{ background-position:	-16px 	-2416px;	}
+.icon-16.weather-snow.light					{ background-position:	0		-2416px;	}
+.icon-16.weather-storm,
+.icon-16.weather-storm.dark					{ background-position:	-16px 	-2432px;	}
+.icon-16.weather-storm.light				{ background-position:	0		-2432px;	}
+
+
+/*-------------------------------------------------------------- 
+		24x24px Iconset
+-------------------------------------------------------------- */
+
+
+.icon-24
+{
+	background-image:	url(../img/24x24/iconset_24.png);
+	background-repeat:	no-repeat;
+	height:				24px;
+	width:				24px;
+	vertical-align:		middle;
+	line-height:		24px;
+	display:			block;
+	border:				none;
+}
+
+
+.icon-24-container
+{
+	margin:				2px;
+	padding:			2px;
+	height:				24px;
+	width:				24px;
+	display:			inline-block;
+	
+	-moz-border-radius:		2px;
+	-webkit-border-radius:	2px;
+	-o-border-radius:		2px;
+	border-radius:			2px;
+}
+
+.icon-24-container.dark				{ background-color:#dedede; }
+.icon-24-container.dark:hover		{ background-color:#ededed; }
+
+.icon-24-container.light			{ background-color:#333333; }
+.icon-24-container.light:hover		{ background-color:#222222; }
+
+.icon-24.dark
+{
+	opacity: 0.9;
+}
+
+.icon-24.edit,
+.icon-24.edit.dark								{ background-position:	-24px 	0;	}
+.icon-24.edit.light								{ background-position:	0		0;	}
+.icon-24.unavailable,
+.icon-24.unavailable.dark						{ background-position:	-24px 	-24px;	}
+.icon-24.unavailable.light						{ background-position:	0		-24px;	}
+.icon-24.open-recent,
+.icon-24.open-recent.dark						{ background-position:	-24px 	-48px;	}
+.icon-24.open-recent.light						{ background-position:	0		-48px;	}
+.icon-24.save-as,
+.icon-24.save-as.dark							{ background-position:	-24px 	-72px;	}
+.icon-24.save-as.light							{ background-position:	0		-72px;	}
+.icon-24.save,
+.icon-24.save.dark								{ background-position:	-24px 	-96px;	}
+.icon-24.save.light								{ background-position:	0		-96px;	}
+.icon-24.clear,
+.icon-24.clear.dark								{ background-position:	-24px 	-120px;	}
+.icon-24.clear.light							{ background-position:	0		-120px;	}
+.icon-24.copy,
+.icon-24.copy.dark								{ background-position:	-24px 	-144px;	}
+.icon-24.copy.light								{ background-position:	0		-144px;	}
+.icon-24.cut,
+.icon-24.cut.dark								{ background-position:	-24px 	-168px;	}
+.icon-24.cut.light								{ background-position:	0		-168px;	}
+.icon-24.delete,
+.icon-24.delete.dark							{ background-position:	-24px 	-192px;	}
+.icon-24.delete.light							{ background-position:	0		-192px;	}
+.icon-24.find,
+.icon-24.find.dark								{ background-position:	-24px 	-216px;	}
+.icon-24.find.light								{ background-position:	0		-216px;	}
+.icon-24.paste,
+.icon-24.paste.dark								{ background-position:	-24px 	-240px;	}
+.icon-24.paste.light							{ background-position:	0		-240px;	}
+.icon-24.redo,
+.icon-24.redo.dark								{ background-position:	-24px 	-264px;	}
+.icon-24.redo.light								{ background-position:	0		-264px;	}
+.icon-24.undo,
+.icon-24.undo.dark								{ background-position:	-24px 	-288px;	}
+.icon-24.undo.light								{ background-position:	0		-288px;	}
+.icon-24.indent-less,
+.icon-24.indent-less.dark						{ background-position:	-24px 	-312px;	}
+.icon-24.indent-less.light						{ background-position:	0		-312px;	}
+.icon-24.indent-more,
+.icon-24.indent-more.dark						{ background-position:	-24px 	-336px;	}
+.icon-24.indent-more.light						{ background-position:	0		-336px;	}
+.icon-24.justify-center,
+.icon-24.justify-center.dark					{ background-position:	-24px 	-360px;	}
+.icon-24.justify-center.light					{ background-position:	0		-360px;	}
+.icon-24.justify-fill,
+.icon-24.justify-fill.dark						{ background-position:	-24px 	-384px;	}
+.icon-24.justify-fill.light						{ background-position:	0		-384px;	}
+.icon-24.justify-left,
+.icon-24.justify-left.dark						{ background-position:	-24px 	-408px;	}
+.icon-24.justify-left.light						{ background-position:	0		-408px;	}
+.icon-24.justify-right,
+.icon-24.justify-right.dark						{ background-position:	-24px 	-432px;	}
+.icon-24.justify-right.light					{ background-position:	0		-432px;	}
+.icon-24.text-bold,
+.icon-24.text-bold.dark							{ background-position:	-24px 	-456px;	}
+.icon-24.text-bold.light						{ background-position:	0		-456px;	}
+.icon-24.text-italic,
+.icon-24.text-italic.dark						{ background-position:	-24px 	-480px;	}
+.icon-24.text-italic.light						{ background-position:	0		-480px;	}
+.icon-24.text-strikethrought,
+.icon-24.text-strikethrought.dark				{ background-position:	-24px 	-504px;	}
+.icon-24.text-strikethrought.light				{ background-position:	0		-504px;	}
+.icon-24.text-underline,
+.icon-24.text-underline.dark					{ background-position:	-24px 	-528px;	}
+.icon-24.text-underline.light					{ background-position:	0		-528px;	}
+.icon-24.go-bottom,
+.icon-24.go-bottom.dark							{ background-position:	-24px 	-552px;	}
+.icon-24.go-bottom.light						{ background-position:	0		-552px;	}
+.icon-24.go-down,
+.icon-24.go-down.dark							{ background-position:	-24px 	-576px;	}
+.icon-24.go-down.light							{ background-position:	0		-576px;	}
+.icon-24.go-first,
+.icon-24.go-first.dark							{ background-position:	-24px 	-600px;	}
+.icon-24.go-first.light							{ background-position:	0		-600px;	}
+.icon-24.go-last,
+.icon-24.go-last.dark							{ background-position:	-24px 	-624px;	}
+.icon-24.go-last.light							{ background-position:	0		-624px;	}
+.icon-24.go-next,
+.icon-24.go-next.dark							{ background-position:	-24px 	-648px;	}
+.icon-24.go-next.light							{ background-position:	0		-648px;	}
+.icon-24.go-previous,
+.icon-24.go-previous.dark						{ background-position:	-24px 	-672px;	}
+.icon-24.go-previous.light						{ background-position:	0		-672px;	}
+.icon-24.go-top,
+.icon-24.go-top.dark							{ background-position:	-24px 	-696px;	}
+.icon-24.go-top.light							{ background-position:	0		-696px;	}
+.icon-24.go-up,
+.icon-24.go-up.dark								{ background-position:	-24px 	-720px;	}
+.icon-24.go-up.light							{ background-position:	0		-720px;	}
+.icon-24.list-add,
+.icon-24.list-add.dark							{ background-position:	-24px 	-744px;	}
+.icon-24.list-add.light							{ background-position:	0		-744px;	}
+.icon-24.list-remove,
+.icon-24.list-remove.dark						{ background-position:	-24px 	-768px;	}
+.icon-24.list-remove.light						{ background-position:	0		-768px;	}
+.icon-24.media-eject,
+.icon-24.media-eject.dark						{ background-position:	-24px 	-792px;	}
+.icon-24.media-eject.light						{ background-position:	0		-792px;	}
+.icon-24.media-pause,
+.icon-24.media-pause.dark						{ background-position:	-24px 	-816px;	}
+.icon-24.media-pause.light						{ background-position:	0		-816px;	}
+.icon-24.media-start,
+.icon-24.media-start.dark						{ background-position:	-24px 	-840px;	}
+.icon-24.media-start.light						{ background-position:	0		-840px;	}
+.icon-24.media-stop,
+.icon-24.media-stop.dark						{ background-position:	-24px 	-864px;	}
+.icon-24.media-stop.light						{ background-position:	0		-864px;	}
+.icon-24.media-record,
+.icon-24.media-record.dark						{ background-position:	-24px 	-888px;	}
+.icon-24.media-record.light						{ background-position:	0		-888px;	}
+.icon-24.media-skip-backward,
+.icon-24.media-skip-backward.dark				{ background-position:	-24px 	-912px;	}
+.icon-24.media-skip-backward.light				{ background-position:	0		-912px;	}
+.icon-24.media-skip-forward,
+.icon-24.media-skip-forward.dark				{ background-position:	-24px 	-936px;	}
+.icon-24.media-skip-forward.light				{ background-position:	0		-936px;	}
+.icon-24.media-seek-backward,
+.icon-24.media-seek-backward.dark				{ background-position:	-24px 	-960px;	}
+.icon-24.media-seek-backward.light				{ background-position:	0		-960px;	}
+.icon-24.media-seek-forward,
+.icon-24.media-seek-forward.dark				{ background-position:	-24px 	-984px;	}
+.icon-24.media-seek-forward.light				{ background-position:	0		-984px;	}
+.icon-24.object-flip-horizontal,
+.icon-24.object-flip-horizontal.dark			{ background-position:	-24px 	-1008px;	}
+.icon-24.object-flip-horizontal.light			{ background-position:	0		-1008px;	}
+.icon-24.object-flip-vertical,
+.icon-24.object-flip-vertical.dark				{ background-position:	-24px 	-1032px;	}
+.icon-24.object-flip-vertical.light				{ background-position:	0		-1032px;	}
+.icon-24.object-rotate-left,
+.icon-24.object-rotate-left.dark				{ background-position:	-24px 	-1056px;	}
+.icon-24.object-rotate-left.light				{ background-position:	0		-1056px;	}
+.icon-24.object-rotate-right,
+.icon-24.object-rotate-right.dark				{ background-position:	-24px 	-1080px;	}
+.icon-24.object-rotate-right.light				{ background-position:	0		-1080px;	}
+.icon-24.object-select,
+.icon-24.object-select.dark						{ background-position:	-24px 	-1104px;	}
+.icon-24.object-select.light					{ background-position:	0		-1104px;	}
+.icon-24.process-stop,
+.icon-24.process-stop.dark						{ background-position:	-24px 	-1128px;	}
+.icon-24.process-stop.light						{ background-position:	0		-1128px;	}
+.icon-24.send-to,
+.icon-24.send-to.dark							{ background-position:	-24px 	-1152px;	}
+.icon-24.send-to.light							{ background-position:	0		-1152px;	}
+.icon-24.system-run,
+.icon-24.system-run.dark						{ background-position:	-24px 	-1176px;	}
+.icon-24.system-run.light						{ background-position:	0		-1176px;	}
+.icon-24.system-shutdown,
+.icon-24.system-shutdown.dark					{ background-position:	-24px 	-1200px;	}
+.icon-24.system-shutdown.light					{ background-position:	0		-1200px;	}
+.icon-24.view-fullscreen,
+.icon-24.view-fullscreen.dark					{ background-position:	-24px 	-1224px;	}
+.icon-24.view-fullscreen.light					{ background-position:	0		-1224px;	}
+.icon-24.view-refresh,
+.icon-24.view-refresh.dark						{ background-position:	-24px 	-1248px;	}
+.icon-24.view-refresh.light						{ background-position:	0		-1248px;	}
+.icon-24.view-restore,
+.icon-24.view-restore.dark						{ background-position:	-24px 	-1272px;	}
+.icon-24.view-restore.light						{ background-position:	0		-1272px;	}
+.icon-24.window-close,
+.icon-24.window-close.dark						{ background-position:	-24px 	-1296px;	}
+.icon-24.window-close.light						{ background-position:	0		-1296px;	}
+.icon-24.zoom-in,
+.icon-24.zoom-in.dark							{ background-position:	-24px 	-1320px;	}
+.icon-24.zoom-in.light							{ background-position:	0		-1320px;	}
+.icon-24.zoom-original,
+.icon-24.zoom-original.dark						{ background-position:	-24px 	-1344px;	}
+.icon-24.zoom-original.light					{ background-position:	0		-1344px;	}
+.icon-24.zoom-out,
+.icon-24.zoom-out.dark							{ background-position:	-24px 	-1368px;	}
+.icon-24.zoom-out.light							{ background-position:	0		-1368px;	}
+.icon-24.calculator,
+.icon-24.calculator.dark						{ background-position:	-24px 	-1416px;	}
+.icon-24.calculator.light						{ background-position:	0		-1416px;	}
+.icon-24.character-map,
+.icon-24.character-map.dark						{ background-position:	-24px 	-1440px;	}
+.icon-24.character-map.light					{ background-position:	0		-1440px;	}
+.icon-24.text-editor,
+.icon-24.text-editor.dark						{ background-position:	-24px 	-1464px;	}
+.icon-24.text-editor.light						{ background-position:	0		-1464px;	}
+.icon-24.help-browser,
+.icon-24.help-browser.dark						{ background-position:	-24px 	-1488px;	}
+.icon-24.help-browser.light						{ background-position:	0		-1488px;	}
+.icon-24.accessibility,
+.icon-24.accessibility.dark						{ background-position:	-24px 	-1512px;	}
+.icon-24.accessibility.light					{ background-position:	0		-1512px;	}
+.icon-24.display,
+.icon-24.display.dark							{ background-position:	-24px 	-1536px;	}
+.icon-24.display.light							{ background-position:	0		-1536px;	}
+.icon-24.keyboard-shortcut,
+.icon-24.keyboard-shortcut.dark					{ background-position:	-24px 	-1560px;	}
+.icon-24.keyboard-shortcut.light				{ background-position:	0		-1560px;	}
+.icon-24.date-time,
+.icon-24.date-time.dark							{ background-position:	-24px 	-1584px;	}
+.icon-24.date-time.light						{ background-position:	0		-1584px;	}
+.icon-24.file-manager,
+.icon-24.file-manager.dark						{ background-position:	-24px 	-1608px;	}
+.icon-24.file-manager.light						{ background-position:	0		-1608px;	}
+.icon-24.users,
+.icon-24.users.dark								{ background-position:	-24px 	-1632px;	}
+.icon-24.users.light							{ background-position:	0		-1632px;	}
+.icon-24.monitor,
+.icon-24.monitor.dark							{ background-position:	-24px 	-1656px;	}
+.icon-24.monitor.light							{ background-position:	0		-1656px;	}
+.icon-24.terminal,
+.icon-24.terminal.dark							{ background-position:	-24px 	-1680px;	}
+.icon-24.terminal.light							{ background-position:	0		-1680px;	}
+.icon-24.preferences,
+.icon-24.preferences.dark						{ background-position:	-24px 	-1704px;	}
+.icon-24.preferences.light						{ background-position:	0		-1704px;	}
+.icon-24.microphone,
+.icon-24.microphone.dark						{ background-position:	-24px 	-1752px;	}
+.icon-24.microphone.light						{ background-position:	0		-1752px;	}
+.icon-24.camera-photo,
+.icon-24.camera-photo.dark						{ background-position:	-24px 	-1776px;	}
+.icon-24.camera-photo.light						{ background-position:	0		-1776px;	}
+.icon-24.camera-web,
+.icon-24.camera-web.dark						{ background-position:	-24px 	-1800px;	}
+.icon-24.camera-web.light						{ background-position:	0		-1800px;	}
+.icon-24.computer,
+.icon-24.computer.dark							{ background-position:	-24px 	-1824px;	}
+.icon-24.computer.light							{ background-position:	0		-1824px;	}
+.icon-24.harddisk,
+.icon-24.harddisk.dark							{ background-position:	-24px 	-1848px;	}
+.icon-24.harddisk.light							{ background-position:	0		-1848px;	}
+.icon-24.keyboard,
+.icon-24.keyboard.dark							{ background-position:	-24px 	-1872px;	}
+.icon-24.keyboard.light							{ background-position:	0		-1872px;	}
+.icon-24.touchpad,
+.icon-24.touchpad.dark							{ background-position:	-24px 	-1896px;	}
+.icon-24.touchpad.light							{ background-position:	0		-1896px;	}
+.icon-24.optical,
+.icon-24.optical.dark							{ background-position:	-24px 	-1920px;	}
+.icon-24.optical.light							{ background-position:	0		-1920px;	}
+.icon-24.phone,
+.icon-24.phone.dark								{ background-position:	-24px 	-1944px;	}
+.icon-24.phone.light							{ background-position:	0		-1944px;	}
+.icon-24.printer,
+.icon-24.printer.dark							{ background-position:	-24px 	-1968px;	}
+.icon-24.printer.light							{ background-position:	0		-1968px;	}
+.icon-24.screen,
+.icon-24.screen.dark							{ background-position:	-24px 	-1992px;	}
+.icon-24.screen.light							{ background-position:	0		-1992px;	}
+.icon-24.default,
+.icon-24.default.dark							{ background-position:	-24px 	-2040px;	}
+.icon-24.default.light							{ background-position:	0		-2040px;	}
+.icon-24.favorite,
+.icon-24.favorite.dark							{ background-position:	-24px 	-2064px;	}
+.icon-24.favorite.light							{ background-position:	0		-2064px;	}
+.icon-24.important,
+.icon-24.important.dark							{ background-position:	-24px 	-2088px;	}
+.icon-24.important.light						{ background-position:	0		-2088px;	}
+.icon-24.shared,
+.icon-24.shared.dark							{ background-position:	-24px 	-2112px;	}
+.icon-24.shared.light							{ background-position:	0		-2112px;	}
+.icon-24.synchronizing,
+.icon-24.synchronizing.dark						{ background-position:	-24px 	-2136px;	}
+.icon-24.synchronizing.light					{ background-position:	0		-2136px;	}
+.icon-24.emote-sad,
+.icon-24.emote-sad.dark							{ background-position:	-24px 	-2184px;	}
+.icon-24.emote-sad.light						{ background-position:	0		-2184px;	}
+.icon-24.emote-smile,
+.icon-24.emote-smile.dark						{ background-position:	-24px 	-2208px;	}
+.icon-24.emote-smile.light						{ background-position:	0		-2208px;	}
+.icon-24.audio,
+.icon-24.audio.dark								{ background-position:	-24px 	-2256px;	}
+.icon-24.audio.light							{ background-position:	0		-2256px;	}
+.icon-24.package,
+.icon-24.package.dark							{ background-position:	-24px 	-2280px;	}
+.icon-24.package.light							{ background-position:	0		-2280px;	}
+.icon-24.text,
+.icon-24.text.dark								{ background-position:	-24px 	-2304px;	}
+.icon-24.text.light								{ background-position:	0		-2304px;	}
+.icon-24.folder,
+.icon-24.folder.dark							{ background-position:	-24px 	-2352px;	}
+.icon-24.folder.light							{ background-position:	0		-2352px;	}
+.icon-24.folder-searchs,
+.icon-24.folder-searchs.dark					{ background-position:	-24px 	-2376px;	}
+.icon-24.folder-searchs.light					{ background-position:	0		-2376px;	}
+.icon-24.folder-pictures,
+.icon-24.folder-pictures.dark					{ background-position:	-24px 	-2400px;	}
+.icon-24.folder-pictures.light					{ background-position:	0		-2400px;	}
+.icon-24.folder-templates,
+.icon-24.folder-templates.dark					{ background-position:	-24px 	-2424px;	}
+.icon-24.folder-templates.light					{ background-position:	0		-2424px;	}
+.icon-24.folder-videos,
+.icon-24.folder-videos.dark						{ background-position:	-24px 	-2448px;	}
+.icon-24.folder-videos.light					{ background-position:	0		-2448px;	}
+.icon-24.folder-downloads,
+.icon-24.folder-downloads.dark					{ background-position:	-24px 	-2472px;	}
+.icon-24.folder-downloads.light					{ background-position:	0		-2472px;	}
+.icon-24.folder-music,
+.icon-24.folder-music.dark						{ background-position:	-24px 	-2496px;	}
+.icon-24.folder-music.light						{ background-position:	0		-2496px;	}
+.icon-24.network-remote,
+.icon-24.network-remote.dark					{ background-position:	-24px 	-2520px;	}
+.icon-24.network-remote.light					{ background-position:	0		-2520px;	}
+.icon-24.network-server,
+.icon-24.network-server.dark					{ background-position:	-24px 	-2544px;	}
+.icon-24.network-server.light					{ background-position:	0		-2544px;	}
+.icon-24.network-workgrounp,
+.icon-24.network-workgrounp.dark				{ background-position:	-24px 	-2568px;	}
+.icon-24.network-workgrounp.light				{ background-position:	0		-2568px;	}
+.icon-24.bookmark,
+.icon-24.bookmark.dark							{ background-position:	-24px 	-2592px;	}
+.icon-24.bookmark.light							{ background-position:	0		-2592px;	}
+.icon-24.home,
+.icon-24.home.dark								{ background-position:	-24px 	-2616px;	}
+.icon-24.home.light								{ background-position:	0		-2616px;	}
+.icon-24.trash,
+.icon-24.trash.dark								{ background-position:	-24px 	-2640px;	}
+.icon-24.trash.light							{ background-position:	0		-2640px;	}
+.icon-24.volume-mute,
+.icon-24.volume-mute.dark						{ background-position:	-24px 	-2688px;	}
+.icon-24.volume-mute.light						{ background-position:	0		-2688px;	}
+.icon-24.volume-low,
+.icon-24.volume-low.dark						{ background-position:	-24px 	-2712px;	}
+.icon-24.volume-low.light						{ background-position:	0		-2712px;	}
+.icon-24.volume-medium,
+.icon-24.volume-medium.dark						{ background-position:	-24px 	-2736px;	}
+.icon-24.volume-medium.light					{ background-position:	0		-2736px;	}
+.icon-24.volume-high,
+.icon-24.volume-high.dark						{ background-position:	-24px 	-2760px;	}
+.icon-24.volume-high.light						{ background-position:	0		-2760px;	}
+.icon-24.avatar,
+.icon-24.avatar.dark							{ background-position:	-24px 	-2784px;	}
+.icon-24.avatar.light							{ background-position:	0		-2784px;	}
+.icon-24.change-allow,
+.icon-24.change-allow.dark						{ background-position:	-24px 	-2808px;	}
+.icon-24.change-allow.light						{ background-position:	0		-2808px;	}
+.icon-24.change-prevent,
+.icon-24.change-prevent.dark					{ background-position:	-24px 	-2832px;	}
+.icon-24.change-prevent.light					{ background-position:	0		-2832px;	}
+.icon-24.dialog-error,
+.icon-24.dialog-error.dark						{ background-position:	-24px 	-2856px;	}
+.icon-24.dialog-error.light						{ background-position:	0		-2856px;	}
+.icon-24.dialog-information,
+.icon-24.dialog-information.dark				{ background-position:	-24px 	-2880px;	}
+.icon-24.dialog-information.light				{ background-position:	0		-2880px;	}
+.icon-24.dialog-password,
+.icon-24.dialog-password.dark					{ background-position:	-24px 	-2904px;	}
+.icon-24.dialog-password.light					{ background-position:	0		-2904px;	}
+.icon-24.dialog-question,
+.icon-24.dialog-question.dark					{ background-position:	-24px 	-2928px;	}
+.icon-24.dialog-question.light					{ background-position:	0		-2928px;	}
+.icon-24.dialog-warning,
+.icon-24.dialog-warning.dark					{ background-position:	-24px 	-2952px;	}
+.icon-24.dialog-warning.light					{ background-position:	0		-2952px;	}
+.icon-24.mail-attachment,
+.icon-24.mail-attachment.dark					{ background-position:	-24px 	-2976px;	}
+.icon-24.mail-attachment.light					{ background-position:	0		-2976px;	}
+.icon-24.mail-unread,
+.icon-24.mail-unread.dark						{ background-position:	-24px 	-3000px;	}
+.icon-24.mail-unread.light						{ background-position:	0		-3000px;	}
+.icon-24.mail-read,
+.icon-24.mail-read.dark							{ background-position:	-24px 	-3024px;	}
+.icon-24.mail-read.light						{ background-position:	0		-3024px;	}
+.icon-24.mail-replied,
+.icon-24.mail-replied.dark						{ background-position:	-24px 	-3048px;	}
+.icon-24.mail-replied.light						{ background-position:	0		-3048px;	}
+.icon-24.mail-send-receive,
+.icon-24.mail-send-receive.dark					{ background-position:	-24px 	-3072px;	}
+.icon-24.mail-send-receive.light				{ background-position:	0		-3072px;	}
+.icon-24.non-starred,
+.icon-24.non-starred.dark						{ background-position:	-24px 	-3096px;	}
+.icon-24.non-starred.light						{ background-position:	0		-3096px;	}
+.icon-24.starred,
+.icon-24.starred.dark							{ background-position:	-24px 	-3120px;	}
+.icon-24.starred.light							{ background-position:	0		-3120px;	}
+.icon-24.security-low,
+.icon-24.security-low.dark						{ background-position:	-24px 	-3144px;	}
+.icon-24.security-low.light						{ background-position:	0		-3144px;	}
+.icon-24.security-medium,
+.icon-24.security-medium.dark					{ background-position:	-24px 	-3168px;	}
+.icon-24.security-medium.light					{ background-position:	0		-3168px;	}
+.icon-24.security-high,
+.icon-24.security-high.dark						{ background-position:	-24px 	-3192px;	}
+.icon-24.security-high.light					{ background-position:	0		-3192px;	}
+.icon-24.user-available,
+.icon-24.user-available.dark					{ background-position:	-24px 	-3216px;	}
+.icon-24.user-available.light					{ background-position:	0		-3216px;	}
+.icon-24.user-away,
+.icon-24.user-away.dark							{ background-position:	-24px 	-3240px;	}
+.icon-24.user-away.light						{ background-position:	0		-3240px;	}
+.icon-24.user-busy,
+.icon-24.user-busy.dark							{ background-position:	-24px 	-3264px;	}
+.icon-24.user-busy.light						{ background-position:	0		-3264px;	}
+.icon-24.user-idle,
+.icon-24.user-idle.dark							{ background-position:	-24px 	-3288px;	}
+.icon-24.user-idle.light						{ background-position:	0		-3288px;	}
+.icon-24.user-invisible,
+.icon-24.user-invisible.dark					{ background-position:	-24px 	-3312px;	}
+.icon-24.user-invisible.light					{ background-position:	0		-3312px;	}
+.icon-24.user-offline,
+.icon-24.user-offline.dark						{ background-position:	-24px 	-3336px;	}
+.icon-24.user-offline.light						{ background-position:	0		-3336px;	}
+.icon-24.weather-clear-night,
+.icon-24.weather-clear-night.dark				{ background-position:	-24px 	-3360px;	}
+.icon-24.weather-clear-night.light				{ background-position:	0		-3360px;	}
+.icon-24.weather-clear,
+.icon-24.weather-clear.dark						{ background-position:	-24px 	-3384px;	}
+.icon-24.weather-clear.light					{ background-position:	0		-3384px;	}
+.icon-24.weather-clouds-night,
+.icon-24.weather-clouds-night.dark				{ background-position:	-24px 	-3408px;	}
+.icon-24.weather-clouds-night.light				{ background-position:	0		-3408px;	}
+.icon-24.weather-clouds,
+.icon-24.weather-clouds.dark					{ background-position:	-24px 	-3432px;	}
+.icon-24.weather-clouds.light					{ background-position:	0		-3432px;	}
+.icon-24.weather-few-clouds-night,
+.icon-24.weather-few-clouds-night.dark			{ background-position:	-24px 	-3456px;	}
+.icon-24.weather-few-clouds-night.light			{ background-position:	0		-3456px;	}
+.icon-24.weather-few-clouds,
+.icon-24.weather-few-clouds.dark				{ background-position:	-24px 	-3480px;	}
+.icon-24.weather-few-clouds.light				{ background-position:	0		-3480px;	}
+.icon-24.weather-fog,
+.icon-24.weather-fog.dark						{ background-position:	-24px 	-3504px;	}
+.icon-24.weather-fog.light						{ background-position:	0		-3504px;	}
+.icon-24.weather-overcast,
+.icon-24.weather-overcast.dark					{ background-position:	-24px 	-3528px;	}
+.icon-24.weather-overcast.light					{ background-position:	0		-3528px;	}
+.icon-24.weather-sever-alert,
+.icon-24.weather-sever-alert.dark				{ background-position:	-24px 	-3552px;	}
+.icon-24.weather-sever-alert.light				{ background-position:	0		-3552px;	}
+.icon-24.weather-showers-scattered,
+.icon-24.weather-showers-scattered.dark			{ background-position:	-24px 	-3576px;	}
+.icon-24.weather-showers-scattered.light		{ background-position:	0		-3576px;	}
+.icon-24.weather-showers,
+.icon-24.weather-showers.dark					{ background-position:	-24px 	-3600px;	}
+.icon-24.weather-showers.light					{ background-position:	0		-3600px;	}
+.icon-24.weather-snow,
+.icon-24.weather-snow.dark						{ background-position:	-24px 	-3624px;	}
+.icon-24.weather-snow.light						{ background-position:	0		-3624px;	}
+.icon-24.weather-storm,
+.icon-24.weather-storm.dark						{ background-position:	-24px 	-3648px;	}
+.icon-24.weather-storm.light					{ background-position:	0		-3648px;	}
+
+

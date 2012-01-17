@@ -1,0 +1,167 @@
+/*
+Aquarelle, The creative & opensource CSS framework.
+Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@charset "utf-8";
+/* --------------------------------------------------------------
+
+	iab.css
+		
+		This plugin set your ads balaced in their parents box
+		
+-------------------------------------------------------------- */
+
+.adBox
+{
+
+}
+
+/*	Button 1				(120x90px)	*/
+.span-4.row-5.adBox > .ad.button1
+{
+	width:		120px;
+	height:		90px;
+	margin:		0 auto;
+}
+
+/*	Button 2				(120x60px)	*/
+.span-4.row-4.adBox > .ad.button2
+{
+	width:		120px;
+	height:		60px;
+	margin:		5px auto 0;
+}
+
+/*	Half Page Ad			(300x600px)	*/
+.span-8.row-34.adBox > .ad.halfpagead
+{
+	width:		300px;
+	height:		600px;
+	margin:		6px auto 0;
+}
+
+/*	Leaderboard				(728x90px)	*/
+.span-19.row-5.adBox > .ad.leaderboard
+{
+	width:		728px;
+	height:		90px;
+	margin:		0 auto;
+}
+
+/*	Medium Rectangle		(300x250px)	*/
+.span-8.row-14.adBox > .ad.medium-rectangle
+{
+	width:		300px;
+	height:		250px;
+	margin:		1px auto 0;
+}
+
+/*	Microbar				(88x31px)	*/
+.span-3.row-2.adBox > .ad.microbar
+{
+	width:		88px;
+	height:		31px;
+	margin:		2px auto 0;
+}
+
+/*	Rectangle				(180x150px)	*/
+.span-5.row-9.adBox > .ad.rectangle
+{
+	width:		180px;
+	height:		150px;
+	margin:		6px auto 0;
+}
+
+/*	Wide Skyscraper			(160x600px)	*/
+.span-5.row-34.adBox > .ad.wide-skyscraper
+{
+	width:		160px;
+	height:		600px;
+	margin:		6px auto 0;
+}
+
+/*	3by1 Rectangle			(300x100px)	*/
+.span-8.row-6.adBox > .ad.third-rectangle
+{
+	width:		300px;
+	height:		100px;
+	margin:		4px auto 0;
+}
+
+/*	Full Banner				(468x60px)	*/
+.span-12.row-4.adBox > .ad.full-banner
+{
+	width:		468px;
+	height:		60px;
+	margin:		6px auto 0;
+}
+
+/*	Half Banner				(234x60px)	*/
+.span-7.row-4.adBox > .ad.half-banner
+{
+	width:		234px;
+	height:		60px;
+	margin:		6px auto 0;
+}
+
+/*	Large Rectangle			(336x280px)	*/
+.span-9.row-16.adBox > .ad.large-rectangle
+{
+	width:		336px;
+	height:		280px;
+	margin:		4px auto 0;
+}
+
+/*	Skyscraper				(120x600px)	*/
+.span-4.row-34.adBox > .ad.skyscraper
+{
+	width:		120px;
+	height:		600px;
+	margin:		6px auto 0;
+}
+
+/*	Square Button			(125x125px)	*/
+.span-4.row-7.adBox > .ad.square-button
+{
+	width:		125px;
+	height:		125px;
+	margin:		1px auto 0;
+}
+
+/*	Square Popup			(250x250px)	*/
+.span-7.row-14.adBox > .ad.square-popup
+{
+	width:		250px;
+	height:		250px;
+	margin:		1px auto 0;
+}
+
+/*	Vertical Banner			(120x240px)	*/
+.span-4.row-14.adBox > .ad.vertical-banner
+{
+	width:		120px;
+	height:		240px;
+	margin:		6px auto 0;
+}
+
+/*	Vertical Rectangle		(240x400px)	*/
+.span-7.row-23.adBox > .ad.vertical-rectangle
+{
+	width:		240px;
+	height:		400px;
+	margin:		7px auto 0;
+}

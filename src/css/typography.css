@@ -1,0 +1,575 @@
+/*
+Aquarelle, The creative & opensource CSS framework.
+Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@charset "utf-8";
+/* --------------------------------------------------------------
+	typography.css
+		* Sets up some sensible default typography.
+
+-------------------------------------------------------------- */
+
+/*-------------------------------------------------------------- 
+		Default font settings.
+-------------------------------------------------------------- */
+
+html,
+body
+{
+	font-size:			13px;
+	color:				#333333;
+	background-color:	#ffffff;
+	font-family:		Verdana, Arial, Helvetica, 'Helvetica Neue', sans-serif;
+}
+
+
+/*-------------------------------------------------------------- 
+		Headings
+-------------------------------------------------------------- */
+
+h1, h2, h3,
+h4, h5, h6
+{
+	font-weight:		normal;
+	color:				#111111;
+	clear:				both;
+}
+
+h1
+{
+	font-size:			32px;
+	line-height:		36px;
+	margin-top:			18px;
+	margin-bottom:		18px 
+}
+
+h1.subtitle
+{
+	font-size:			28px;
+	line-height:		36px;
+	margin-bottom:		18px;
+	height:				36px;
+	text-indent:		30px;
+	margin-top:			-18px;
+}
+
+h2
+{
+	font-size:			28px;
+	line-height:		28px;
+	margin-bottom:		18px;
+}
+
+h2.subtitle
+{
+	font-size:			24px;
+	line-height:		28px;
+	margin-bottom:		18px;
+	text-indent:		30px;
+	margin-top:			-18px;
+}
+
+h3
+{
+	font-size:			18px;
+	line-height:		18px;
+	margin-bottom:		18px;
+	text-indent:		30px; 
+}
+
+h4
+{
+	font-size:			16px;
+	line-height:		18px;
+	margin-bottom:		18px;
+	text-indent:		30px;
+}
+
+h5
+{
+	font-size:			14px;
+	font-weight:		bold;
+	margin-bottom:		0px; 
+}
+
+h6
+{
+	font-size:			14px;
+	font-weight:		bold;
+}
+
+
+h1 img, h2 img, h3 img,
+h4 img, h5 img, h6 img
+{
+	margin:				0;
+}
+
+
+/*-------------------------------------------------------------- 
+		Text elements
+-------------------------------------------------------------- */
+
+p
+{
+	margin:				0 0 18px;
+	text-indent:		15px;
+	font-size:			13px;
+	line-height:		15px;
+}
+	
+p.message
+{
+	font-size:			13px;
+	text-indent:		0;
+	padding:			3px 15px;
+}
+
+/*
+	About the .right and .left classes, see "tricks.css"
+*/
+p .left
+{
+	margin:				18px 30px 18px 0;
+	padding:			0;
+}
+
+p .right
+{	margin:				18px 0 18px 30px;
+	padding:			0;
+}
+
+a
+{
+	color:				#0066cc;
+	text-decoration:	none;
+}
+
+a:focus, a:hover
+{
+	color:				#0099ff;
+	text-decoration:	underline;
+}
+
+strong,dfn
+{
+	font-weight:		bold;
+}
+
+em,dfn
+{
+	font-style:			italic;
+}
+
+sup, sub
+{
+	line-height:		0;
+}
+
+abbr, acronym
+{
+	border-bottom:		thin dotted #666666;
+}
+
+address
+{
+	margin:				0 30px;
+	font-style:			italic;
+}
+
+del
+{
+	color:#666666;
+}
+
+pre
+{
+	margin:				18px 0;
+	white-space: pre;
+}
+
+pre,code,tt
+{
+	font-size:			13px
+	font-family:		'andale mono', 'lucida console', monospace;
+	line-height:		18px;
+}
+
+
+/*-------------------------------------------------------------- 
+		Beautiful Blockquotes
+-------------------------------------------------------------- */
+
+blockquote, 
+blockquote p
+{
+	margin:				15px;
+	color:				#444444; 
+	font-weight:		bold;
+	font-size:			15px;
+	font-family:		Georgia, Times, Time, 'Times New Roman', serif; 
+	font-style:			italic;
+	line-height:		18px;
+	background-color:	#fafafa;
+}
+
+blockquote:before, q:before
+{
+	content:			'"'; 
+	font-size:			60px; 
+	float:				left;
+	margin-top:			20px;
+	height:				20px;
+	display:			block;
+	color:				#999999;
+}
+
+blockquote:after, q:after
+{
+	content:			''; 
+}
+
+blockquote, q
+{
+	quotes:				"" ""; 
+}
+
+
+/* 
+	Just before closing your blockquote, 
+	you can use this class to add your reference 
+	ex: <span class="author">W. Shakespeare</span>
+*/
+span.author
+{
+	font-weight:		bold;
+	font-size:			15px;
+	font-family:		Georgia, Times, serif;
+	font-style:			normal;
+	color:				#111111;
+	line-height: 		90%;
+	margin:				10px 0 0 15px;
+	display:			block;
+}
+
+
+/*-------------------------------------------------------------- 
+		Message
+-------------------------------------------------------------- */
+
+.message,
+.message.error,
+.message.alert,
+.message.notice,
+.message.success,
+.message.info
+{
+	padding:			6px;
+	margin-bottom:		18px;
+	border:				thin solid #dddddd;
+}
+
+/* Grid Adjustment */
+
+.message.row-1		{ height: 12px; line-height:12px; }
+
+.message.span-1		{ width: 16px;	}
+.message.span-2		{ width: 56px;	}
+.message.span-3		{ width: 96px;	}
+.message.span-4		{ width: 136px;	}
+.message.span-5		{ width: 176px;	}
+.message.span-6		{ width: 216px;	}
+.message.span-7		{ width: 256px;	}
+.message.span-8		{ width: 296px;	}
+.message.span-9		{ width: 336px;	}
+.message.span-10	{ width: 376px;	}
+.message.span-11	{ width: 416px;	}
+.message.span-12	{ width: 456px;	}
+.message.span-13	{ width: 496px;	}
+.message.span-14	{ width: 536px;	}
+.message.span-15	{ width: 576px;	}
+.message.span-16	{ width: 616px;	}
+.message.span-17	{ width: 656px;	}
+.message.span-18	{ width: 696px;	}
+.message.span-19	{ width: 736px;	}
+.message.span-20	{ width: 776px;	}
+.message.span-21	{ width: 816px;	}
+.message.span-22	{ width: 856px;	}
+.message.span-23	{ width: 896px;	}
+.message.span-24	{ width: 936px;	}
+.message.span-all	{ width: 100%;	}
+
+
+/* Messages colors */
+
+.message.error, .message.alert
+{
+	background-color:	#fbe3e4;
+	color:				#8a1f11;
+	border-color:		#fbc2c4;
+}
+
+.message.notice
+{
+	background-color:	#fff6bf;
+	color:				#514721;
+	border-color:		#ffd324;
+}
+
+.message.success
+{
+	background-color:	#e6efc2;
+	color:				#264409;
+	border-color:		#c6d880;
+}
+
+.message.info
+{
+	background-color:	#d5edf8;
+	color:				#205791;
+	border-color:		#92cae4; 
+}
+
+.message.error a, .message.alert a
+{
+	color:				#8a1f11;
+}
+
+.message.notice a
+{
+	color:				#514721;
+}
+
+.message.success a
+{
+	color:				#264409;
+}
+
+.message.info a
+{
+	color:				#205791;
+}
+
+/*-------------------------------------------------------------- 
+		Lists
+-------------------------------------------------------------- */
+
+ul, ol
+{
+	margin:				0 15px;
+	padding-left:		15px;
+}
+
+ul
+{
+	list-style-type:	disc;
+}
+
+ol
+{
+	list-style-type:	decimal;
+}
+
+li ul, li ol
+{
+	margin:				0;
+}
+
+dl
+{
+	margin:				0 0 18px 0;
+}
+
+dl dt
+{
+	font-weight:		bold;
+}
+
+dd
+{
+	margin-left:		15px;
+}
+
+/*-------------------------------------------------------------- 
+		Misc classes
+-------------------------------------------------------------- */
+
+.small
+{
+	font-size:			11px;
+}
+
+.large
+{
+	font-size:			15px;
+	line-height:		18px;
+	margin-bottom:		0;
+}
+
+.italic
+{
+	font-style:			italic;
+}
+
+.justify
+{
+	text-align:			justify;
+}
+
+.quiet
+{
+	color:				#888888;
+}
+
+.loud
+{
+	color:				#000000;
+}
+
+.highlight
+{
+	background-color:	#ffff00;
+}
+
+.added
+{
+	background-color:	#006600;
+	color:				#ffffff;
+}
+
+.removed
+{
+	background-color:	#ff5555;
+	color:				#ffffff;
+}
+
+.graphhed
+{
+	color:				#111111;
+	font-size:			16px;
+	font-weight:		bold;
+	margin-left:		0;
+}
+
+.dropcap
+{
+	color:				#111111;
+	font-weight:		bold;
+	font-size:			60px;
+	float:				left;
+	line-height:		48px;
+	margin-right:		2px;
+	margin-bottom:		-10px;
+}
+
+.num_notify	{ 
+	background-color:	#990000; 
+	color:				#ffffff; 
+	font-weight:		bold;
+	padding:			0px 5px;
+	
+	-moz-border-radius:		10px;
+	-webkit-border-radius:	10px;
+	-o-border-radius:		10px;
+	border-radius:			10px;
+}
+
+/*-------------------------------------------------------------- 
+		Horizontal Rules
+-------------------------------------------------------------- */
+
+hr,
+hr.border,
+hr.border-tiny
+{
+	background-color:	#f0f0f0;
+	color:				#f0f0f0;
+	clear:				both;
+	float:				none;
+	width:				100%;
+	height:				1px;
+	margin:				0 0 17px;
+	border:				none;
+}
+
+hr.border
+{
+	margin:				9px 0 8px 0;
+}
+
+hr.border-tiny
+{
+	width:				80%;
+	margin:				4px auto;
+}
+
+hr.space
+{
+	background-color:	#ffffff;
+	color:				#ffffff;
+	visibility:			hidden;
+}
+
+/*-------------------------------------------------------------- 
+		Fancy Type Classes
+-------------------------------------------------------------- */
+
+/* Indentation instead of line shifts for sibling paragraphs. */
+p + p
+{
+	/* margin-top:			-9px; */
+}
+
+form p + p
+{	/* Don't want this in forms. */
+	text-indent:		0;
+}
+
+
+/* Since you can't put a list in a <p>, let's hack this */
+p + ul,
+p + ol,
+p + address
+{
+	margin-top:			-18px;
+	margin-bottom:		18px;
+}
+
+
+/* For great looking type, use this class. */
+.alt
+{
+	color:				#333333;
+	font-family:		"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
+	font-style:			italic;
+	font-weight:		normal;
+	font-size:			16px;
+	line-height:		15px;
+}
+
+
+.caps
+{
+	font-variant:		small-caps;
+	letter-spacing:		1px;
+	text-transform:		lowercase;
+	font-size:			15px;
+	line-height:		15px;
+	font-weight:		bold;
+	padding:			0 2px;
+}
+
