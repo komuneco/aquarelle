@@ -151,8 +151,15 @@ textarea.noresize
 	padding:			1px;
 }
 
-/* Use class="noindent" on a p to remove the automatic text-indent */
-p.noindent
+/* Use class="noindent" to remove the automatic text-indent */
+.noindent,
+p.noindent,
+h1.noindent,
+h2.noindent,
+h3.noindent,
+h4.noindent,
+h5.noindent,
+h5.noindent
 {
 	text-indent:		0;
 }
