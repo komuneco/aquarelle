@@ -32,9 +32,8 @@ signal.signal(signal.SIGINT,	signal.SIG_DFL)
 signal.signal(signal.SIGUSR1,	signal.SIG_DFL)
 
 
-#TODO : Ajouter le fichier CSS iab.css
 
-tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'icons', 'tricks', 'print', 'ie'] 
+tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'icons', 'iab', 'tricks', 'print', 'ie'] 
 css_content_core	= ''
 css_content_ie		= ''
 css_content_print	= ''
