@@ -100,6 +100,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 				);
 				
 				
+				
 				// Buttons don't have focus on mouse click...
 				$(document).on
 				(
@@ -122,6 +123,13 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 				$('.tooltip-sw')	.tipsy($.extend({}, tipsy_default_conf, {gravity: 'sw'}));
 				$('.tooltip-w')		.tipsy($.extend({}, tipsy_default_conf, {gravity: 'w'}));
 				$('.tooltip-nw')	.tipsy($.extend({}, tipsy_default_conf, {gravity: 'nw'}));
+				
+				
+				// Form validation
+				if (typeof($().validate) != 'undefined')
+				{
+					// TODO Do some stuff...
+				}
 			}
 		);
 	}
