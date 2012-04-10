@@ -97,11 +97,11 @@ for css_file in tab_css_files:
 		print 'Erreur lors de la lecture de src/css/'+ css_file +'.css'
 
 try:
-	f = open('src/lib/tipsy/stylesheets/tipsy.css')
+	f = open('src/lib/tipswift/jquery.tipswift.css')
 	css_content_core += f.read()
 	f.close()
 except IOError:
-	print 'Erreur lors de la lecture de src/lib/tipsy/stylesheets/tipsy.css'
+	print 'Erreur lors de la lecture de src/lib/tipswift/jquery.tipswift.css'
 
 try:
 	f = open('src/css/themes/default.css')
@@ -189,11 +189,11 @@ except IOError:
 	print 'Erreur lors de la lecture de src/js/aquarelle.js'
 
 try:
-	f = open('src/lib/tipsy/javascripts/jquery.tipsy.js')
+	f = open('src/lib/tipswift/jquery.tipswift.js')
 	js_content_core += f.read()
 	f.close()
 except IOError:
-	print 'Erreur lors de la lecture de src/lib/tipsy/javascripts/jquery.tipsy.js'
+	print 'Erreur lors de la lecture de src/lib/tipswift/jquery.tipswift.js'
 
 
 try:
