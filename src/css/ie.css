@@ -27,8 +27,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 -------------------------------------------------------------- */
 
 /* Make sure the layout is centered in IE5 */
-body			{ text-align: center;	}
-.container		{ text-align: left;		}
+* html body				{ text-align: center;	}
+* html .container		{ text-align: left;		}
 
 /* Fixes IE margin bugs */
 * html .column,
@@ -56,30 +56,30 @@ body			{ text-align: center;	}
 }
 
 /* Fixes wrong line-height on sup/sub in IE. */
-sup
+* html sup
 {
 	vertical-align:		text-top;
 }
 
-sub 
+* html sub 
 {
 	vertical-align:		text-bottom;
 }
 
 /* Fixes IE7 missing wrapping of code elements. */
-html > body p code
+*+html p code
 {
 	*white-space:		normal;
 }
 
 /* IE 6&7 has problems with setting proper <hr> margins. */
-hr
+* html hr
 {
 	margin:				-8px auto 11px;
 }
 
 /* Explicitly set interpolation, allowing dynamically resized images to not look horrible */
-img
+* html img
 {
 	-ms-interpolation-mode:	bicubic;
 }
@@ -90,8 +90,8 @@ img
 -------------------------------------------------------------- */
 
 /* Makes clearfix actually work in IE */
-.clearfix,
-.container
+* html .clearfix,
+* html .container
 {
 	display:			inline-block;
 }
@@ -108,12 +108,12 @@ img
 -------------------------------------------------------------- */
 
 /* Fixes padding on fieldset */
-fieldset
+* html fieldset
 {
 	padding-top: 0;
 }
 
-legend
+* html legend
 {
 	margin-top:			-0.2em;
 	margin-bottom:		1em;
@@ -121,13 +121,14 @@ legend
 }
 
 /* Makes classic textareas in IE 6 resemble other browsers */
-textarea
+* html textarea
 {
 	overflow:			auto;
 }
 
 /* Makes labels behave correctly in IE 6 and 7 */
-label
+* html label,
+*+html label,
 {
 	vertical-align:		middle;
 	position:			relative;
@@ -135,52 +136,52 @@ label
 }
 
 /* Fixes rule that IE 6 ignores */
-input.text,
-input.title,
-textarea
+* html input.text,
+* html input.title,
+* html textarea
 {
 	background-color:	#ffffff;
 	border:				1px solid #bbbbbb;
 }
 
-input.text:focus,
-input.title:focus
+* html input.text:focus,
+* html input.title:focus
 {
 	border-color:		#666666;
 }
 
-input.text,
-input.title,
-textarea,
-select
+* html input.text,
+* html input.title,
+* html textarea,
+* html select
 {
 	margin:				0.5em 0;
 }
 
-input.checkbox,
-input.radio
+* html input.checkbox,
+* html input.radio
 {
 	position:			relative;
 	top:				.25em;
 }
 
 /* Fixes alignment of inline form elements */
-form.inline div,
-form.inline p
+* html form.inline div,
+* html form.inline p
 {
 	vertical-align:		middle;
 }
 
-form.inline input.checkbox,
-form.inline input.radio,
-form.inline input.button,
-form.inline button
+* html form.inline input.checkbox,
+* html form.inline input.radio,
+* html form.inline input.button,
+* html form.inline button
 {
 	margin:				0.5em 0;
 }
 
-button,
-input.button
+* html button,
+* html input.button
 {
 	position:			relative;
 	top:				0.25em;
