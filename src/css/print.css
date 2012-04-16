@@ -17,6 +17,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
 @charset "utf-8";
+
+@media print
+{
 /* --------------------------------------------------------------
 
 	print.css
@@ -155,3 +158,6 @@ a:link:after, a:visited:after
 /* a[href^="/"]:after {
   content: " (http://www.yourdomain.com" attr(href) ") ";
 } */
+
+}
+/* End of @media print */

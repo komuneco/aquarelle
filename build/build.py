@@ -33,8 +33,7 @@ signal.signal(signal.SIGUSR1,	signal.SIG_DFL)
 
 
 
-
-tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'icons', 'tricks']
+tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'icons', 'iab', 'tricks', 'print', 'ie'] 
 css_content_core	= ''
 css_content_ie		= ''
 css_content_print	= ''
@@ -105,20 +104,6 @@ except IOError:
 	print 'Erreur lors de la lecture de src/lib/tipsy/stylesheets/tipsy.css'
 
 try:
-	f = open('src/css/ie.css')
-	css_content_ie += f.read()
-	f.close()
-except IOError:
-	print 'Erreur lors de la lecture de src/css/ie.css'
-
-try:
-	f = open('src/css/print.css')
-	css_content_print += f.read()
-	f.close()
-except IOError:
-	print 'Erreur lors de la lecture de src/css/print.css'
-
-try:
 	f = open('src/css/themes/default.css')
 	css_content_themes += f.read()
 	f.close()
@@ -140,25 +125,12 @@ except IOError:
 	print 'Erreur lors de la creation du fichier temporaire build/tmp/aquarelle.css'
 
 try:
-	f = open('build/tmp/ie.css', 'w')
-	f.write(css_content_ie)
-	f.close()
-except IOError:
-	print 'Erreur lors de la creation du fichier temporaire build/tmp/ie.css'
-
-try:
-	f = open('build/tmp/print.css', 'w')
-	f.write(css_content_print)
-	f.close()
-except IOError:
-	print 'Erreur lors de la creation du fichier temporaire build/tmp/print.css'
-
-try:
-	f = open('build/tmp/default.css', 'w')
+	f = open('build/tmp/default.aquarelle.css', 'w')
+	f.write(css_content_core)
 	f.write(css_content_themes)
 	f.close()
 except IOError:
-	print 'Erreur lors de la creation du fichier temporaire build/tmp/default.css'
+	print 'Erreur lors de la creation du fichier temporaire build/tmp/default.aquarelle.css'
 
 
 
@@ -166,9 +138,7 @@ except IOError:
 
 
 os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/aquarelle.min.css build/tmp/aquarelle.css')
-os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/print.min.css build/tmp/ie.css')
-os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/ie.min.css build/tmp/print.css')
-os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/themes/default.min.css build/tmp/default.css')
+os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/default.aquarelle.min.css build/tmp/default.aquarelle.css')
 
 
 try:
@@ -182,34 +152,14 @@ except IOError:
 	print 'Erreur lors de la mise en place de la licence dans le fichier css/aquarelle.min.css'
 
 try:
-	f = open('css/print.min.css', 'r')
+	f = open('css/default.aquarelle.min.css', 'r')
 	old_content = f.read()
 	f.close()
-	f = open('css/print.min.css', 'w')
+	f = open('css/default.aquarelle.min.css', 'w')
 	f.write(gpl_license + old_content)
 	f.close()
 except IOError:
-	print 'Erreur lors de la mise en place de la licence dans le fichier css/print.min.css'
-
-try:
-	f = open('css/ie.min.css', 'r')
-	old_content = f.read()
-	f.close()
-	f = open('css/ie.min.css', 'w')
-	f.write(gpl_license + old_content)
-	f.close()
-except IOError:
-	print 'Erreur lors de la mise en place de la licence dans le fichier css/ie.min.css'
-
-try:
-	f = open('css/themes/default.min.css', 'r')
-	old_content = f.read()
-	f.close()
-	f = open('css/themes/default.min.css', 'w')
-	f.write(gpl_license + old_content)
-	f.close()
-except IOError:
-	print 'Erreur lors de la mise en place de la licence dans le fichier css/themes/default.min.css'
+	print 'Erreur lors de la mise en place de la licence dans le fichier css/default.aquarelle.min.css'
 
 
 
@@ -220,17 +170,7 @@ except OSError:
 	print 'Erreur lors de la suppression du fichier temporaire build/tmp/aquarelle.css'
 
 try:
-	os.remove('build/tmp/ie.css')
-except OSError:
-	print 'Erreur lors de la suppression du fichier temporaire build/tmp/ie.css'
-
-try:
-	os.remove('build/tmp/print.css')
-except OSError:
-	print 'Erreur lors de la suppression du fichier temporaire build/tmp/print.css'
-
-try:
-	os.remove('build/tmp/default.css')
+	os.remove('build/tmp/default.aquarelle.css')
 except OSError:
 	print 'Erreur lors de la suppression du fichier temporaire build/tmp/default.css'
 
