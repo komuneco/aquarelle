@@ -55,28 +55,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 		(
 			function()
 			{
-				var tipswift_default_conf =
-				{
-					delayIn:	0,							// delay before showing tooltip (ms)
-					delayOut:	0,							// delay before hiding tooltip (ms)
-					fade:		false,						// fade tooltips in/out?
-					fallback:	'',							// fallback text to use when no tooltip text
-					title:		'title',					// attribute/callback containing tooltip text
-					trigger:	'hover',					// how tooltip is triggered - hover | focus | manual
-
-					live: true,								// wether to use live type of event binding
-					gravity: 'n',							// tip gravity
-					offset: 0,								// offset from the element edge in pixel
-					opacity: 0.9,							// opacity [0..1]
-					showEffect: $.tipSwift.effects.show,	// effect used to show the tip
-					hideEffect: $.tipSwift.effects.hide,	// effect used to hide the tip (must eventually remove() the tip)
-					extraClass: [],							// extra classes to add the tip
-					html: true,								// wether to use html for the tip content
-					plugins: [$.tipSwift.plugins.tip()]		// the list of plugins
-				};
-				
-				
-				
 				// Fills files input when a file is selected
 				$(document).on
 				(
@@ -120,21 +98,32 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 				
 				
 				// Better tooltips
-				$('.tooltip-n')		.tipSwift($.extend({}, tipswift_default_conf, {gravity: 'n'}));
-				$('.tooltip-ne')	.tipSwift($.extend({}, tipswift_default_conf, {gravity: 'ne'}));
-				$('.tooltip-e')		.tipSwift($.extend({}, tipswift_default_conf, {gravity: 'e'}));
-				$('.tooltip-se')	.tipSwift($.extend({}, tipswift_default_conf, {gravity: 'se'}));
-				$('.tooltip-s')		.tipSwift($.extend({}, tipswift_default_conf, {gravity: 's'}));
-				$('.tooltip-sw')	.tipSwift($.extend({}, tipswift_default_conf, {gravity: 'sw'}));
-				$('.tooltip-w')		.tipSwift($.extend({}, tipswift_default_conf, {gravity: 'w'}));
-				$('.tooltip-nw')	.tipSwift($.extend({}, tipswift_default_conf, {gravity: 'nw'}));
-				
-				
-				// Form validation
-				if (typeof($().validate) != 'undefined')
+				$.tipSwift.defaultCfg =
 				{
-					// TODO Do some stuff...
-				}
+					delayIn:	0,							// delay before showing tooltip (ms)
+					delayOut:	0,							// delay before hiding tooltip (ms)
+					fade:		false,						// fade tooltips in/out?
+					fallback:	'',							// fallback text to use when no tooltip text
+					title:		'title',					// attribute/callback containing tooltip text
+					trigger:	'hover',					// how tooltip is triggered - hover | focus | manual
+					
+					live:		true,						// wether to use live type of event binding
+					offset:		0,							// offset from the element edge in pixel
+					opacity:	0.9,						// opacity [0..1]
+					showEffect:	$.tipSwift.effects.show,	// effect used to show the tip
+					hideEffect:	$.tipSwift.effects.hide,	// effect used to hide the tip (must eventually remove() the tip)
+					extraClass:	[],							// extra classes to add the tip
+					html:		true						// wether to use html for the tip content
+				};
+				
+				$('.tooltip-n')		.tipSwift({plugins: [$.tipSwift.plugins.tip({gravity: 'n'})]});
+				$('.tooltip-ne')	.tipSwift({plugins: [$.tipSwift.plugins.tip({gravity: 'ne'})]});
+				$('.tooltip-e')		.tipSwift({plugins: [$.tipSwift.plugins.tip({gravity: 'e'})]});
+				$('.tooltip-se')	.tipSwift({plugins: [$.tipSwift.plugins.tip({gravity: 'se'})]});
+				$('.tooltip-s')		.tipSwift({plugins: [$.tipSwift.plugins.tip({gravity: 's'})]});
+				$('.tooltip-sw')	.tipSwift({plugins: [$.tipSwift.plugins.tip({gravity: 'sw'})]});
+				$('.tooltip-w')		.tipSwift({plugins: [$.tipSwift.plugins.tip({gravity: 'w'})]});
+				$('.tooltip-nw')	.tipSwift({plugins: [$.tipSwift.plugins.tip({gravity: 'nw'})]});
 			}
 		);
 	}
