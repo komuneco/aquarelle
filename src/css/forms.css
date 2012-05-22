@@ -117,7 +117,7 @@ label
 }
 
 /*-------------------------------------------------------------- 
-		Styling Inputs
+		Styling Inputs and Textareas
 -------------------------------------------------------------- */
 
 /* Text inputs */
@@ -128,14 +128,30 @@ input[type="url"],
 input[type="email"],
 input[type="file"],
 input.title,
-select
+select,
+textarea
 {
-	height:				22px;
 	font-size:			13px;
 	background-color:	#ffffff;
 	border:				thin solid #c0c0c0;
 	color:				#333333;
-	padding:			1px;
+	padding:			1px 5px;
+}
+
+textarea
+{
+	padding:			5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="file"],
+input.title,
+select
+{
+	height:				22px;
 }
 
 input.title
@@ -193,15 +209,14 @@ input.span-all
 {
 	border-left-width:	1px;
 	border-right-width:	1px;
-	padding-left:		5px;
-	padding-right:		5px;
 }
 
 input[type="text"].span-1,
 input[type="password"].span-1,
 input[type="url"].span-1,
 input[type="email"].span-1,
-input.title.span-1
+input.title.span-1,
+textarea.span-1
 {	width:				18px;	}
 
 
@@ -209,7 +224,8 @@ input[type="text"].span-2,
 input[type="password"].span-2,
 input[type="url"].span-2,
 input[type="email"].span-2,
-input.title.span-2
+input.title.span-2,
+textarea.span-2
 {	width:				58px;	}
 
 
@@ -217,7 +233,8 @@ input[type="text"].span-3,
 input[type="password"].span-3,
 input[type="url"].span-3,
 input[type="email"].span-3,
-input.title.span-3
+input.title.span-3,
+textarea.span-3
 {	width:				98px;	}
 
 
@@ -225,7 +242,8 @@ input[type="text"].span-4,
 input[type="password"].span-4,
 input[type="url"].span-4,
 input[type="email"].span-4,
-input.title.span-4
+input.title.span-4,
+textarea.span-4
 {	width:				138px;	}
 
 
@@ -233,7 +251,8 @@ input[type="text"].span-5,
 input[type="password"].span-5,
 input[type="url"].span-5,
 input[type="email"].span-5,
-input.title.span-5
+input.title.span-5,
+textarea.span-5
 {	width:				178px;	}
 
 
@@ -241,7 +260,8 @@ input[type="text"].span-6,
 input[type="password"].span-6,
 input[type="url"].span-6,
 input[type="email"].span-6,
-input.title.span-6
+input.title.span-6,
+textarea.span-6
 {	width:				218px;	}
 
 
@@ -249,7 +269,8 @@ input[type="text"].span-7,
 input[type="password"].span-7,
 input[type="url"].span-7,
 input[type="email"].span-7,
-input.title.span-7
+input.title.span-7,
+textarea.span-7
 {	width:				258px;	}
 
 
@@ -257,7 +278,8 @@ input[type="text"].span-8,
 input[type="password"].span-8,
 input[type="url"].span-8,
 input[type="email"].span-8,
-input.title.span-8
+input.title.span-8,
+textarea.span-8
 {	width:				298px;	}
 
 
@@ -265,7 +287,8 @@ input[type="text"].span-9,
 input[type="password"].span-9,
 input[type="url"].span-9,
 input[type="email"].span-9,
-input.title.span-9
+input.title.span-9,
+textarea.span-9
 {	width:				338px;	}
 
 
@@ -273,7 +296,8 @@ input[type="text"].span-10,
 input[type="password"].span-10,
 input[type="url"].span-10,
 input[type="email"].span-10,
-input.title.span-10
+input.title.span-10,
+textarea.span-10
 {	width:				378px;	}
 
 
@@ -281,7 +305,8 @@ input[type="text"].span-11,
 input[type="password"].span-11,
 input[type="url"].span-11,
 input[type="email"].span-11,
-input.title.span-11
+input.title.span-11,
+textarea.span-11
 {	width:				418px;	}
 
 
@@ -289,7 +314,8 @@ input[type="text"].span-12,
 input[type="password"].span-12,
 input[type="url"].span-12,
 input[type="email"].span-12,
-input.title.span-12
+input.title.span-12,
+textarea.span-12
 {	width:				458px;	}
 
 
@@ -297,7 +323,8 @@ input[type="text"].span-13,
 input[type="password"].span-13,
 input[type="url"].span-13,
 input[type="email"].span-13,
-input.title.span-13
+input.title.span-13,
+textarea.span-13
 {	width:				498px;	}
 
 
@@ -305,7 +332,8 @@ input[type="text"].span-14,
 input[type="password"].span-14,
 input[type="url"].span-14,
 input[type="email"].span-14,
-input.title.span-14
+input.title.span-14,
+textarea.span-14
 {	width:				538px;	}
 
 
@@ -313,7 +341,8 @@ input[type="text"].span-15,
 input[type="password"].span-15,
 input[type="url"].span-15,
 input[type="email"].span-15,
-input.title.span-15
+input.title.span-15,
+textarea.span-15
 {	width:				578px;	}
 
 
@@ -321,7 +350,8 @@ input[type="text"].span-16,
 input[type="password"].span-16,
 input[type="url"].span-16,
 input[type="email"].span-16,
-input.title.span-16
+input.title.span-16,
+textarea.span-16
 {	width:				618px;	}
 
 
@@ -329,7 +359,8 @@ input[type="text"].span-17,
 input[type="password"].span-17,
 input[type="url"].span-17,
 input[type="email"].span-17,
-input.title.span-17
+input.title.span-17,
+textarea.span-17
 {	width:				658px;	}
 
 
@@ -337,7 +368,8 @@ input[type="text"].span-18,
 input[type="password"].span-18,
 input[type="url"].span-18,
 input[type="email"].span-18,
-input.title.span-18
+input.title.span-18,
+textarea.span-18
 {	width:				698px;	}
 
 
@@ -345,7 +377,8 @@ input[type="text"].span-19,
 input[type="password"].span-19,
 input[type="url"].span-19,
 input[type="email"].span-19,
-input.title.span-19
+input.title.span-19,
+textarea.span-19
 {	width:				738px;	}
 
 
@@ -353,7 +386,8 @@ input[type="text"].span-20,
 input[type="password"].span-20,
 input[type="url"].span-20,
 input[type="email"].span-20,
-input.title.span-20
+input.title.span-20,
+textarea.span-20
 {	width:				778px;	}
 
 
@@ -361,7 +395,8 @@ input[type="text"].span-21,
 input[type="password"].span-21,
 input[type="url"].span-21,
 input[type="email"].span-21,
-input.title.span-21
+input.title.span-21,
+textarea.span-21
 {	width:				818px;	}
 
 
@@ -369,7 +404,8 @@ input[type="text"].span-22,
 input[type="password"].span-22,
 input[type="url"].span-22,
 input[type="email"].span-22,
-input.title.span-22
+input.title.span-22,
+textarea.span-22
 {	width:				858px;	}
 
 
@@ -377,7 +413,8 @@ input[type="text"].span-23,
 input[type="password"].span-23,
 input[type="url"].span-23,
 input[type="email"].span-23,
-input.title.span-23
+input.title.span-23,
+textarea.span-23
 {	width:				898px;	}
 
 
@@ -385,7 +422,8 @@ input[type="text"].span-24,
 input[type="password"].span-24,
 input[type="url"].span-24,
 input[type="email"].span-24,
-input.title.span-24
+input.title.span-24,
+textarea.span-24
 {	width:				938px;	}
 
 /* Text input, styled on states */
@@ -395,7 +433,8 @@ input[type="password"]:focus,
 input[type="url"]:focus,
 input[type="email"]:focus,
 input.title:focus,
-select:focus
+select:focus,
+textarea:focus
 {
 	border-color:		#666666;
 }
@@ -565,64 +604,6 @@ button.tiny
 	padding:			1px 8px 0 8px;
 }
 
-/*-------------------------------------------------------------- 
-		Styling textareas
--------------------------------------------------------------- */
-textarea
-{
-	font-size:			13px;
-	background-color:	#ffffff;
-	border:				thin solid #c0c0c0;
-	color:				#333333;
-	padding:			1px;
-}
-
-textarea:focus
-{
-	border-color:		#666666;
-}
-
-/* Grid Adjustment */
-
-textarea.span-1,	textarea.span-2,	textarea.span-3,	textarea.span-4,
-textarea.span-5,	textarea.span-6,	textarea.span-7,	textarea.span-8,
-textarea.span-9,	textarea.span-10,	textarea.span-11,	textarea.span-12,
-textarea.span-13,	textarea.span-14,	textarea.span-15,	textarea.span-16,
-textarea.span-17,	textarea.span-18,	textarea.span-19,	textarea.span-20,
-textarea.span-21,	textarea.span-22,	textarea.span-23,	textarea.span-24,
-textarea.span-all
-{
-	border-left-width:	1px;
-	border-right-width:	1px;
-	padding:			1px;
-}
-
-
-textarea.span-1		{ width: 26px;	}
-textarea.span-2		{ width: 66px;	}
-textarea.span-3		{ width: 106px;	}
-textarea.span-4		{ width: 146px;	}
-textarea.span-5		{ width: 186px;	}
-textarea.span-6		{ width: 226px;	}
-textarea.span-7		{ width: 266px;	}
-textarea.span-8		{ width: 306px;	}
-textarea.span-9		{ width: 346px;	}
-textarea.span-10	{ width: 386px;	}
-textarea.span-11	{ width: 426px;	}
-textarea.span-12	{ width: 466px;	}
-textarea.span-13	{ width: 506px;	}
-textarea.span-14	{ width: 546px;	}
-textarea.span-15	{ width: 586px;	}
-textarea.span-16	{ width: 626px;	}
-textarea.span-17	{ width: 666px;	}
-textarea.span-18	{ width: 706px;	}
-textarea.span-19	{ width: 746px;	}
-textarea.span-20	{ width: 786px;	}
-textarea.span-21	{ width: 826px;	}
-textarea.span-22	{ width: 866px;	}
-textarea.span-23	{ width: 906px;	}
-textarea.span-24	{ width: 946px;	}
-textarea.span-all	{ width: 100%;	}
 
 
 /*-------------------------------------------------------------- 
