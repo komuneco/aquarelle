@@ -217,14 +217,12 @@ pre,code,tt
 blockquote, 
 blockquote p
 {
-	margin:				15px;
 	color:				#444444; 
 	font-weight:		bold;
 	font-size:			15px;
 	font-family:		Georgia, Times, Time, 'Times New Roman', serif; 
 	font-style:			italic;
 	line-height:		18px;
-	background-color:	#fafafa;
 }
 
 blockquote:before, q:before
