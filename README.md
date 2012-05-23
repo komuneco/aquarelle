@@ -35,3 +35,40 @@ All you have to do is add this code into the `<head>` section of your HTML files
 <script type="text/javascript" charset="utf-8" src="aquarelle/js/aquarelle.min.js"></script>
 ```
 
+
+### Development tools
+
+In order to have a good workflow with Aquarelle, we develop some tools. They can be used by replacing this file :
+
+```html
+<script type="text/javascript" charset="utf-8" src="aquarelle/js/aquarelle.min.js"></script>
+```
+
+...by this one :
+
+```html
+<script type="text/javascript" charset="utf-8" src="aquarelle/js/dev.aquarelle.min.js"></script>
+```
+
+... into the `<head>` section of your HTML files.
+
+
+### Just the core
+
+If you don't want to use the Aquarelle's default theme, replace this file :
+
+```html
+<link type="text/css" rel="stylesheet" media="screen, projection" href="aquarelle/css/default.aquarelle.min.css">
+```
+
+...by this one :
+
+```html
+<link type="text/css" rel="stylesheet" media="screen, projection" href="aquarelle/css/aquarelle.min.css">
+```
+
+... into the `<head>` section of your HTML files.
+
+
+
+
