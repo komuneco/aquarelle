@@ -33,12 +33,13 @@ signal.signal(signal.SIGUSR1,	signal.SIG_DFL)
 
 
 
-tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'icons', 'iab', 'tricks', 'print', 'ie'] 
+tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'icons', 'iab', 'tricks', 'print', 'ie', 'dev'] 
 css_content_core	= ''
 css_content_ie		= ''
 css_content_print	= ''
 css_content_themes	= ''
 js_content_core		= ''
+js_content_dev		= ''
 
 gpl_license = '''/*
 Aquarelle, The creative & opensource CSS framework.
@@ -195,6 +196,13 @@ try:
 except IOError:
 	print 'Erreur lors de la lecture de src/lib/tipswift/jquery.tipswift.js'
 
+try:
+	f = open('src/js/dev.js')
+	js_content_dev += f.read()
+	f.close()
+except IOError:
+	print 'Erreur lors de la lecture de src/js/dev.js'
+
 
 try:
 	f = open('build/tmp/aquarelle.js', 'w')
@@ -203,11 +211,20 @@ try:
 except IOError:
 	print 'Erreur lors de la creation du fichier temporaire build/tmp/aquarelle.js'
 
+try:
+	f = open('build/tmp/dev.aquarelle.js', 'w')
+	f.write(js_content_core)
+	f.write(js_content_dev)
+	f.close()
+except IOError:
+	print 'Erreur lors de la creation du fichier temporaire build/tmp/dev.aquarelle.js'
+
 
 
 
 
 os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type js -o js/aquarelle.min.js build/tmp/aquarelle.js')
+os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type js -o js/dev.aquarelle.min.js build/tmp/dev.aquarelle.js')
 
 
 try:
@@ -220,12 +237,27 @@ try:
 except IOError:
 	print 'Erreur lors de la mise en place de la licence dans le fichier js/aquarelle.min.js'
 
+try:
+	f = open('js/dev.aquarelle.min.js', 'r')
+	old_content = f.read()
+	f.close()
+	f = open('js/dev.aquarelle.min.js', 'w')
+	f.write(gpl_license + old_content)
+	f.close()
+except IOError:
+	print 'Erreur lors de la mise en place de la licence dans le fichier js/dev.aquarelle.min.js'
+
 
 
 
 
 try:
 	os.remove('build/tmp/aquarelle.js')
+except OSError:
+	print 'Erreur lors de la suppression du fichier temporaire build/tmp/aquarelle.js'
+
+try:
+	os.remove('build/tmp/dev.aquarelle.js')
 except OSError:
 	print 'Erreur lors de la suppression du fichier temporaire build/tmp/aquarelle.js'
 

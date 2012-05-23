@@ -1,0 +1,55 @@
+#aquarelle_dev
+{
+	position:		fixed;
+	z-index:		9999;
+	bottom:			5px;
+	left:			5px;
+}
+
+
+#aquarelle_grid
+{
+	display:		none;
+	position:		fixed;
+	z-index:		9999;
+	top:			0;
+	bottom:			0;
+	left:			50%;
+	margin-left:	-475px;
+}
+
+
+#aquarelle_grid > .span-1
+{
+	height:				100%;
+	background-color:	rgba(0, 0, 0, .1);
+}
+
+#aquarelle_grid > .span-1 div
+{
+	display:			none;
+	position:			fixed;
+	bottom:				0;
+	color:				#fff;
+	font-size:			16px;
+	line-height:		16px;
+	font-weight:		bold;
+	font-family:		Sans;
+	text-align:		center;
+	text-shadow:		0 1px 2px #000;
+}
+
+#aquarelle_grid > .span-1:hover
+{
+	background-color:	rgba(0, 0, 0, .7);
+}
+
+#aquarelle_grid > .span-1:hover div
+{
+	display:			block;
+}
+
+#aquarelle_grid  > .span-1 div .column_size
+{
+	font-size: 7px;
+}
