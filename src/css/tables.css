@@ -105,6 +105,40 @@ table tbody th
 table tbody tr:nth-child(even) td,
 table tbody tr.even td
 {
-	background-color:			#fafafa;
+	background-color:			#f0f0f0;
 }
+
+table.highlight-hover-tr tbody tr:hover td,
+table.highlight-hover-td tbody tr td:hover,
+table tbody tr.highlight-hover-tr:hover td,
+table tbody tr.highlight-hover-td td:hover,
+table tbody tr td.highlight-hover-td:hover,
+table tbody tr.highlight-tr td,
+table tbody tr td.highlight-td
+{
+	background-color:			#FFF6BF;
+}
+
+table.highlight-hover-tr tbody tr.highlight-hover-tr:hover td,
+table.highlight-hover-tr tbody tr.highlight-tr:hover td,
+table.highlight-hover-tr tbody tr:hover td.highlight-hover-td:hover,
+table.highlight-hover-tr tbody tr:hover td.highlight-td,
+table.highlight-hover-td tbody tr.highlight-hover-tr td:hover,
+table.highlight-hover-td tbody tr.highlight-tr td:hover,
+table.highlight-hover-td tbody tr td.highlight-hover-td:hover,
+table.highlight-hover-td tbody tr td.highlight-td,
+table tbody tr.highlight-hover-tr.highlight-tr:hover td,
+table tbody tr.highlight-hover-tr:hover td.highlight-hover-td:hover,
+table tbody tr.highlight-hover-tr:hover td.highlight-td,
+table tbody tr.highlight-hover-td td.highlight-hover-td:hover,
+table tbody tr.highlight-hover-td td.highlight-td,
+table tbody tr td.highlight-hover-td.highlight-td:hover,
+table tbody tr.highlight-tr td.highlight-td,
+table tbody tr.highlight-tr td.highlight-hover-td:hover,
+table tbody tr td.highlight-hover-td.highlight-td:hover
+{
+	background-color:			#F8E254;
+}
+
+
 
