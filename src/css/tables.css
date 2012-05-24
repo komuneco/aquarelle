@@ -116,7 +116,25 @@ table tbody tr td.highlight-hover-td:hover,
 table tbody tr.highlight-tr td,
 table tbody tr td.highlight-td
 {
-	background-color:			#FFF6BF;
+	background-color:			#fff6bf;
+}
+
+table.highlight-hover-tr tbody tr:nth-child(even):hover td,
+table.highlight-hover-td tbody tr:nth-child(even) td:hover,
+table tbody tr:nth-child(even).highlight-hover-tr:hover td,
+table tbody tr:nth-child(even).highlight-hover-td td:hover,
+table tbody tr:nth-child(even) td.highlight-hover-td:hover,
+table tbody tr:nth-child(even).highlight-tr td,
+table tbody tr:nth-child(even) td.highlight-td,
+table.highlight-hover-tr tbody tr.even:hover td,
+table.highlight-hover-td tbody tr.even td:hover,
+table tbody tr.even.highlight-hover-tr:hover td,
+table tbody tr.even.highlight-hover-td td:hover,
+table tbody tr.even td.highlight-hover-td:hover,
+table tbody tr.even.highlight-tr td,
+table tbody tr.even td.highlight-td
+{
+	background-color:			#fdf0a1;
 }
 
 table.highlight-hover-tr tbody tr.highlight-hover-tr:hover td,
