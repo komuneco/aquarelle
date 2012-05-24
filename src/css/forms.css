@@ -138,6 +138,11 @@ textarea
 	padding:			1px 5px;
 }
 
+select
+{
+	padding:			1px 1px 1px 5px;
+}
+
 textarea
 {
 	padding:			5px;
