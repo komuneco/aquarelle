@@ -217,20 +217,20 @@ pre,code,tt
 blockquote, 
 blockquote p
 {
-	color:				#444444; 
+	color:				#444444;
 	font-weight:		bold;
 	font-size:			15px;
 	font-family:		Georgia, Times, Time, 'Times New Roman', serif; 
-	font-style:			italic;
+	font-style:		italic;
 	line-height:		18px;
 }
 
 blockquote:before, q:before
 {
-	content:			'"'; 
+	content:			open-quote;
 	font-size:			60px; 
 	float:				left;
-	margin-top:			20px;
+	margin-top:		20px;
 	height:				20px;
 	display:			block;
 	color:				#999999;
@@ -238,12 +238,12 @@ blockquote:before, q:before
 
 blockquote:after, q:after
 {
-	content:			''; 
+	content:			'';
 }
 
 blockquote, q
 {
-	quotes:				"" ""; 
+	quotes:				"\201C""\201D""\2018""\2019";
 }
 
 
