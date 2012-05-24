@@ -148,7 +148,6 @@ div.fake-input-file
 textarea.noresize
 {
 	resize:				none;
-	padding:			1px;
 }
 
 /* Use class="noindent" to remove the automatic text-indent */
