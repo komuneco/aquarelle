@@ -120,22 +120,24 @@ nav.dropdown-top-menu > ul > li:hover > ul
 	display: 				block;
 }
 
-nav.dropdown-top-menu > ul > li > ul > li
+nav.dropdown-top-menu > ul > li > ul li
 {
 	height:					36px;
 	display:				block;
 	background-color:		#ffffff;
 }
 
-nav.dropdown-top-menu > ul > li > ul > li:hover
+nav.dropdown-top-menu > ul > li > ul li:hover
 {
 	background-color:		#dedede;
 	text-decoration:		none;
 	color:					#ffffff;
 }
 
-nav.dropdown-top-menu > ul > li > ul > li > a
+nav.dropdown-top-menu > ul > li > ul li > a
 {
+	background-color:		#ffffff;
+	text-shadow:			none;
 	font-weight:			normal;
 	color:					#333333;
 	font-size:				12px;
@@ -148,16 +150,17 @@ nav.dropdown-top-menu > ul > li > ul > li > a
 	text-decoration:		none;
 }
 
-nav.dropdown-top-menu > ul > li > ul > li:hover > a,
-nav.dropdown-top-menu > ul > li > ul > li > a:hover
+nav.dropdown-top-menu > ul > li > ul li:hover > a,
+nav.dropdown-top-menu > ul > li > ul li > a:hover
 {
 	color:					#111111;
 	text-decoration:		none;
+	background-color:		#dedede;
 }
 
 /* Third level menu */
 
-nav.dropdown-top-menu > ul > li > ul > li > ul
+nav.dropdown-top-menu > ul > li > ul li > ul
 {
 	display:				none;
 	left:					0;
@@ -168,37 +171,9 @@ nav.dropdown-top-menu > ul > li > ul > li > ul
 	padding:				0;
 }
 
-nav.dropdown-top-menu > ul > li > ul > li:hover > ul
+nav.dropdown-top-menu > ul > li > ul li:hover > ul
 {
 	display:				block;
-}
-
-nav.dropdown-top-menu > ul > li > ul > li > ul > li
-{
-	height:					36px;
-	display:				block;
-}
-
-nav.dropdown-top-menu > ul > li > ul > li > ul > li > a
-{
-	background-color:		#ffffff;
-	font-weight:			normal;
-	color:					#333333;
-	font-size:				12px;
-	line-height:			18px;
-	padding:				9px 10px;
-	white-space:			nowrap;
-	overflow:				hidden;
-	height:					18px;
-	display:				block;
-	text-shadow:			none;
-	text-decoration:		none;
-}
-
-nav.dropdown-top-menu > ul > li > ul > li > ul > li > a:hover
-{
-	background-color:		#dedede;
-	color:					#111111;
 }
 
 
@@ -535,24 +510,26 @@ nav.dropdown-side-menu > ul > li:hover > ul
 	display:				block;
 }
 
-nav.dropdown-side-menu > ul > li > ul > li
+nav.dropdown-side-menu > ul > li > ul li
 {
 	height:					36px;
 	display:				block;
 	background-color:		#ffffff;
 }
 
-nav.dropdown-side-menu > ul > li > ul > li:hover
+nav.dropdown-side-menu > ul > li > ul li:hover
 {
 	background-color:		#dedede;
 	color:					#222222;
 	text-decoration:		none;
 }
 
-nav.dropdown-side-menu > ul > li > ul > li > a
+nav.dropdown-side-menu > ul > li > ul li > a
 {
+	background-color:		#ffffff;
+	text-shadow:			none;
+	color:					#333333;
 	font-weight:			normal;
-	color:					#444444;
 	font-size:				12px;
 	line-height:			18px;
 	padding:				9px 10px;
@@ -563,17 +540,18 @@ nav.dropdown-side-menu > ul > li > ul > li > a
 	text-decoration:		none;
 }
 
-nav.dropdown-side-menu > ul > li > ul > li:hover > a,
-nav.dropdown-side-menu > ul > li > ul > li > a:hover
+nav.dropdown-side-menu > ul > li > ul li:hover > a,
+nav.dropdown-side-menu > ul > li > ul li > a:hover
 {
 	color:					#222222;
 	text-decoration:		none;
+	background-color:		#dedede;
 }
 
 
 /* Third Level Menu */
 
-nav.dropdown-side-menu > ul > li > ul > li > ul
+nav.dropdown-side-menu > ul > li > ul li > ul
 {
 	display:				none;
 	left:					0;
@@ -585,39 +563,11 @@ nav.dropdown-side-menu > ul > li > ul > li > ul
 	background-color:		#ffffff;
 }
 
-nav.dropdown-side-menu > ul > li > ul > li:hover > ul
+nav.dropdown-side-menu > ul > li > ul li:hover > ul
 {
 	display:				block;
 }
 
-nav.dropdown-side-menu > ul > li > ul > li > ul > li
-{
-	height:					36px;
-	display:				block;
-}
-
-
-nav.dropdown-side-menu > ul > li > ul > li > ul > li > a
-{
-	background-color:		#ffffff;
-	font-weight:			normal;
-	color:					#444444;
-	font-size:				12px;
-	line-height:			18px;
-	padding:				9px 10px;
-	white-space:			nowrap;
-	overflow:				hidden;
-	height:					18px;
-	display:				block;
-	text-decoration:		none;
-}
-
-nav.dropdown-side-menu > ul > li > ul > li > ul > li > a:hover
-{
-	background-color:		#dedede;
-	color:					#222222;
-	text-decoration:		none;
-}
 
 /* Others */
 
