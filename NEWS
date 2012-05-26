@@ -1,0 +1,39 @@
+0.2.6
+
+	- Add a NEWS file to have a simple history of our developments
+
+0.2.5
+
+	- Add highlight classes for tables
+	- Add develoment tools to test pages
+	- Some bugfix
+
+0.2.4
+
+	- Replace the dropdown-top-menu-* and dropdown-side-menu-* old classes by the new dropdown-menu-*
+	- Remove the depth limitation for top menus and side menus
+	- Some bugfix
+
+0.2.3
+
+	- Add development tools when dev.aquarelle.min.js is loaded instead of aquarelle.min.js
+	- Add README file
+	- Some bugfix
+
+0.2.2
+
+	- Aquarelle's CSS can now be fully loaded in one call
+	- Add IAB support
+	- Add the .noindent typographic trick
+	- Add test files
+	- Tipsy plugin replaced by its fork TipSwift
+	- Some bugfix
+
+0.2.1
+
+	- Add SOURCE file
+	- First default fontface becomes Arial instead of Verdana
+
+0.2.0
+
+	- First stable version of Aquarelle
