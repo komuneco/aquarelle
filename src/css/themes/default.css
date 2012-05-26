@@ -1633,22 +1633,22 @@ nav.dropdown-side-menu > ul > li
 
 nav.dropdown-top-menu > ul > li
 {
-	border-right:		thin solid #efefef;
+	border-right:		thin solid #f0f0f0;
 }
 
 nav.dropdown-side-menu > ul > li
 {
-	border-bottom:		thin solid #efefef;
+	border-bottom:		thin solid #f0f0f0;
 }
 
 nav.dropdown-top-menu > ul > li:first-child
 {
-	border-left:		thin solid #efefef;
+	border-left:		thin solid #f0f0f0;
 }
 
 nav.dropdown-side-menu > ul > li:first-child
 {
-	border-top:		thin solid #efefef;
+	border-top:		thin solid #f0f0f0;
 }
 
 nav.dropdown-top-menu > ul > li:hover,
