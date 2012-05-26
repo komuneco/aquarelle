@@ -1766,9 +1766,10 @@ nav.dropdown-top-menu > ul > li > ul li.dropdown-menu-title:hover,
 nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-title,
 nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-title:focus,
 nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-title:hover
+{
 	text-shadow:		none;
 	filter:				none;
-	-ms-filter:		none;
+	-ms-filter:			none;
 	color:				#222222;
 }
 
