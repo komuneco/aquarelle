@@ -245,8 +245,8 @@ span.author
 .message.error, .message.alert
 {
 	background-color:	#ffdddd;
-	border-color:		#8a1f11;
-	color:				#8a1f11;
+	border-color:		#c24336;
+	color:				#c24336;
 }
 
 .message.notice
@@ -273,7 +273,7 @@ span.author
 .message.error a,
 .message.alert a
 {
-	color:				#8a1f11;
+	color:				#c24336;
 	font-weight:		bold;
 }
 
@@ -1463,7 +1463,7 @@ select.important
 label.error,
 label.alert
 {
-	color:				#8a1f11;
+	color:				#c24336;
 	font-weight:		bold;
 }
 
