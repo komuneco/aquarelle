@@ -1535,7 +1535,6 @@ input.info::-webkit-input-placeholder,		textarea.info::-webkit-input-placeholder
 .hover-dropdown-list > ul > li,
 .focus-dropdown-list > ul > li
 {
-	background-color:	#2e2e2e;
 	font-weight:		normal;
 	color:				#c8c8c8;
 	font-size:			12px;
@@ -1618,6 +1617,13 @@ input.info::-webkit-input-placeholder,		textarea.info::-webkit-input-placeholder
 	-ms-filter:			none;
 }
 
+.hover-dropdown-list > ul.dropdown-bubble-left:after,
+.focus-dropdown-list > ul.dropdown-bubble-left:after,
+.hover-dropdown-list > ul.dropdown-bubble-right:after,
+.focus-dropdown-list > ul.dropdown-bubble-right:after
+{
+	border-bottom:			6px solid #2e2e2e;
+}
 
 /*-------------------------------------------------------------- 
 		Drop Down Navigation Menu
