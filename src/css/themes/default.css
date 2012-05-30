@@ -1523,7 +1523,6 @@ input.info::-webkit-input-placeholder,		textarea.info::-webkit-input-placeholder
 .hover-dropdown-list > ul > li,
 .focus-dropdown-list > ul > li
 {
-	background-color:	#ffffff;
 	font-weight:		normal;
 	color:				#333333;
 	font-size:			12px;
