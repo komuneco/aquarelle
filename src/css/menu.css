@@ -335,6 +335,7 @@ nav.dropdown-top-menu > ul > li > ul.dropdown-menu-right
 .focus-dropdown-list > ul.dropdown-bubble-right
 {
 	margin-top:			10px;
+	padding:				6px 0;
 	border-radius:			6px;
 }
 
