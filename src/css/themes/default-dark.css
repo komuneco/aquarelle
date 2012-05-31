@@ -297,10 +297,11 @@ span.author
 
 .message.important
 {
-	color:				#990000;
+	color:				#dd2525;
+	color:				#ffffff;
 	text-align:			center;
-	border-color:		#990000;
-	background-color:	#242525;
+	border-color:		#dd2525;
+	background-color:	#3b3b3b;
 	
 	-moz-box-shadow:		0 0 2px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow:		0 0 2px rgba(0, 0, 0, 0.3);
@@ -310,7 +311,8 @@ span.author
 
 .message.important a
 {
-	color:				#990000;
+	color:				#ee3535;
+	/* color:				#ffffff;*/
 	font-weight:		bold;
 }
 
@@ -1456,6 +1458,8 @@ textarea.important,
 select.important
 {
 	border-color:		#990000;
+	background-color:	#3b3b3b;
+	color:				#ededed;
 }
 
 
@@ -1469,46 +1473,47 @@ label.alert
 
 label.notice
 {
-	color:				#514721;
+	color:				#ffaa00;
 	font-weight:		bold;
 }
 
 label.info
 {
-	color:				#205791;
+	color:				#2b95c6;
 	font-weight:		bold;
 }
 
 label.success
 {
-	color:				#264409;
+	color:				#61a027;
 	font-weight:		bold;
 }
 
 label.important
 {
-	color:				#990000;
+	color:				#dd2525;
 	font-weight:		bold;
 }
 
 /* Styling placeholders by events*/
 
 /*input[placeholder],							textarea[placeholder]							{ color: #3b3b3b; }*/
-::-webkit-input-placeholder,				::-webkit-textarea-placeholder,					{ color: #3b3b3b; }
-input:-moz-placeholder,						textarea:-moz-placeholder						{ color: #3b3b3b; }
+::-webkit-input-placeholder,				::-webkit-textarea-placeholder,					{ color: #777777; }
+input:-moz-placeholder,						textarea:-moz-placeholder						{ color: #777777; }
 
 input.error:-moz-placeholder,				textarea.error:-moz-placeholder,
 input.alert:-moz-placeholder,				textarea.alert:-moz-placeholder					{ color: #e8686b; }
 input.notice:-moz-placeholder,				textarea.notice:-moz-placeholder				{ color: #ffaa00; }
 input.success:-moz-placeholder,				textarea.success:-moz-placeholder				{ color: #7aae42; }
 input.info:-moz-placeholder,				textarea.info:-moz-placeholder					{ color: #2b95c6; }
+input.important:-moz-placeholder,			textarea.important:-moz-placeholder				{ color: #dedede; font-style:	italic; }
 
 input.error::-webkit-input-placeholder,		textarea.error::-webkit-input-placeholder,
 input.alert::-webkit-input-placeholder,		textarea.alert::-webkit-input-placeholder		{ color: #e8686b; }
 input.notice::-webkit-input-placeholder,	textarea.notice::-webkit-input-placeholder		{ color: #ffaa00; }
 input.success::-webkit-input-placeholder,	textarea.success::-webkit-input-placeholder		{ color: #7aae42; }
 input.info::-webkit-input-placeholder,		textarea.info::-webkit-input-placeholder		{ color: #2b95c6; }
-
+input.important::-webkit-input-placeholder,	textarea.important::-webkit-input-placeholder	{ color: #fefefe; }
 
 
 /*-------------------------------------------------------------- 
