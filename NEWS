@@ -1,5 +1,6 @@
 0.2.7
 
+    - Add the ability to give all button styles to anchors elements
     - Add a dark version of the default theme
 	- Add a new « bubble mode » to display hover-dropdown-list and focus-dropdown-list
 
