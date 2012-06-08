@@ -102,6 +102,31 @@ fieldset.span-22	{ width: 840px;	}
 fieldset.span-23	{ width: 880px;	}
 fieldset.span-24	{ width: 920px;	}
 
+
+a.button.span-2		{ width: 48px;	}
+a.button.span-3		{ width: 88px;	}
+a.button.span-4		{ width: 128px;	}
+a.button.span-5		{ width: 168px;	}
+a.button.span-6		{ width: 208px;	}
+a.button.span-7		{ width: 248px;	}
+a.button.span-8		{ width: 288px;	}
+a.button.span-9		{ width: 328px;	}
+a.button.span-10	{ width: 368px;	}
+a.button.span-11	{ width: 408px;	}
+a.button.span-12	{ width: 448px;	}
+a.button.span-13	{ width: 488px;	}
+a.button.span-14	{ width: 528px;	}
+a.button.span-15	{ width: 568px;	}
+a.button.span-16	{ width: 608px;	}
+a.button.span-17	{ width: 648px;	}
+a.button.span-18	{ width: 688px;	}
+a.button.span-19	{ width: 728px;	}
+a.button.span-20	{ width: 768px;	}
+a.button.span-21	{ width: 808px;	}
+a.button.span-22	{ width: 848px;	}
+a.button.span-23	{ width: 888px;	}
+a.button.span-24	{ width: 928px;	}
+
 /*-------------------------------------------------------------- 
 		Styling Labels
 -------------------------------------------------------------- */
@@ -544,10 +569,22 @@ input[type="checkbox"]:focus
 		Styling Button and input[submit-reset]
 -------------------------------------------------------------- */
 
+a.button
+{
+	display:			inline-block;
+	text-align:	center;
+}
+
+a.button:hover
+{
+	text-decoration:	none;
+}
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-button
+button,
+a.button
 {
 	padding:			6px 10px;
 	line-height:		18px;
@@ -563,7 +600,8 @@ button
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-button:hover 
+button:hover,
+a.button:hover
 {
 	border-color:		#666666;
 }
@@ -572,7 +610,8 @@ button:hover
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
-button:active
+button:active,
+a.button:active
 {
 	background-color:	#ededed; 
 }
@@ -582,14 +621,17 @@ input[type="submit"]:disabled,
 input[type="reset"]:disabled,
 input[type="button"]:disabled,
 button:disabled,
+a.button:disabled,
 input[type="submit"]:disabled:hover,
 input[type="reset"]:disabled:hover,
 input[type="button"]:disabled:hover,
 button:disabled:hover,
+a.button:disabled:hover,
 input[type="submit"]:disabled:active,
 input[type="reset"]:disabled:active,
 input[type="button"]:disabled:active,
-button:disabled:active
+button:disabled:active,
+a.button:disabled:active
 {
 	color:				#c0c0c0;
 	border-color:		#c0c0c0;
@@ -600,7 +642,8 @@ button:disabled:active
 input[type="submit"].tiny,
 input[type="reset"].tiny,
 input[type="button"].tiny,
-button.tiny
+button.tiny,
+a.button.tiny
 {
 	font-size:			13px;
 	font-weight:		normal;
