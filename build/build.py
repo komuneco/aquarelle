@@ -33,11 +33,12 @@ signal.signal(signal.SIGUSR1,	signal.SIG_DFL)
 
 
 
-tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'icons', 'iab', 'tricks', 'print', 'ie', 'dev'] 
+tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'icons', 'iab', 'tricks', 'print', 'ie', 'dev']
+tab_themes			= ['default', 'default-dark']
 css_content_core	= ''
 css_content_ie		= ''
 css_content_print	= ''
-css_content_themes	= ''
+css_content_themes	= {}
 js_content_core		= ''
 js_content_dev		= ''
 
@@ -104,12 +105,13 @@ try:
 except IOError:
 	print 'Erreur lors de la lecture de src/lib/tipswift/jquery.tipswift.css'
 
-try:
-	f = open('src/css/themes/default.css')
-	css_content_themes += f.read()
-	f.close()
-except IOError:
-	print 'Erreur lors de la lecture de css/themes/default.css'
+for theme in tab_themes:
+	try:
+		f = open('src/css/themes/'+ theme +'.css')
+		css_content_themes[theme] = f.read()
+		f.close()
+	except IOError:
+		print 'Erreur lors de la lecture de css/themes/'+ theme +'.css'
 
 
 
@@ -125,13 +127,14 @@ try:
 except IOError:
 	print 'Erreur lors de la creation du fichier temporaire build/tmp/aquarelle.css'
 
-try:
-	f = open('build/tmp/default.aquarelle.css', 'w')
-	f.write(css_content_core)
-	f.write(css_content_themes)
-	f.close()
-except IOError:
-	print 'Erreur lors de la creation du fichier temporaire build/tmp/default.aquarelle.css'
+for theme in tab_themes:
+	try:
+		f = open('build/tmp/'+ theme +'.aquarelle.css', 'w')
+		f.write(css_content_core)
+		f.write(css_content_themes[theme])
+		f.close()
+	except IOError:
+		print 'Erreur lors de la creation du fichier temporaire build/tmp/'+ theme +'.aquarelle.css'
 
 
 
@@ -139,7 +142,9 @@ except IOError:
 
 
 os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/aquarelle.min.css build/tmp/aquarelle.css')
-os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/default.aquarelle.min.css build/tmp/default.aquarelle.css')
+
+for theme in tab_themes:
+	os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/'+ theme +'.aquarelle.min.css build/tmp/'+ theme +'.aquarelle.css')
 
 
 try:
@@ -152,15 +157,16 @@ try:
 except IOError:
 	print 'Erreur lors de la mise en place de la licence dans le fichier css/aquarelle.min.css'
 
-try:
-	f = open('css/default.aquarelle.min.css', 'r')
-	old_content = f.read()
-	f.close()
-	f = open('css/default.aquarelle.min.css', 'w')
-	f.write(gpl_license + old_content)
-	f.close()
-except IOError:
-	print 'Erreur lors de la mise en place de la licence dans le fichier css/default.aquarelle.min.css'
+for theme in tab_themes:
+	try:
+		f = open('css/'+ theme +'.aquarelle.min.css', 'r')
+		old_content = f.read()
+		f.close()
+		f = open('css/'+ theme +'.aquarelle.min.css', 'w')
+		f.write(gpl_license + old_content)
+		f.close()
+	except IOError:
+		print 'Erreur lors de la mise en place de la licence dans le fichier css/'+ theme +'.aquarelle.min.css'
 
 
 
@@ -170,10 +176,11 @@ try:
 except OSError:
 	print 'Erreur lors de la suppression du fichier temporaire build/tmp/aquarelle.css'
 
-try:
-	os.remove('build/tmp/default.aquarelle.css')
-except OSError:
-	print 'Erreur lors de la suppression du fichier temporaire build/tmp/default.css'
+for theme in tab_themes:
+	try:
+		os.remove('build/tmp/'+ theme +'.aquarelle.css')
+	except OSError:
+		print 'Erreur lors de la suppression du fichier temporaire build/tmp/'+ theme +'.css'
 
 
 
