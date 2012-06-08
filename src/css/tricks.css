@@ -24,10 +24,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 -------------------------------------------------------------- */
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Position
 -------------------------------------------------------------- */
-/* 	These can be used to pull an image at the start of a paragraph, so 
+/* 	These can be used to pull an image at the start of a paragraph, so
 	that the text flows around it (usage: <p><img class="left">Text</p>)
  */
 .left
@@ -44,7 +44,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
 /* 	You don't want the gutter ? Use those class to make your element
-	stuck on the side 
+	stuck on the side
 */
 .left.stuck
 {
@@ -80,7 +80,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 .clear					{ clear: both; }
 .clear-left				{ clear: left; }
 .clear-right			{ clear: right; }
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Visibility and display
 -------------------------------------------------------------- */
 
@@ -95,7 +95,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 .hide					{ display: none; }
 .show					{ display: block; }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Text and Typography
 -------------------------------------------------------------- */
 .align-left				{ text-align: left; }
@@ -103,8 +103,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 .align-right			{ text-align: right; }
 .align-justify			{ text-align: justify; }
 
-/*-------------------------------------------------------------- 
-		Forms 
+/*--------------------------------------------------------------
+		Forms
 -------------------------------------------------------------- */
 
 /* This method is based on the Michael McGrady's trick available for reading here : http://www.quirksmode.org/dom/inputfile.html */

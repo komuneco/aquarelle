@@ -60,12 +60,12 @@ a:hover
 	border:				none;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 
-		TYPOGRAPHY 
+		TYPOGRAPHY
 
 -------------------------------------------------------------- */
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Headings
 -------------------------------------------------------------- */
 
@@ -125,12 +125,12 @@ h6
 {  }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Text elements
 -------------------------------------------------------------- */
 
 p
-{..}
+{  }
 
 a
 {
@@ -171,7 +171,7 @@ dt
 	font-weight:		bold;
 	text-align:			right;
 }
-	
+
 dd
 {
 	float:				left;
@@ -180,7 +180,7 @@ dd
 	margin:				0 0 3px 4px;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Fancy Type Classes
 -------------------------------------------------------------- */
 
@@ -190,17 +190,16 @@ dd
 	font-family:		'Warnock Pro', 'Goudy Old Style','Palatino','Book Antiqua', Georgia, serif;
 	font-style:			italic;
 	font-weight:		normal;
-
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Beautiful Blockquotes
 -------------------------------------------------------------- */
 blockquote,
 blockquote p
 {
-	color:				#444444; 
-	font-family:		Georgia, Times, Time, 'Times New Roman', serif; 
+	color:				#444444;
+	font-family:		Georgia, Times, Time, 'Times New Roman', serif;
 	background-color:	#fafafa;
 	
 	-moz-border-radius:		5px;
@@ -209,7 +208,7 @@ blockquote p
 	border-radius:			5px;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Message
 -------------------------------------------------------------- */
 .message.error,
@@ -304,7 +303,7 @@ blockquote p
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 
 		BOXES
 
@@ -389,13 +388,13 @@ blockquote p
 
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 
-		FORMS 
+		FORMS
 
 -------------------------------------------------------------- */
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Styling Fieldsets
 -------------------------------------------------------------- */
 fieldset
@@ -407,7 +406,6 @@ fieldset
 	-webkit-border-radius:	2px;
 	-o-border-radius:		2px;
 	border-radius:			2px;
-	
 }
 
 fieldset > legend
@@ -433,7 +431,7 @@ fieldset > legend > a:hover
 	text-shadow:		0 1px rgba(0, 0, 0, 0.2);
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Styling Labels
 -------------------------------------------------------------- */
 label
@@ -444,7 +442,7 @@ label
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Styling Inputs
 -------------------------------------------------------------- */
 
@@ -562,7 +560,7 @@ select optgroup option
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Styling Checkboxes & radio buttons
 -------------------------------------------------------------- */
 
@@ -614,7 +612,7 @@ input[type="checkbox"]:focus
 	border-color:		#4d90fe;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Styling Submits, Resets and Buttons
 -------------------------------------------------------------- */
 
@@ -630,7 +628,7 @@ a.button
 	background-image:	-webkit-gradient(linear, left top, left bottom, color-stop(0%, #dedede), color-stop(100%, #cfcfcf));
 	background-image:	-webkit-linear-gradient(#dedede, #cfcfcf);
 	background-image:	-o-linear-gradient(#dedede, #cfcfcf);
-	filter:				progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#cfcfcf'); 
+	filter:				progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#cfcfcf');
 	-ms-filter:			"progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#cfcfcf')";
 	background-image:	linear-gradient(#dedede, #cfcfcf);
 
@@ -1003,7 +1001,7 @@ a.button.button-dark:disabled:active
 }
 
 /*	----- HIGHLIGHT (Blue) -----	*/
-	
+
 input[type="submit"].button-highlight,
 input[type="reset"].button-highlight,
 input[type="button"].button-highlight,
@@ -1381,7 +1379,7 @@ a.button.button-bad:disabled:active
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Styling inputs by events
 -------------------------------------------------------------- */
 
@@ -1418,7 +1416,7 @@ select.alert:hover,
 input.alert:focus,
 textarea.alert:focus,
 select.alert:focus
-{ 
+{
 	border-color:		#ea2f16;
 }
 
@@ -1539,13 +1537,13 @@ input.info::-webkit-input-placeholder,		textarea.info::-webkit-input-placeholder
 
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 
 		MENUS
 
 -------------------------------------------------------------- */
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Drop Down List
 -------------------------------------------------------------- */
 
@@ -1645,7 +1643,7 @@ input.info::-webkit-input-placeholder,		textarea.info::-webkit-input-placeholder
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Drop Down Navigation Menu
 -------------------------------------------------------------- */
 
@@ -1764,7 +1762,7 @@ nav.dropdown-side-menu > ul > li > ul  li:hover > a,
 nav.dropdown-side-menu > ul > li > ul  li > a:hover
 {
 	background-color:	#357ae8;
-	background-image:	-moz-linear-gradient(#4d90fe, #357ae8); 
+	background-image:	-moz-linear-gradient(#4d90fe, #357ae8);
 	background-image:	-ms-linear-gradient(#4d90fe, #357ae8);
 	background-image:	-webkit-gradient(linear, left top, left bottom, color-stop(0%, #4d90fe), color-stop(100%, #357ae8));
 	background-image:	-webkit-linear-gradient(#4d90fe, #357ae8);

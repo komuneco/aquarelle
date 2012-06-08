@@ -36,15 +36,15 @@ img.icon
 	width:					18px;
 	display:				inline-block;
 	
-	padding:				0; 
+	padding:				0;
 	margin-top:				-2px;
 	line-height:			18px;
 	vertical-align:			middle;
 	
-	background-color:		#205eb0; 
-	background-image:		url(../img/16x16/info.png); 
-	background-position:	3px 3px; 
-	background-repeat:		no-repeat; 
+	background-color:		#205eb0;
+	background-image:		url(../img/16x16/info.png);
+	background-position:	3px 3px;
+	background-repeat:		no-repeat;
 	
 	-moz-border-radius:		10px;
 	-webkit-border-radius:	10px;
@@ -52,14 +52,14 @@ img.icon
 	border-radius:			10px;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 
 		ICONSET // SPRITE
 		
 -------------------------------------------------------------- */
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		16x16px Iconset
 -------------------------------------------------------------- */
 
@@ -574,7 +574,7 @@ img.icon
 .icon-16.weather-storm.light				{ background-position:	0		-2432px;	}
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		24x24px Iconset
 -------------------------------------------------------------- */
 

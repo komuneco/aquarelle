@@ -24,9 +24,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 -------------------------------------------------------------- */
 
-table 
+table
 {
-	margin-bottom:		36px; 
+	margin-bottom:		36px;
 	width:				100%;
 	border:				thin solid #dedede;
 	border-width:		1px 1px 1px 0;
@@ -45,14 +45,14 @@ table caption
 
 
 table tr th
-{ 
+{
 	font-weight:		bold;
 }
 
 table tr th,
 table tr td,
 table caption
-{ 
+{
 	padding:			4px 10px 4px 5px;
 }
 
@@ -83,7 +83,7 @@ table tfoot th:first-child
 
 table tfoot
 {
-	font-style:			italic; 
+	font-style:			italic;
 }
 
 table tfoot th

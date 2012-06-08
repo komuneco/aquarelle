@@ -40,7 +40,7 @@ body
 }
 
 header,
-footer, 
+footer,
 nav,
 .adBlock
 {
@@ -114,17 +114,17 @@ blockquote {
 
 .large
 {
-	font-size:			1.1em; 
+	font-size:			1.1em;
 }
 
 .quiet
 {
-	color:				#999999; 
+	color:				#999999;
 }
 
 .hide
 {
-	display:			none; 
+	display:			none;
 }
 
 

@@ -23,7 +23,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 -------------------------------------------------------------- */
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Default font settings.
 -------------------------------------------------------------- */
 
@@ -37,7 +37,7 @@ body
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Headings
 -------------------------------------------------------------- */
 
@@ -54,7 +54,7 @@ h1
 	font-size:			32px;
 	line-height:		36px;
 	margin-top:			18px;
-	margin-bottom:		18px 
+	margin-bottom:		18px
 }
 
 h1.subtitle
@@ -88,7 +88,7 @@ h3
 	font-size:			18px;
 	line-height:		18px;
 	margin-bottom:		18px;
-	text-indent:		30px; 
+	text-indent:		30px;
 }
 
 h4
@@ -103,7 +103,7 @@ h5
 {
 	font-size:			14px;
 	font-weight:		bold;
-	margin-bottom:		0px; 
+	margin-bottom:		0px;
 }
 
 h6
@@ -120,7 +120,7 @@ h4 img, h5 img, h6 img
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Text elements
 -------------------------------------------------------------- */
 
@@ -210,17 +210,17 @@ pre,code,tt
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Beautiful Blockquotes
 -------------------------------------------------------------- */
 
-blockquote, 
+blockquote,
 blockquote p
 {
 	color:				#444444;
 	font-weight:		bold;
 	font-size:			15px;
-	font-family:		Georgia, Times, Time, 'Times New Roman', serif; 
+	font-family:		Georgia, Times, Time, 'Times New Roman', serif;
 	font-style:		italic;
 	line-height:		18px;
 }
@@ -228,7 +228,7 @@ blockquote p
 blockquote:before, q:before
 {
 	content:			open-quote;
-	font-size:			60px; 
+	font-size:			60px;
 	float:				left;
 	margin-top:		20px;
 	height:				20px;
@@ -247,9 +247,9 @@ blockquote, q
 }
 
 
-/* 
-	Just before closing your blockquote, 
-	you can use this class to add your reference 
+/*
+	Just before closing your blockquote,
+	you can use this class to add your reference
 	ex: <span class="author">W. Shakespeare</span>
 */
 span.author
@@ -265,7 +265,7 @@ span.author
 }
 
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Message
 -------------------------------------------------------------- */
 
@@ -339,7 +339,7 @@ span.author
 {
 	background-color:	#d5edf8;
 	color:				#205791;
-	border-color:		#92cae4; 
+	border-color:		#92cae4;
 }
 
 .message.error a, .message.alert a
@@ -362,7 +362,7 @@ span.author
 	color:				#205791;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Lists
 -------------------------------------------------------------- */
 
@@ -402,7 +402,7 @@ dd
 	margin-left:		15px;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Misc classes
 -------------------------------------------------------------- */
 
@@ -474,9 +474,9 @@ dd
 	margin-bottom:		-10px;
 }
 
-.num_notify	{ 
-	background-color:	#990000; 
-	color:				#ffffff; 
+.num_notify	{
+	background-color:	#990000;
+	color:				#ffffff;
 	font-weight:		bold;
 	padding:			0px 5px;
 	
@@ -486,7 +486,7 @@ dd
 	border-radius:			10px;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Horizontal Rules
 -------------------------------------------------------------- */
 
@@ -522,7 +522,7 @@ hr.space
 	visibility:			hidden;
 }
 
-/*-------------------------------------------------------------- 
+/*--------------------------------------------------------------
 		Fancy Type Classes
 -------------------------------------------------------------- */
 

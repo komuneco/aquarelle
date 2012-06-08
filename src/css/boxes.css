@@ -31,7 +31,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 -------------------------------------------------------------- */
 
 /*
-	Grid overloading 
+	Grid overloading
 	Just because we want our box to have a border
 	/!\ Not safe to change
 */
@@ -117,16 +117,16 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 .box.row-50		{ height: 875px;	}
 .box.row-all	{ height: 100%;		}
-/* 
-	Here is the box 
+/*
+	Here is the box
 	/!\ Not safe to change padding and border-width
 */
 .box
 {
 	overflow:			hidden;
 	background-color:	#ffffff;
-	padding:			6px 6px 7px; 
-	margin-bottom:		12px; 
+	padding:			6px 6px 7px;
+	margin-bottom:		12px;
 	border-width:		thin;
 	border-style:		solid;
 	border-color:		#dddddd;
@@ -136,13 +136,13 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 {
 	height:				36px;
 	margin:				0 0 -1px 0;
-	padding:			0; 
-	text-indent:		10px; 
+	padding:			0;
+	text-indent:		10px;
 	font-size:			20px;
 	font-weight:		normal;
 	line-height:		36px;
 	color:				#333333;
-	background-color:	#ffffff; 
+	background-color:	#ffffff;
 }
 
 .box h4
@@ -157,9 +157,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 	color: 				#666666;
 }
 
-/* 
+/*
 	Just another titling.
-	You can use it to introduce your ads for instance. =) 
+	You can use it to introduce your ads for instance. =)
 */
 .box > h4.alt
 {
