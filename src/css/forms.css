@@ -576,7 +576,11 @@ a.button
 	cursor:			default;
 }
 
-a.button:hover
+a.button
+a.button:hover,
+a.button:link,
+a.button:focus,
+a.button:visited
 {
 	text-decoration:	none;
 }
@@ -651,6 +655,12 @@ a.button.tiny
 	height:				26px;
 	line-height:		14px;
 	padding:			1px 8px 0 8px;
+}
+
+a.button.tiny
+{
+	height:				26px;
+	line-height:		14px;
 }
 
 
