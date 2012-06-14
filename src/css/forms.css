@@ -571,8 +571,9 @@ input[type="checkbox"]:focus
 
 a.button
 {
-	display:			inline-block;
+	display:		inline-block;
 	text-align:	center;
+	cursor:			default;
 }
 
 a.button:hover
