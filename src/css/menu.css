@@ -46,8 +46,16 @@ nav.dropdown-side-menu
 
 nav.dropdown-top-menu
 {
-	border-top:			thin solid #c0c0c0;
-	border-bottom:			thin solid #c0c0c0;
+	border-width:			thin thin thin 0;
+	border-style:			solid;
+	border-color:			#c0c0c0;
+}
+
+nav.dropdown-side-menu
+{
+	border-width:			0 thin;
+	border-style:			solid;
+	border-color:			#c0c0c0;
 }
 
 
@@ -65,6 +73,12 @@ nav.dropdown-top-menu ul.child-has-focus,
 nav.dropdown-side-menu ul.child-has-focus
 {
 	display:				block;
+}
+
+nav.dropdown-top-menu ul li,
+nav.dropdown-side-menu ul li
+{
+	position:				relative;
 }
 
 nav.dropdown-top-menu > ul > li
@@ -94,10 +108,24 @@ nav.dropdown-side-menu > ul > li:first-child
 	border-top:			thin solid #c0c0c0;
 }
 
-nav.dropdown-top-menu ul li,
-nav.dropdown-side-menu ul li
+nav.dropdown-top-menu ul li a,
+nav.dropdown-side-menu ul li a
 {
-	position:				relative;
+	padding:				6px 15px;
+	text-decoration:		none;
+	font-weight:			bold;
+	line-height:			22px;
+	color:					#444444;
+}
+
+nav.dropdown-top-menu ul li a:hover,
+nav.dropdown-top-menu ul li:hover > a,
+nav.dropdown-side-menu ul li a:hover,
+nav.dropdown-side-menu ul li:hover > a
+{
+	background-color:		#dedede;
+	color:					#222222;
+	text-decoration:		none;
 }
 
 nav.dropdown-top-menu > ul > li > a
@@ -112,28 +140,9 @@ nav.dropdown-side-menu > ul > li > a
 	text-align:			left;
 }
 
-nav.dropdown-top-menu ul li a
-{
-	padding:				6px 15px;
-	text-decoration:		none;
-	font-weight:			bold;
-	line-height:			22px;
-	color:					#444444;
-}
 
-nav.dropdown-top-menu ul li a:hover,
-nav.dropdown-top-menu ul li:hover > a,
-nav.dropdown-side-menu ul li a:hover,
-nav.dropdown-side-menu ul li:hover > a
-{
-	color:					#222222;
-	text-decoration:		none;
-	background-color:		#ffffff;
-}
-
-
-nav.dropdown-top-menu > ul > li > ul,
-nav.dropdown-side-menu > ul > li > ul
+nav.dropdown-top-menu > ul > li ul,
+nav.dropdown-side-menu > ul > li ul
 {
 	background-color:		#ffffff;
 	display:				none;
@@ -143,82 +152,35 @@ nav.dropdown-side-menu > ul > li > ul
 	padding:				0;
 	list-style-type:		none;
 	list-style-position:	outside;
+	border:					thin solid #c0c0c0;
 }
 
-nav.dropdown-side-menu > ul > li > ul
+nav.dropdown-top-menu > ul > li > ul > li ul,
+nav.dropdown-side-menu > ul > li ul
 {
-	position:				absolute;
 	top:					-1px;
 	left:					100%;
-	margin:					0
 }
 
-nav.dropdown-top-menu > ul > li:hover > ul,
-nav.dropdown-side-menu > ul > li:hover > ul
+nav.dropdown-top-menu > ul li:hover > ul,
+nav.dropdown-side-menu > ul li:hover > ul
 {
 	display:				block;
 }
 
-nav.dropdown-top-menu > ul > li > ul li,
-nav.dropdown-side-menu > ul > li > ul li
-{
-	display:				block;
-	background-color:		#ffffff;
-}
 
-nav.dropdown-top-menu > ul > li > ul li:hover,
-nav.dropdown-side-menu > ul > li > ul li:hover
-{
-	background-color:		#dedede;
-	color:					#222222;
-	text-decoration:		none;
-}
-
-nav.dropdown-top-menu > ul > li > ul li > a,
-nav.dropdown-side-menu > ul > li > ul li > a
+nav.dropdown-top-menu > ul > li > ul li a,
+nav.dropdown-side-menu > ul > li > ul li a
 {
 	background-color:		#ffffff;
 	color:					#333333;
 	font-weight:			normal;
-	font-size:				12px;
-	line-height:			18px;
-	padding:				9px 10px;
 	white-space:			nowrap;
 	overflow:				hidden;
-	height:					18px;
 	display:				block;
 	text-decoration:		none;
 }
 
-nav.dropdown-top-menu > ul > li > ul li:hover > a,
-nav.dropdown-top-menu > ul > li > ul li > a:hover,
-nav.dropdown-side-menu > ul > li > ul li:hover > a,
-nav.dropdown-side-menu > ul > li > ul li > a:hover
-{
-	color:					#222222;
-	text-decoration:		none;
-	background-color:		#dedede;
-}
-
-nav.dropdown-top-menu > ul > li > ul li > ul,
-nav.dropdown-side-menu > ul > li > ul li > ul
-{
-	position:				absolute;
-	top:					0;
-	left:					100%;
-	margin:					0;
-	display:				none;
-	list-style-type:		none;
-	list-style-position:	outside;
-	padding:				0;
-	background-color:		#ffffff;
-}
-
-nav.dropdown-top-menu > ul > li > ul li:hover > ul,
-nav.dropdown-side-menu > ul > li > ul li:hover > ul
-{
-	display:				block;
-}
 
 
 /* Other */
@@ -265,18 +227,13 @@ nav.dropdown-top-menu > ul > li > ul li.dropdown-menu-separator,
 nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-separator
 {
 	height:					1px;
-	border-bottom:			thin dashed #c0c0c0;
+	border-top:			thin dashed #c0c0c0;
 }
 nav.dropdown-top-menu > ul > li > ul li.dropdown-menu-separator:hover,
 nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-separator:hover
 {
 	background-color:		transparent;
 	background-image:		none;
-}
-
-nav.dropdown-top-menu > ul > li > ul.dropdown-menu-right
-{
-	right:					0;
 }
 
 

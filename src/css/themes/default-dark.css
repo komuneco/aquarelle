@@ -1672,18 +1672,20 @@ input.important::-webkit-input-placeholder,	textarea.important::-webkit-input-pl
 		Drop Down Navigation Menu
 -------------------------------------------------------------- */
 
-
-nav.dropdown-top-menu,
-nav.dropdown-side-menu
-{
-	background-color:	transparent;
-}
-
 nav.dropdown-top-menu
 {
-	border-top:		thin solid transparent;
-	border-bottom:		thin solid #242525;
+	border-width:			thin 0 thin 0;
+	border-style:			solid;
+	border-color:			#242525;
 }
+
+nav.dropdown-side-menu
+{
+	border-width:			0 thin;
+	border-style:			solid;
+	border-color:			#242525;
+}
+
 
 nav.dropdown-top-menu,
 nav.dropdown-top-menu > ul > li,
@@ -1720,13 +1722,6 @@ nav.dropdown-side-menu > ul > li:first-child
 	border-top:		thin solid #242525;
 }
 
-nav.dropdown-top-menu > ul > li:hover,
-nav.dropdown-side-menu > ul > li:hover
-{
-	background-color:	#282929;
-	background-image:	none;
-}
-
 nav.dropdown-top-menu > ul > li > a,
 nav.dropdown-side-menu > ul > li > a
 {
@@ -1734,11 +1729,6 @@ nav.dropdown-side-menu > ul > li > a
 	font-weight:		bold;
 	color:				#c8c8c8;
 	text-shadow:		0 -1px 0 rgba(0, 0, 0, 0.5);
-}
-
-nav.dropdown-side-menu > ul > li > a
-{
-	text-indent:		10px;
 }
 
 nav.dropdown-top-menu > ul > li > a:hover,
@@ -1753,10 +1743,9 @@ nav.dropdown-side-menu > ul > li:hover > a
 	background-image:	none;
 }
 
-/* Second Level Menu */
-
-nav.dropdown-top-menu > ul > li > ul
+nav.dropdown-top-menu > ul > li ul
 {
+	border:				none;
 	background-color:	#282929;
 	
 	-moz-box-shadow:	0 2px 2px rgba(0, 0, 0, 0.6);
@@ -1765,10 +1754,10 @@ nav.dropdown-top-menu > ul > li > ul
 	box-shadow:			0 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-nav.dropdown-side-menu > ul > li > ul
+nav.dropdown-side-menu > ul > li ul
 {
+	border:				none;
 	background-color:	#282929;
-	margin:				-34px 0 0 100%;
 	
 	-moz-box-shadow:	1px 0 2px rgba(0, 0, 0, 0.4);
 	-webkit-box-shadow:	1px 0 2px rgba(0, 0, 0, 0.4);
@@ -1776,25 +1765,18 @@ nav.dropdown-side-menu > ul > li > ul
 	box-shadow:			1px 0 2px rgba(0, 0, 0, 0.4);
 }
 
-nav.dropdown-top-menu > ul > li > ul  li,
-nav.dropdown-side-menu > ul > li > ul  li
-{
-	background-color:	#282929;
-}
-
-
-nav.dropdown-top-menu > ul > li > ul  li > a,
-nav.dropdown-side-menu > ul > li > ul  li > a
+nav.dropdown-top-menu > ul > li ul li a,
+nav.dropdown-side-menu > ul > li ul li a
 {
 	color:				#c8c8c8;
 	text-shadow:		none;
 	background-color:	#282929;
 }
 
-nav.dropdown-top-menu > ul > li > ul  li:hover > a,
-nav.dropdown-top-menu > ul > li > ul  li > a:hover,
-nav.dropdown-side-menu > ul > li > ul  li:hover > a,
-nav.dropdown-side-menu > ul > li > ul  li > a:hover
+nav.dropdown-top-menu > ul > li ul li:hover > a,
+nav.dropdown-top-menu > ul > li ul li > a:hover,
+nav.dropdown-side-menu > ul > li ul li:hover > a,
+nav.dropdown-side-menu > ul > li ul li > a:hover
 {
 	background-color:	#357ae8;
 	background-image:	-moz-linear-gradient(#4d90fe, #357ae8);
@@ -1809,27 +1791,6 @@ nav.dropdown-side-menu > ul > li > ul  li > a:hover
 	color:				#eeeeee;
 	text-decoration:	none;
 	text-shadow:		0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-nav.dropdown-top-menu > ul > li > ul  li > ul
-{
-	background-color:	#282929;
-	
-	-moz-box-shadow:	1px 2px 2px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow:	1px 2px 2px rgba(0, 0, 0, 0.3);
-	-o-box-shadow:		1px 2px 2px rgba(0, 0, 0, 0.3);
-	box-shadow:			1px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-nav.dropdown-side-menu > ul > li > ul  li > ul
-{
-	background-color:	#282929;
-	margin:				-36px 0 0 100%;
-	
-	-moz-box-shadow:	1px 0 2px rgba(0, 0, 0, 0.6);
-	-webkit-box-shadow:	1px 0 2px rgba(0, 0, 0, 0.6);
-	-o-box-shadow:		1px 0 2px rgba(0, 0, 0, 0.6);
-	box-shadow:			1px 0 2px rgba(0, 0, 0, 0.6);
 }
 
 nav.dropdown-top-menu > ul > li > ul li.dropdown-menu-title,
@@ -1861,7 +1822,7 @@ nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-nohover:hover
 nav.dropdown-top-menu > ul > li > ul li.dropdown-menu-separator,
 nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-separator
 {
-	border-bottom:		thin dashed #3b3b3b;
+	border-top:		thin dashed #3b3b3b;
 }
 
 nav.dropdown-top-menu > ul > li > ul li.dropdown-menu-separator:hover,
