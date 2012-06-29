@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Aquarelle, The creative & opensource CSS framework.
-# Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+# Copyright (C) 2012 Floris MORICEAU <floris.moriceau@komuneco.org> and Guillaume AMAT <guillaume.amat@komuneco.org>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@ js_content_dev		= ''
 
 gpl_license = '''/*
 Aquarelle, The creative & opensource CSS framework.
-Copyright (C) 2012 Floris MORICEAU <floris@floris-moriceau.info> and Guillaume AMAT <mozzito@free.fr>
+Copyright (C) 2012 Floris MORICEAU <floris.moriceau@komuneco.org> and Guillaume AMAT <guillaume.amat@komuneco.org>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
