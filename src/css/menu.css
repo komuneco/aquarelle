@@ -282,6 +282,9 @@ nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-separator:hover
 {
 	margin-top:			10px;
 	padding:				6px 0;
+	-moz-border-radius:		6px;
+	-webkit-border-radius:	6px;
+	-o-border-radius:		6px;
 	border-radius:			6px;
 }
 
