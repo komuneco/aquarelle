@@ -33,23 +33,6 @@ html, body
 	direction:			ltr;
 }
 
-a
-{
-	color:				#5a94bd;
-	text-decoration:	none;
-}
-
-a:active
-{
-	color:				#10468c;
-}
-
-a:hover
-{
-	color:				#10468c;
-	text-decoration:	underline;
-}
-
 .global
 {
 	background-color:	#242525
@@ -80,7 +63,7 @@ h1,h2,h3,h4,h5,h6 { }
 
 h1
 {
-	color:				#5a94bd;
+	color:				#4594cc;
 	text-shadow:		0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -91,7 +74,7 @@ h1.subtitle
 
 h2
 {
-	color:				#5a94bd;
+	color:				#4594cc;
 	text-indent:		0px;
 	line-height:		36px;
 	margin-top:			36px;
@@ -120,7 +103,7 @@ h3
 
 h4
 {
-	color:				#5a94bd;
+	color:				#4594cc;
 	font-weight:		bold;
 	text-shadow:		0 1px 0 rgba(0, 0, 0, 0.15);
 }
@@ -140,12 +123,18 @@ p
 
 a
 {
-	color:				#0066cc;
+	color:				#35abff;
+	text-decoration:	none;
+}
+
+a:active
+{
+	color:				#2b8cd1;
 }
 
 a:focus, a:hover
 {
-	color:				#0099ff;
+	color:				#35b8ff;
 	text-decoration:	underline;
 }
 
@@ -349,7 +338,7 @@ span.author
 
 .box h4
 {
-	color:				#5a94bd;
+	color:				#4594cc;
 	text-shadow:		0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -426,7 +415,7 @@ fieldset > legend
 	font-weight:		bold;
 	font-size:			16px;
 	padding:			0 5px;
-	color:				#5a94bd;
+	color:				#4594cc;
 	text-shadow:		0 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -434,7 +423,7 @@ fieldset > legend > a,
 fieldset > legend > a:visited
 {
 	text-decoration:	none;
-	color:				#5a94bd;
+	color:				#4594cc;
 }
 
 fieldset > legend > a:hover
@@ -565,7 +554,7 @@ select optgroup
 
 select optgroup[label]
 {
-	color:				#5a94bd;
+	color:				#4594cc;
 }
 
 select optgroup option
@@ -1861,7 +1850,7 @@ table thead th,
 table tfoot th
 {
 	background:		#282929;
-	color:				#5a94bd;
+	color:				#4594cc;
 	border-color:		#3b3b3b;
 }
 
@@ -1879,7 +1868,7 @@ table tfoot th
 table tbody th
 {
 	border-color:		#3b3b3b;
-	color:				#5a94bd;
+	color:				#4594cc;
 }
 
 /* You can zebra-stripe your tables in outdated browsers by adding the class "even" to every other table row.*/

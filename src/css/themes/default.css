@@ -32,23 +32,6 @@ html, body
 	direction:			ltr;
 }
 
-a
-{
-	color:				#205eb0;
-	text-decoration:	none;
-}
-
-a:active
-{
-	color:				#10468c;
-}
-
-a:hover
-{
-	color:				#10468c;
-	text-decoration:	underline;
-}
-
 .global
 {
 	background-color:	#ffffff
@@ -135,6 +118,12 @@ p
 a
 {
 	color:				#0066cc;
+	text-decoration:	none;
+}
+
+a:active
+{
+	color:				#10468c;
 }
 
 a:focus, a:hover
