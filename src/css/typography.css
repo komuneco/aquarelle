@@ -23,6 +23,25 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 -------------------------------------------------------------- */
 
+
+
+@font-face
+{
+	font-family:		'Cantarell';
+	src:				local('Cantarell'), local('Cantarell Regular');
+}
+
+@font-face
+{
+	font-family:		'Cantarell';
+	font-weight:		bold;
+	src:				local('Cantarell'), local('Cantarell Bold'), local('Cantarell-Bold');
+}
+
+
+
+
+
 /*--------------------------------------------------------------
 		Default font settings.
 -------------------------------------------------------------- */
@@ -33,7 +52,7 @@ body
 	font-size:			13px;
 	color:				#333333;
 	background-color:	#ffffff;
-	font-family:		Arial, Helvetica, 'Helvetica Neue', sans-serif;
+	font-family:		Cantarell, 'Droid Sans', Ubuntu, 'DejaVu Sans', Arial, Helvetica, sans-serif;
 }
 
 
@@ -205,7 +224,7 @@ pre
 pre,code,tt
 {
 	font-size:			13px
-	font-family:		'andale mono', 'lucida console', monospace;
+	font-family:		'Droid Sans Mono','Ubuntu Mono','DejaVu Sans Mono', 'Courier New', Monaco, Courier, monospace;
 	line-height:		18px;
 }
 
@@ -220,7 +239,7 @@ blockquote p
 	color:				#444444;
 	font-weight:		bold;
 	font-size:			15px;
-	font-family:		Georgia, Times, Time, 'Times New Roman', serif;
+	font-family:		'Droid Serif','DejaVu Serif', Georgia, Times, Time, 'Times New Roman', serif;
 	font-style:		italic;
 	line-height:		18px;
 }
@@ -256,7 +275,7 @@ span.author
 {
 	font-weight:		bold;
 	font-size:			15px;
-	font-family:		Georgia, Times, serif;
+	font-family:		'Droid Serif','DejaVu Serif', Georgia, Times, Time, 'Times New Roman', serif;
 	font-style:			normal;
 	color:				#111111;
 	line-height: 		90%;
@@ -552,7 +571,7 @@ p + address
 .alt
 {
 	color:				#333333;
-	font-family:		"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
+	font-family:		'Warnock Pro', 'Goudy Old Style', Palatino, 'Book Antiqua', Georgia, serif;
 	font-style:			italic;
 	font-weight:		normal;
 	font-size:			16px;

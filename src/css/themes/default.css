@@ -188,7 +188,7 @@ blockquote,
 blockquote p
 {
 	color:				#444444;
-	font-family:		Georgia, Times, Time, 'Times New Roman', serif;
+	font-family:		'Droid Serif','DejaVu Serif', Georgia, Times, Time, 'Times New Roman', serif;
 	background-color:	#fafafa;
 	
 	-moz-border-radius:		5px;
