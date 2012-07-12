@@ -176,7 +176,7 @@ dd
 .alt
 {
 	color:				#333333;
-	font-family:		'Warnock Pro', 'Goudy Old Style','Palatino','Book Antiqua', Georgia, serif;
+	font-family:		Palatino, 'Book Antiqua', Georgia, serif;
 	font-style:			italic;
 	font-weight:		normal;
 }
@@ -188,7 +188,7 @@ blockquote,
 blockquote p
 {
 	color:				#444444;
-	font-family:		'Droid Serif','DejaVu Serif', Georgia, Times, Time, 'Times New Roman', serif;
+	font-family:		'Liberation Serif','DejaVu Serif', Times, 'Times New Roman', serif;
 	background-color:	#fafafa;
 	
 	-moz-border-radius:		5px;

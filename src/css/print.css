@@ -33,7 +33,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 body
 {
 	line-height:		1.5;
-	font-family:		Cantarell, 'Droid Sans', Ubuntu, 'DejaVu Sans', Arial, Helvetica, 'sans-serif';
+	font-family:		'Liberation Sans', 'DejaVu Sans', Arial, Helvetica, 'Helvetica Neue', sans-serif;
 	color:				#000000;
 	background:			none;
 	font-size:			10pt;
@@ -81,13 +81,13 @@ hr.space
 
 h1,h2,h3,h4,h5,h6
 {
-	font-family:		Cantarell, 'Droid Sans', Ubuntu, 'DejaVu Sans', Arial, Helvetica, 'sans-serif';
+	font-family:		'Liberation Sans', 'DejaVu Sans', Arial, Helvetica, 'Helvetica Neue', sans-serif;
 }
 
 pre, code, tt
 {
 	font-size:			.9em;
-	font-family:		'Droid Sans Mono','Ubuntu Mono','DejaVu Sans Mono', 'Courier New', Monaco, Courier, monospace;
+	font-family:		'Liberation Mono','DejaVu Sans Mono', Courier, 'Courier New', Monaco, monospace;
 }
 
 a img
