@@ -910,6 +910,7 @@ textarea.info::-webkit-input-placeholder
 
 .inline.row-2 > input[type="submit"].tiny,
 .inline.row-2 > input[type="reset"].tiny,
+.inline.row-2 > input[type="button"].tiny,
 .inline.row-2 > button.tiny
 {
 	margin-top:			5px;
@@ -917,6 +918,7 @@ textarea.info::-webkit-input-placeholder
 
 .inline.row-3 > input[type="submit"].tiny,
 .inline.row-3 > input[type="reset"].tiny,
+.inline.row-3 > input[type="button"].tiny,
 .inline.row-3 > button.tiny
 {
 	margin-top:			13px;
@@ -924,6 +926,7 @@ textarea.info::-webkit-input-placeholder
 
 .inline.row-4 > input[type="submit"].tiny,
 .inline.row-4 > input[type="reset"].tiny,
+.inline.row-4 > input[type="button"].tiny,
 .inline.row-4 > button.tiny
 {
 	margin-top:			21px;
@@ -931,6 +934,7 @@ textarea.info::-webkit-input-placeholder
 
 .inline.row-2 > input[type="submit"],
 .inline.row-2 > input[type="reset"],
+.inline.row-2 > input[type="button"],
 .inline.row-2 > button
 {
 	margin-top:			1px;
@@ -938,6 +942,7 @@ textarea.info::-webkit-input-placeholder
 
 .inline.row-3 > input[type="submit"],
 .inline.row-3 > input[type="reset"],
+.inline.row-3 > input[type="button"],
 .inline.row-3 > button
 {
 	margin-top:			11px;
@@ -945,6 +950,7 @@ textarea.info::-webkit-input-placeholder
 
 .inline.row-4 > input[type="submit"],
 .inline.row-4 > input[type="reset"],
+.inline.row-4 > input[type="button"],
 .inline.row-4 > button
 { margin-top:19px;
 }
