@@ -485,7 +485,7 @@ textarea:disabled
 input[type="file"]
 {
 	/*
-	If you're looking for a fancy <input type="file" />, check "tricks.css" out !
+	If you're looking for a fancy <input type="file" />, check out "tricks.css" !
 	*/
 }
 
@@ -654,7 +654,7 @@ a.button.tiny
 	font-weight:		normal;
 	height:				26px;
 	line-height:		14px;
-	padding:			1px 8px 0 8px;
+	padding:			1px 5px 0;
 }
 
 a.button.tiny
