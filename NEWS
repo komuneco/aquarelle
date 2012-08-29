@@ -1,3 +1,16 @@
+0.2.10
+
+	- The TipSwift javascript library is replaced by the awesome PowerTip library
+	- Add some examples on test pages
+
+0.2.9
+
+	- Add some missing -*-border-radius and correct some values
+	- All default fonts are now open source fonts
+	- Fix the input type button on the inline form display
+	- Padding for tiny buttons is reduced from 8px to 5px
+	- Some cleanups
+
 0.2.8
 
 	- Fix the dropdown-side-menu height
