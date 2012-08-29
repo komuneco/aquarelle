@@ -99,11 +99,11 @@ for css_file in tab_css_files:
 		print 'Erreur lors de la lecture de src/css/'+ css_file +'.css'
 
 try:
-	f = open('src/lib/tipswift/jquery.tipswift.css')
+	f = open('src/lib/jquery-powertip/jquery.powertip.css')
 	css_content_core += f.read()
 	f.close()
 except IOError:
-	print 'Erreur lors de la lecture de src/lib/tipswift/jquery.tipswift.css'
+	print 'Erreur lors de la lecture de src/lib/jquery-powertip/jquery.powertip.css'
 
 for theme in tab_themes:
 	try:
@@ -141,10 +141,10 @@ for theme in tab_themes:
 
 
 
-os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/aquarelle.min.css build/tmp/aquarelle.css')
+os.system('java -jar build/yuicompressor-2.4.6.jar --charset utf-8 --type css -o css/aquarelle.min.css build/tmp/aquarelle.css')
 
 for theme in tab_themes:
-	os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type css -o css/'+ theme +'.aquarelle.min.css build/tmp/'+ theme +'.aquarelle.css')
+	os.system('java -jar build/yuicompressor-2.4.6.jar --charset utf-8 --type css -o css/'+ theme +'.aquarelle.min.css build/tmp/'+ theme +'.aquarelle.css')
 
 
 try:
@@ -197,11 +197,11 @@ except IOError:
 	print 'Erreur lors de la lecture de src/js/aquarelle.js'
 
 try:
-	f = open('src/lib/tipswift/jquery.tipswift.js')
+	f = open('src/lib/jquery-powertip/jquery.powertip.js')
 	js_content_core += f.read()
 	f.close()
 except IOError:
-	print 'Erreur lors de la lecture de src/lib/tipswift/jquery.tipswift.js'
+	print 'Erreur lors de la lecture de src/lib/jquery-powertip/jquery.powertip.js'
 
 try:
 	f = open('src/js/dev.js')
@@ -230,8 +230,8 @@ except IOError:
 
 
 
-os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type js -o js/aquarelle.min.js build/tmp/aquarelle.js')
-os.system('java -jar build/yuicompressor-2.4.6.jar -v --charset utf-8 --type js -o js/dev.aquarelle.min.js build/tmp/dev.aquarelle.js')
+os.system('java -jar build/yuicompressor-2.4.6.jar --charset utf-8 --type js -o js/aquarelle.min.js build/tmp/aquarelle.js')
+os.system('java -jar build/yuicompressor-2.4.6.jar --charset utf-8 --type js -o js/dev.aquarelle.min.js build/tmp/dev.aquarelle.js')
 
 
 try:
