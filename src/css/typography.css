@@ -573,3 +573,20 @@ p + address
 	padding:			0 2px;
 }
 
+
+.font-sans-serif
+{
+	font-family:		'Liberation Sans', 'DejaVu Sans', Arial, Helvetica, 'Helvetica Neue', sans-serif;
+}
+
+.font-serif
+{
+	font-family:		'Liberation Serif','DejaVu Serif', Times, 'Times New Roman', serif;
+}
+
+.font-monospace
+{
+	font-family:		'Liberation Mono','DejaVu Sans Mono', Courier, 'Courier New', Monaco, monospace;
+}
+
+
