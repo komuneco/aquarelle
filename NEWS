@@ -1,5 +1,7 @@
 0.2.11
 
+	- PowerTip updated
+	- Elements added or modified with tooltip-* classes are now handled
 	- Add font-sans-serif, font-serif and font-monospace
 
 0.2.10
