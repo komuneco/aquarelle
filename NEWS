@@ -3,6 +3,7 @@
 	- PowerTip updated
 	- Elements added or modified with tooltip-* classes are now handled
 	- Add font-sans-serif, font-serif and font-monospace
+	- H1 to H6 titles are more polished
 
 0.2.10
 
