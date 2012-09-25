@@ -51,6 +51,34 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 		
 		
 		
+		function On_tooltip_mouseenter(element, event, placement)
+		{
+			var title = $(element).attr('title');
+			
+			if (typeof(title) != 'undefined' && title != $(element).data('powertip'))
+			{
+				$(element).data('powertip', title);
+				$(element).removeAttr('title');
+			}
+			
+			$(element).powerTip
+			({
+				manual:		true,
+				placement:	placement
+			});
+			
+			return $(element).powerTip('show', event);
+		}
+		
+		
+		function On_tooltip_mouseleave(element)
+		{
+			return $(element).powerTip('hide');
+		}
+		
+		
+		
+		
 		$(document).ready
 		(
 			function()
@@ -100,14 +128,28 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 				// Better tooltips
 				$.fn.powerTip.defaults.smartPlacement = true;
 				
-				$('.tooltip-n')		.powerTip({placement: 'n'});
-				$('.tooltip-ne')	.powerTip({placement: 'ne'});
-				$('.tooltip-e')		.powerTip({placement: 'e'});
-				$('.tooltip-se')	.powerTip({placement: 'se'});
-				$('.tooltip-s')		.powerTip({placement: 's'});
-				$('.tooltip-sw')	.powerTip({placement: 'sw'});
-				$('.tooltip-w')		.powerTip({placement: 'w'});
-				$('.tooltip-nw')	.powerTip({placement: 'nw'});
+				$(document)
+				.on('mouseenter', '.tooltip-n',			function(event){ On_tooltip_mouseenter(this, event, 'n'); })
+				.on('mouseenter', '.tooltip-ne',		function(event){ On_tooltip_mouseenter(this, event, 'ne'); })
+				.on('mouseenter', '.tooltip-ne-alt',	function(event){ On_tooltip_mouseenter(this, event, 'ne-alt'); })
+				.on('mouseenter', '.tooltip-e',			function(event){ On_tooltip_mouseenter(this, event, 'e'); })
+				.on('mouseenter', '.tooltip-se',		function(event){ On_tooltip_mouseenter(this, event, 'se'); })
+				.on('mouseenter', '.tooltip-se-alt',	function(event){ On_tooltip_mouseenter(this, event, 'se-alt'); })
+				.on('mouseenter', '.tooltip-s',			function(event){ On_tooltip_mouseenter(this, event, 's'); })
+				.on('mouseenter', '.tooltip-sw',		function(event){ On_tooltip_mouseenter(this, event, 'sw'); })
+				.on('mouseenter', '.tooltip-sw-alt',	function(event){ On_tooltip_mouseenter(this, event, 'sw-alt'); })
+				.on('mouseenter', '.tooltip-w',			function(event){ On_tooltip_mouseenter(this, event, 'w'); })
+				.on('mouseenter', '.tooltip-nw',		function(event){ On_tooltip_mouseenter(this, event, 'nw'); })
+				.on('mouseenter', '.tooltip-nw-alt',	function(event){ On_tooltip_mouseenter(this, event, 'nw-alt'); })
+				.on
+				(
+					'mouseleave',
+					'.tooltip-n, .tooltip-ne, .tooltip-ne-alt, .tooltip-e, .tooltip-se, .tooltip-se-alt, .tooltip-s, .tooltip-sw, .tooltip-sw-alt, .tooltip-w, .tooltip-nw, .tooltip-nw-alt',
+					function()
+					{
+						On_tooltip_mouseleave(this);
+					}
+				);
 			}
 		);
 	}
