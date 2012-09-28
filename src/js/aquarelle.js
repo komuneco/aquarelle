@@ -55,9 +55,13 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 		{
 			var title = $(element).attr('title');
 			
-			if (typeof(title) != 'undefined' && title != $(element).data('powertip'))
+			if (typeof(title) != 'undefined')
 			{
-				$(element).data('powertip', title);
+				if (title != $(element).data('powertip'))
+				{
+					$(element).data('powertip', title);
+				}
+				
 				$(element).removeAttr('title');
 			}
 			
