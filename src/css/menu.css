@@ -301,6 +301,8 @@ nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-separator:hover
 	position:				absolute;
 	top:					-6px;
 	left:					10px;
+	box-shadow				0 1px 1px black;
+	background-color:		black;
 }
 
 .hover-dropdown-list > ul.dropdown-bubble-right:after,

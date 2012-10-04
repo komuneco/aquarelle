@@ -201,7 +201,7 @@ del
 pre
 {
 	margin:				18px 0;
-	white-space: pre;
+	white-space:		pre;
 }
 
 pre,code,tt
@@ -223,7 +223,7 @@ blockquote p
 	font-weight:		bold;
 	font-size:			15px;
 	font-family:		'Liberation Serif','DejaVu Serif', Times, 'Times New Roman', serif;
-	font-style:		italic;
+	font-style:			italic;
 	line-height:		18px;
 }
 
@@ -232,7 +232,7 @@ blockquote:before, q:before
 	content:			open-quote;
 	font-size:			60px;
 	float:				left;
-	margin-top:		20px;
+	margin-top:			20px;
 	height:				20px;
 	display:			block;
 	color:				#999999;
