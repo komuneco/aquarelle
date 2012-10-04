@@ -68,7 +68,6 @@ h1.subtitle
 h2
 {
 	color:				#205eb0;
-	text-indent:		0px;
 	line-height:		36px;
 	margin-top:			36px;
 	margin-bottom:		18px;
@@ -83,9 +82,9 @@ h2.subtitle
 h3
 {
 	height:				36px;
-	margin:				0 0 17px 0;
+	margin-top:			36px;
+	margin-bottom:		18px;
 	padding:			0;
-	text-indent:		10px;
 	font-weight:		normal;
 	line-height:		36px;
 	color:				#b0281a;
@@ -96,16 +95,27 @@ h3
 
 h4
 {
+	margin:				18px 0;
 	color:				#205eb0;
 	font-weight:		bold;
 	text-shadow:		0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 h5
-{  }
+{
+	margin:				18px 0;
+	color:				#b0281a;
+	font-weight:		bold;
+	text-shadow:		0 1px 0 rgba(0, 0, 0, 0.1);
+}
 
 h6
-{  }
+{
+	margin:				18px 0;
+	color:				#205eb0;
+	font-weight:		bold;
+	text-shadow:		0 1px 0 rgba(0, 0, 0, 0.1);
+}
 
 
 /*--------------------------------------------------------------

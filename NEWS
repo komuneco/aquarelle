@@ -1,3 +1,10 @@
+0.2.11
+
+	- PowerTip updated
+	- Elements added or modified with tooltip-* classes are now handled
+	- Add font-sans-serif, font-serif and font-monospace
+	- H1 to H6 titles are more polished
+
 0.2.10
 
 	- The TipSwift javascript library is replaced by the awesome PowerTip library

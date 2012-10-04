@@ -65,7 +65,7 @@ h1.subtitle
 	line-height:		36px;
 	margin-bottom:		18px;
 	height:				36px;
-	text-indent:		30px;
+	text-indent:		15px;
 	margin-top:			-18px;
 }
 
@@ -73,6 +73,7 @@ h2
 {
 	font-size:			28px;
 	line-height:		28px;
+	text-indent:		15px;
 	margin-bottom:		18px;
 }
 
@@ -98,20 +99,21 @@ h4
 	font-size:			16px;
 	line-height:		18px;
 	margin-bottom:		18px;
-	text-indent:		30px;
+	text-indent:		45px;
 }
 
 h5
 {
 	font-size:			14px;
-	font-weight:		bold;
-	margin-bottom:		0px;
+	margin-bottom:		18px;
+	text-indent:		55px;
 }
 
 h6
 {
 	font-size:			14px;
-	font-weight:		bold;
+	margin-bottom:		18px;
+	text-indent:		65px;
 }
 
 
@@ -572,4 +574,21 @@ p + address
 	font-weight:		bold;
 	padding:			0 2px;
 }
+
+
+.font-sans-serif
+{
+	font-family:		'Liberation Sans', 'DejaVu Sans', Arial, Helvetica, 'Helvetica Neue', sans-serif;
+}
+
+.font-serif
+{
+	font-family:		'Liberation Serif','DejaVu Serif', Times, 'Times New Roman', serif;
+}
+
+.font-monospace
+{
+	font-family:		'Liberation Mono','DejaVu Sans Mono', Courier, 'Courier New', Monaco, monospace;
+}
+
 
