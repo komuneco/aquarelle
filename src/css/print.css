@@ -42,6 +42,7 @@ body
 header,
 footer,
 nav,
+.adBox
 .adBlock
 {
 	display:			none;
