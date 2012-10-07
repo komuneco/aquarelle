@@ -1785,7 +1785,45 @@ nav.dropdown-side-menu > ul > li > ul li.dropdown-menu-separator:hover
 	-ms-filter:			none;
 }
 
+/*--------------------------------------------------------------
 
+		MEDIAS
+
+-------------------------------------------------------------- */
+/*--------------------------------------------------------------
+		Figures / Images / Captions
+-------------------------------------------------------------- */
+figure
+{
+	display:			block;
+	background-color:	#ffffff;
+}
+
+figure > img
+{
+	border:				5px solid #ffffff;
+	
+	-moz-box-shadow:		0 0 2px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow:		0 0 2px rgba(0, 0, 0, 0.15);
+	-o-box-shadow:			0 0 2px rgba(0, 0, 0, 0.15);
+	box-shadow:				0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+figure > figcaption
+{
+	font-size:			13px;
+	font-style:			italic;
+	margin-top:			0;
+	margin-bottom:		10px;
+	line-height:		15px;
+	color:				#666666;
+}
+
+/*--------------------------------------------------------------
+
+		PLUGINS
+
+-------------------------------------------------------------- */
 
 /* TipSwift plugin */
 .tipswift-inner

@@ -1946,8 +1946,45 @@ table tbody tr td.highlight-hover-td.highlight-td:hover
 }
 
 
+/*--------------------------------------------------------------
 
+		MEDIAS
 
+-------------------------------------------------------------- */
+/*--------------------------------------------------------------
+		Figures / Images / Captions
+-------------------------------------------------------------- */
+figure
+{
+	display:			block;
+	background-color:	transparent;
+}
+
+figure > img
+{
+	border:				5px solid #ffffff;
+	
+	-moz-box-shadow:		0 0 2px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow:		0 0 2px rgba(0, 0, 0, 0.15);
+	-o-box-shadow:			0 0 2px rgba(0, 0, 0, 0.15);
+	box-shadow:				0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+figure > figcaption
+{
+	font-size:			13px;
+	font-style:			italic;
+	margin-top:			0;
+	margin-bottom:		10px;
+	line-height:		15px;
+	color:				#C8C8C8;
+}
+
+/*--------------------------------------------------------------
+
+		PLUGINS
+
+-------------------------------------------------------------- */
 
 /* TipSwift plugin */
 .tipswift-inner
@@ -1957,5 +1994,3 @@ table tbody tr td.highlight-hover-td.highlight-td:hover
 	-o-box-shadow:		0 1px 1px rgba(0, 0, 0, 0.1);
 	box-shadow:			0 1px 1px rgba(0, 0, 0, 0.1);
 }
-
-
