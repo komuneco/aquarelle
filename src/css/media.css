@@ -28,7 +28,8 @@ figure
 	display:			block;
 }
 
-figure > img
+figure > img, 
+figure > a >img
 {
 	
 }

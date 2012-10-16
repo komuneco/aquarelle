@@ -1799,7 +1799,8 @@ figure
 	background-color:	#ffffff;
 }
 
-figure > img
+figure > img,
+figure > a > img
 {
 	border:				5px solid #ffffff;
 	
