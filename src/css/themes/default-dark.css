@@ -1960,7 +1960,8 @@ figure
 	background-color:	transparent;
 }
 
-figure > img
+figure > img,
+figure > a > img
 {
 	border:				5px solid #ffffff;
 	
