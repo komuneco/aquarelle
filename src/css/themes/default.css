@@ -1737,6 +1737,23 @@ nav.dropdown-side-menu > ul > li ul
 	box-shadow:			1px 0 2px rgba(0, 0, 0, 0.4);
 }
 
+nav.dropdown-top-menu > ul > li > ul > li ul,
+nav.dropdown-side-menu > ul > li ul
+{
+	top:					0;
+	left:					100%;
+}
+
+nav.dropdown-top-menu > ul > li > ul
+{
+	left:					0;
+}
+
+nav.dropdown-side-menu > ul > li > ul
+{
+	top:					0;
+}
+
 nav.dropdown-top-menu > ul > li ul li a,
 nav.dropdown-side-menu > ul > li ul li a
 {

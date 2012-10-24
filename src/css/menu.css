@@ -158,8 +158,18 @@ nav.dropdown-side-menu > ul > li ul
 nav.dropdown-top-menu > ul > li > ul > li ul,
 nav.dropdown-side-menu > ul > li ul
 {
-	top:					-1px;
+	top:					0;
 	left:					100%;
+}
+
+nav.dropdown-top-menu > ul > li > ul
+{
+	left:					-1px;
+}
+
+nav.dropdown-side-menu > ul > li > ul
+{
+	top:					-1px;
 }
 
 nav.dropdown-top-menu > ul li:hover > ul,
