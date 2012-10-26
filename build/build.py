@@ -34,7 +34,7 @@ signal.signal(signal.SIGUSR1,	signal.SIG_DFL)
 
 
 tab_css_files		= ['reset', 'grid', 'boxes', 'forms', 'tables', 'typography', 'menu', 'media', 'icons', 'iab', 'tricks', 'print', 'ie', 'dev']
-tab_themes			= ['default', 'default-dark']
+tab_themes			= ['default', 'default-dark', 'inli']
 css_content_core	= ''
 css_content_ie		= ''
 css_content_print	= ''

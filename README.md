@@ -70,6 +70,23 @@ If you want to use the Aquarelle's default dark theme, replace this file :
 ... into the `<head>` section of your HTML files.
 
 
+### Inli theme
+
+If you want to use the Aquarelle's Inli theme, replace this file :
+
+```html
+<link type="text/css" rel="stylesheet" media="screen, projection" href="aquarelle/css/default.aquarelle.min.css">
+```
+
+...by this one :
+
+```html
+<link type="text/css" rel="stylesheet" media="screen, projection" href="aquarelle/css/inli.aquarelle.min.css">
+```
+
+... into the `<head>` section of your HTML files.
+
+
 ### Just the core
 
 If you don't want to use the Aquarelle's default theme, replace this file :
