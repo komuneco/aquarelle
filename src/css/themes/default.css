@@ -1518,21 +1518,58 @@ label.important
 
 /* Styling placeholders by events*/
 
-/*input[placeholder],							textarea[placeholder]							{ color: #c0c0c0; }*/
-::-webkit-input-placeholder,				::-webkit-textarea-placeholder,					{ color: #c0c0c0; }
-input:-moz-placeholder,						textarea:-moz-placeholder						{ color: #c0c0c0; }
+/*
+input[placeholder],
+textarea[placeholder]
+{
+	color: #c0c0c0;
+}
+*/
 
-input.error:-moz-placeholder,				textarea.error:-moz-placeholder,
-input.alert:-moz-placeholder,				textarea.alert:-moz-placeholder					{ color: #e8686b; }
-input.notice:-moz-placeholder,				textarea.notice:-moz-placeholder				{ color: #ffaa00; }
-input.success:-moz-placeholder,				textarea.success:-moz-placeholder				{ color: #7aae42; }
-input.info:-moz-placeholder,				textarea.info:-moz-placeholder					{ color: #2b95c6; }
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder
+{
+	color: #c0c0c0;
+}
 
-input.error::-webkit-input-placeholder,		textarea.error::-webkit-input-placeholder,
-input.alert::-webkit-input-placeholder,		textarea.alert::-webkit-input-placeholder		{ color: #e8686b; }
-input.notice::-webkit-input-placeholder,	textarea.notice::-webkit-input-placeholder		{ color: #ffaa00; }
-input.success::-webkit-input-placeholder,	textarea.success::-webkit-input-placeholder		{ color: #7aae42; }
-input.info::-webkit-input-placeholder,		textarea.info::-webkit-input-placeholder		{ color: #2b95c6; }
+input.error::-webkit-input-placeholder,
+textarea.error::-webkit-input-placeholder,
+input.alert::-webkit-input-placeholder,
+textarea.alert::-webkit-input-placeholder,
+input.error:-moz-placeholder,
+textarea.error:-moz-placeholder,
+input.alert:-moz-placeholder,
+textarea.alert:-moz-placeholder
+{
+	color: #e8686b;
+}
+
+input.notice::-webkit-input-placeholder,
+textarea.notice::-webkit-input-placeholder,
+input.notice:-moz-placeholder,
+textarea.notice:-moz-placeholder
+{
+	color: #ffaa00;
+}
+
+input.success::-webkit-input-placeholder,
+textarea.success::-webkit-input-placeholder,
+input.success:-moz-placeholder,
+textarea.success:-moz-placeholder
+{
+	color: #7aae42;
+}
+
+input.info::-webkit-input-placeholder,
+textarea.info::-webkit-input-placeholder,
+input.info:-moz-placeholder,
+textarea.info:-moz-placeholder
+{
+	color: #2b95c6;
+}
+
 
 
 
