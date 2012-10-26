@@ -471,7 +471,7 @@ textarea
 {
 	color:				#c8c8c8;
 	background-color:	#242525;
-	border-color:		#3b3b3b #3b3b3b #424242 #424242;
+	border-color:		#3b3b3b #424242 #424242 #3b3b3b;
 	border-style:		solid;
 	border-width:		thin;
 	
@@ -490,7 +490,7 @@ input.title:hover,
 select:hover,
 textarea:hover
 {
-	border-color:		#4D4D4D #4D4D4D #545454 #545454;
+	border-color:		#4D4D4D #545454 #545454 #4D4D4D;
 	border-style:		solid;
 	border-width:		thin;
 	
