@@ -1501,6 +1501,16 @@ select.important
 	color:				#ededed;
 }
 
+input.important:hover,
+textarea.important:hover,
+select.important:hover,
+input.important:focus,
+textarea.important:focus,
+select.important:focus
+{
+	border-color:		#d14836;
+}
+
 
 /* Styling labels by events */
 label.error,
