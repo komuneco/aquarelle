@@ -1,3 +1,7 @@
+0.4.0
+
+	- The default theme is now Inli. The old default theme is renamed colored (and colored-dark)
+
 0.2.12
 
 	- New Inli theme
